@@ -531,31 +531,30 @@ init:
     $ sfx_alisa_falls_novoice = "sound/sfx/alisa_falls_novoice.ogg"
 
 init python:
-    for file in renpy.list_files():
-        filename = file.split('/')[-1] # file.extension
+    def bind_files_7dl():
+        ''' Биндит .jpg и .png файлы в renpy.image,
+            а .ogg - в xxx_7dl[] словари, соответственно
+        '''
 
-        if filename.endswith((".jpg", ".png")):
+        for file in renpy.list_files():
+            filename = file.split('/')[-1] # file.extension
 
-            image_bind_prefix = ""
+            if filename.endswith((".jpg", ".png")):
+                image_bind_prefix = ""
 
-            if file.startswith((default_7dl_path + "Pics/bg/")):
-                image_bind_prefix = "bg "
-            elif file.startswith((default_7dl_path + "Pics/cg/")):
-                image_bind_prefix = "cg "
+                if file.startswith((default_7dl_path + "Pics/bg/")):
+                    image_bind_prefix = "bg "
+                elif file.startswith((default_7dl_path + "Pics/cg/")):
+                    image_bind_prefix = "cg "
 
-            renpy.image((image_bind_prefix + filename[:-4]), file)
+                renpy.image((image_bind_prefix + filename[:-4]), file) # [:-4] - remove extension
 
-        elif filename.endswith((".ogg")):
-            # [:-8] - remove "_7dl" suffix and extension
+            elif filename.endswith((".ogg")):
+                for category, dictionary, frontslice in ('ambience', ambience_7dl, 9), ('music', music_7dl, 0), ('sfx', sfx_7dl, 0):
+                    if file.startswith(("%sSound/%s/" % (default_7dl_path, category))):
+                        dictionary[filename[frontslice:-8]] = file
+                        # [:-8] - remove "_7dl" suffix and extension
+                        # frontslice removes "ambience_" prefix from ambiences.
+                        # <PROPHESSOR> Why is the prefix there?
 
-            if file.startswith((default_7dl_path+"Sound/ambience/")):
-                ambience_7dl[filename[:-8]] = file
-
-            elif file.startswith((default_7dl_path+"Sound/music/")):
-                music_7dl[filename[:-8]] = file
-
-            elif file.startswith((default_7dl_path+"Sound/sfx/")):
-                sfx_7dl[filename[:-8]] = file
-
-    del filename
-    del image_bind_prefix
+    bind_files_7dl()
