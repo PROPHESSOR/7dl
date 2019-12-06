@@ -1,18 +1,22 @@
 init -1002 python:
-    class _7DL:
+    class __7DL:
+
         def __init__(self):
-            raise Exception("Class _7DL mustn't create instances!")
+            # Configuration
+            self.version = (0, 0, 0) # (major, minor, patch)
+            self.type = "nonsteam" # steam/nonsteam/mobile
+            
+            # Variables
+            self.rootpath = 'mods/scenario_alt' if self.type == "nonsteam" else 'scenario_alt'
 
-        rootpath = 'mods/scenario_alt' if nonsteam_7dl else 'scenario_alt'
+        def ambience(self, name):
+            return "%s/Sound/ambience/ambience_%s_7dl.ogg" % (self.rootpath, name)
 
-        @static
-        def ambience(name):
-            return "%s/Sound/ambience/ambience_%s" % (_7DL.rootpath, name)
+        def music(self, name):
+            print("Getting music %s..." % name)
+            return "%s/Sound/music/%s_7dl.ogg" % (self.rootpath, name)
 
-        @static
-        def music(name):
-            return "%s/Sound/music/%s" % (_7DL.rootpath, name)
+        def sfx(self, name):
+            return "%s/Sound/sfx/%s_7dl.ogg" % (self.rootpath, name)
 
-        @static
-        def sfx(name):
-            return "%s/Sound/sfx/%s" % (_7DL.rootpath, name)
+    _7DL = __7DL()
