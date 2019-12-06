@@ -506,7 +506,7 @@ screen sdl_achv_route(engine):
                         hover ("sdl_achv_check_active")
                         hovered [Function(engine.set_hovered_icon, "sdl_achv_jump")]
                         unhovered [Function(engine.set_hovered_icon, None)]
-                        action [Stop("ambience"), Function(engine.set_hovered_icon, None), Function(make_names_known_7dl), Replay(achv.get_replay().get_label(), scope=sdl_achv_add_to_dict(achv.get_replay().get_scope(), engine.get_cur_char().get_variable()), locked=False), Play('ambience', default_7dl_path+"Sound/ambience/ambience_safe_7dl.ogg", fadein=5.0)]
+                        action [Stop("ambience"), Function(engine.set_hovered_icon, None), Function(make_names_known_7dl), Replay(achv.get_replay().get_label(), scope=sdl_achv_add_to_dict(achv.get_replay().get_scope(), engine.get_cur_char().get_variable()), locked=False), Play('ambience', _7DL.ambience("safe"), fadein=5.0)]
             else:
                 # Заблокированная ачивка
                 imagebutton xcenter 780 ycenter (165 + 64 * sdl_achv_count):

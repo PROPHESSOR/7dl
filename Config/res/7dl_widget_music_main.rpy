@@ -22,7 +22,7 @@ python early:
                 ui.text(check_muzlo_7dl(m), style="button_text", size=13)
             elif m == None:
                 get_mus_7dl('ambience')
-                if m == default_7dl_path+"Sound/ambience/ambience_safe_7dl.ogg":
+                if m == _7DL.ambience("safe"):
                     ui.text("%s" % "Mikko Tarmia - Back Hall (Amnesia OST)", style="button_text", size=13)
                 else: 
                     ui.text("%s" % "Нет музыки", style="button_text", size=13)

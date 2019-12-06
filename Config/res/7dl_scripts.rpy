@@ -623,8 +623,7 @@ init -1001 python:
             data["map_chibi_7dl"] = None
 
 init -1000 python:
-    nonsteam_7dl = True
-    default_7dl_path = 'mods/scenario_alt/' if nonsteam_7dl else 'scenario_alt/'
+    default_7dl_path = _7DL.rootpath + '/' # TODO: [DEPRECATED] Оставлено только для того, чтобы находить то, что ещё не отрефакторено
 
     # для совместимости с одной из ранних сборок на RenPy 7.0.0
     if not 'translation_new' in globals():
