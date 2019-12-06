@@ -531,6 +531,7 @@ init:
     $ sfx_alisa_falls_novoice = "sound/sfx/alisa_falls_novoice.ogg"
 
 init python:
+    # <PROPHESSOR> WTF??!!
     for file in renpy.list_files():
         if file.startswith((default_7dl_path+"Pics/bg/")) and file.endswith((".jpg", ".png")):
             renpy.image(("bg "+str(file)[default_7dl_path_length+8:-4]), file)

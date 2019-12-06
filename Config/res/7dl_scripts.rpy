@@ -624,12 +624,9 @@ init -1001 python:
 
 init -1000 python:
     nonsteam_7dl = True
-    if nonsteam_7dl == True:
-        default_7dl_path = 'mods/scenario_alt/'
-        default_7dl_path_length = 18
-    else:
-        default_7dl_path = 'scenario_alt/'
-        default_7dl_path_length = 13
+    default_7dl_path = 'mods/scenario_alt/' if nonsteam_7dl else 'scenario_alt/'
+    default_7dl_path_length = len(default_7dl_path)
+
     # для совместимости с одной из ранних сборок на RenPy 7.0.0
     if not 'translation_new' in globals():
         translation_new = translation
