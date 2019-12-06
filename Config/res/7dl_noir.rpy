@@ -1,10 +1,14 @@
 init python:
     def noir_screens_save():
-        renpy.display.screen.screens[("original_game_menu_selector", None)] =  renpy.display.screen.screens[("game_menu_selector", None)]
-        renpy.display.screen.screens[("original_choice", None)] =              renpy.display.screen.screens[("choice", None)]
-        renpy.display.screen.screens[("original_say", None)] =                 renpy.display.screen.screens[("say", None)]
-        renpy.display.screen.screens[("original_nvl", None)] =                 renpy.display.screen.screens[("nvl", None)]
-        renpy.display.screen.screens[("original_text_history_screen", None)] = renpy.display.screen.screens[("text_history_screen", None)]
+        try:
+            renpy.display.screen.screens[("original_game_menu_selector", None)] =  renpy.display.screen.screens[("game_menu_selector", None)]
+            renpy.display.screen.screens[("original_choice", None)] =              renpy.display.screen.screens[("choice", None)]
+            renpy.display.screen.screens[("original_say", None)] =                 renpy.display.screen.screens[("say", None)]
+            renpy.display.screen.screens[("original_nvl", None)] =                 renpy.display.screen.screens[("nvl", None)]
+            renpy.display.screen.screens[("original_text_history_screen", None)] = renpy.display.screen.screens[("text_history_screen", None)]
+            # FIXME: <PROPHESSOR> На моей версии БЛ (1.2) в этом месте игра падает с KeyError. Try/catch - временное решение
+        except Exception as e:
+            print(e)
 
     def noir_screens_on():
         renpy.display.screen.screens[("game_menu_selector", None)] =           renpy.display.screen.screens[("noir_game_menu_selector", None)]
@@ -15,12 +19,16 @@ init python:
         config.mouse = {'default' : [(get_image_7dl("gui/noir/mouse/1.png"), 0, 0)]}
 
     def noir_screens_load():
-        renpy.display.screen.screens[("game_menu_selector", None)] =           renpy.display.screen.screens[("original_game_menu_selector", None)]
-        renpy.display.screen.screens[("choice", None)] =                       renpy.display.screen.screens[("original_choice", None)]
-        renpy.display.screen.screens[("say", None)] =                          renpy.display.screen.screens[("original_say", None)]
-        renpy.display.screen.screens[("nvl", None)] =                          renpy.display.screen.screens[("original_nvl", None)]
-        renpy.display.screen.screens[("text_history_screen", None)] =          renpy.display.screen.screens[("original_text_history_screen", None)]
-        config.mouse = {'default' : [('images/misc/mouse/1.png', 0, 0)]}
+        try:
+            renpy.display.screen.screens[("game_menu_selector", None)] =           renpy.display.screen.screens[("original_game_menu_selector", None)]
+            renpy.display.screen.screens[("choice", None)] =                       renpy.display.screen.screens[("original_choice", None)]
+            renpy.display.screen.screens[("say", None)] =                          renpy.display.screen.screens[("original_say", None)]
+            renpy.display.screen.screens[("nvl", None)] =                          renpy.display.screen.screens[("original_nvl", None)]
+            renpy.display.screen.screens[("text_history_screen", None)] =          renpy.display.screen.screens[("original_text_history_screen", None)]
+            config.mouse = {'default' : [('images/misc/mouse/1.png', 0, 0)]}
+            # FIXME: <PROPHESSOR> На моей версии БЛ (1.2) в этом месте игра падает с KeyError. Try/catch - временное решение
+        except Exception as e:
+            print(e)
 
     noir_screens_save()
 
