@@ -18,7 +18,7 @@
     mt "Ты будешь подниматься?"
     "Горестно вздохнув по безвозвратно почившей утренней эротике, я отвернулся и смежил веки."
     window hide
-    play sound sfx_7dl["mpbt"]
+    play sound _7DL.sfx("mpbt")
     pause(1)
     scene bg int_house_of_mt_sunset
     with blind_l
@@ -407,7 +407,7 @@ label alt_day2_lineup:
     "Это волшебство флага, когда он поднимается, за ним смотрят все. Даже те, кто его недолюбливает или откровенно не уважает."
     "Я видел как задирается нос Двачевской, как Ульянка поднимает подбородок, даже отряд, откуда был последний выкрик — все единодушно провожали взглядом поднимающееся знамя."
     "И наконец верхняя точка."
-    play sound sfx_7dl["eat_horn"] fadein 1
+    play sound _7DL.sfx("eat_horn") fadein 1
     "Будто ожидая этого, жестяной рупор заиграл сигнал горна, священный для любого голодного пионера."
     play ambience ambience_camp_center_evening fadein 1
     "Пионеры одновременно сделали «напра…», и, дождавшись отмашки Ольги, организованным строем поотрядно двинулись питаться."
@@ -3142,7 +3142,7 @@ label alt_day2_dubstep2:
     show us smile sport with dissolve
     us "Эй, а что ты тут делаешь?"
     "Мелкая егоза, кажется, наигралась досыта и теперь решила подоставать меня."
-    play sound sfx_7dl["ghmm"]
+    play sound _7DL.sfx("ghmm")
     "Я щёлкнул пальцами:"
     me "Музыку крутить собираюсь."
     show us laugh2 sport with dspr
@@ -3338,7 +3338,7 @@ label alt_day2_dubstep2:
         else:
             show us sad sport with dspr
         "Я послушно щёлкнул тумблером."
-        play sound sfx_7dl["eat_horn"] fadein 1
+        play sound _7DL.sfx("eat_horn") fadein 1
         "А там и горн поспел…"
         if (alt_day2_convoy == 'dv_prep'):
             "А склероз надо лечить."
@@ -3352,7 +3352,7 @@ label alt_day2_dubstep2:
     dv "Пожалуйста…"
     me "Ладно."
     stop music fadeout 3
-    play sound sfx_7dl["eat_horn"] fadein 1
+    play sound _7DL.sfx("eat_horn") fadein 1
     "Я запустил было музыку, когда из рупоров полились сигналы сбора к обеду."
     me "Пошли."
     "Я потянул руку к тумблеру."
@@ -3431,7 +3431,7 @@ label alt_day2_phone:
     "Как часто и как глубоко надо дышать."
     th "Да какая разница. Надо расслабиться, организм всё куда лучше сознания знает и умеет."
     "Проблема в том лишь, что на публике в организме очень часто включаются извращённые механизмы, отдающие бразды правления телом сознанию."
-    play sound sfx_7dl["ghmm"]
+    play sound _7DL.sfx("ghmm")
     me "Гм…"
     "Микрофон немного пофонил, но моё покашливание воспроизвёл чисто."
     th "Советская техника и ламповый звук."
@@ -4531,7 +4531,7 @@ label alt_day2_grand_escape:
     "Так, собрались."
     window hide
     scene cg d4_catac_us with fade
-    play sound sfx_7dl["train_income"]
+    play sound _7DL.sfx("train_income")
     "Я сидел в самых тёмных кустах, чтобы нельзя было разглядеть из кабины машиниста, и считал секунды."
     "Времени у нас будет мало, поезд хоть и идёт с малой скоростью, для нас и такая может оказаться чрезмерной."
     "Поэтому крайне важно среагировать вовремя."
@@ -8931,7 +8931,7 @@ label alt_day2_slot_sl:
     sl "Кажется… нет. {w}Ты нажми на створки изо всех сил — а то мне веса не хватает."
     "Я сделал, как было сказано, вплотную сомкнув створки и разрешая Славе сделать ещё один виток."
     sl "Оп…"
-    play sound sfx_7dl["gate_open"] fadein 0
+    play sound _7DL.sfx("gate_open") fadein 0
     scene bg ext_entrance_night_clear_closed_7dl at zenterleft
     show sl smile pioneer at cleft
     with dissolve

@@ -45,7 +45,7 @@ label alt_day0_charsel:
         call screen alt_day0_charsel
 
 label alt_day0_approve_herc:
-    play sound sfx_7dl["mpbt"] fadein 0
+    play sound _7DL.sfx("mpbt") fadein 0
     scene intro_herc with dissolve
     pause(1)
     $ renpy.block_rollback()
@@ -81,7 +81,7 @@ label alt_day0_approve_dr:
             jump alt_day0_charsel
 
 label alt_day0_approve_herc_septim:
-    play sound sfx_7dl["mpbt"] fadein 0
+    play sound _7DL.sfx("mpbt") fadein 0
     scene intro_herc_septim with dissolve
     pause(1)
     $ renpy.block_rollback()
@@ -133,7 +133,7 @@ label alt_day0_role_h:
     $ herc = True
     $ plthr = u"Герк"
     $ alt_chapter0()
-    play sound sfx_7dl["role_herc"]
+    play sound _7DL.sfx("role_herc")
     $ renpy.pause(4, hard=True)
     with fade2
     $ routetag = 'prologue'
@@ -150,7 +150,7 @@ label alt_day0_role_l:
     $ loki = True
     $ plthr = u"Локи"
     $ alt_chapter0()
-    play sound sfx_7dl["role_loki"]
+    play sound _7DL.sfx("role_loki")
     $ renpy.pause(4, hard=True)
     with dissolve2
     $ routetag = 'prologue'
@@ -167,7 +167,7 @@ label alt_day0_role_d:
     $ dr = True
     $ plthr = u"Дрищ"
     $ alt_chapter0()
-    play sound sfx_7dl["role_drisch"]
+    play sound _7DL.sfx("role_drisch")
     $ renpy.pause(4, hard=True)
     with fade2
     $ routetag = 'prologue'

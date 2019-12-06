@@ -159,7 +159,7 @@
         "Гадина должна страдать."
         "Порыскав глазами, я нашёл подходящий предмет — им оказалось велосипедное колесо около кровати Ульяны."
         "И, размахнувшись как следует"
-        play sound sfx_7dl["window_glass_break"]
+        play sound _7DL.sfx("window_glass_break")
         with hpunch
         extend ", вышиб стёкла вместе с рамами."
         "Плюнув на пол на прощание, вскочил на подоконник и был таков."
@@ -352,7 +352,7 @@
         with dissolve
         "Она грохнула дверью."
         "А я пошёл."
-    play sound sfx_7dl["eat_horn"] fadein 1
+    play sound _7DL.sfx("eat_horn") fadein 1
     "Над лагерем своевременно разнёсся сигнал горна."
     "Раз не обломилось с занятиями музыкой, придётся искать себе другие развлечения."
     "Но этим лучше заниматься на полный желудок."
@@ -958,7 +958,7 @@ label alt_day4_neu_us:
     us "А снимешь потом?"
     $ alt_day4_neu_us_snake = True
     me "Нет, себе заберу и слопаю."
-    play sound sfx_7dl["eat_horn"] fadein 1
+    play sound _7DL.sfx("eat_horn") fadein 1
     show us dontlike sport with dspr
     "Она надулась и топнула ногой:"
     us "Ах так! Да я…"
@@ -1401,7 +1401,7 @@ label alt_day4_neu_un:
                 un "Увидимся."
                 hide un with dissolve
                 "Будто услышав мысленный посыл, она положила ракетку на стенде и, кивнув мне, направилась к выходу с корта."
-                play sound sfx_7dl["eat_horn"] fadein 1
+                play sound _7DL.sfx("eat_horn") fadein 1
                 "А от столовой между тем донеслось приснопамятное «бери ложку»."
                 "И я ощутил вдруг, как сильно проголодался."
                 stop music fadeout 3
@@ -1606,7 +1606,7 @@ label alt_day4_neu_mi:
     show dv scared pioneer with dspr
     me "Меньше надо греть свои тупые уши!"
     hide dv with dissolve
-    play sound sfx_7dl["eat_horn"] fadein 1
+    play sound _7DL.sfx("eat_horn") fadein 1
     "Оттолкнув её c пути, я направился к столовой."
     "Не знаю, почему я психанул."
     "Хотя вру. Знаю. Тоненькие ножки-ручки — одним пальцем сломать можно — а туда же, смеяться надо мной."
@@ -2214,7 +2214,7 @@ label alt_day4_neu_lunch:
         "Твёрдое, зелёное, пахнет яблоком."
         "Я протёр фрукт о рукав."
         "На вкус…"
-        play sound sfx_7dl["apple_bite"]
+        play sound _7DL.sfx("apple_bite")
         "Тоже яблоко!"
         scene bg int_aidpost_day
         dreamgirl "И ты так просто его съел. {w}А вдруг оно отравлено?!"
@@ -2637,7 +2637,7 @@ label alt_day4_neu_lunch:
             "И я почувствовал, как против воли уголки губ начинают разъезжаться."
             "Ульяна оказывала на меня самое позитивное воздействие."
             "И почему она не постарше лет на пять!"
-            play sound sfx_7dl["eat_horn"] fadein 1
+            play sound _7DL.sfx("eat_horn") fadein 1
             show us normal sport with dspr
             us "Нет."
             "Ответила рыжая."
@@ -2809,7 +2809,7 @@ label alt_day4_neu_lunch:
             un "Где!"
             "Лена взвизгнула и неловко подпрыгнула на месте, пытаясь одновременно отряхнуться."
             dv "Здесь!"
-            play sound sfx_7dl["volley_hit"]
+            play sound _7DL.sfx("volley_hit")
             "И Алиса, вознесясь в прыжке чуть ли не на километр, вколотила мяч почти вертикально вниз по ту сторону сетки."
             window hide
             scene bg ext_volley_court_7dl
@@ -4677,7 +4677,7 @@ label alt_day4_neu_map_dining_hall:
             scene bg ext_house_of_dv_night
             show dv normal pioneer2 at left
             with dissolve
-            play sound sfx_7dl["breath"]
+            play sound _7DL.sfx("breath")
             me "Не ожидал от тебя такой пошлости, если честно."
             "Пытаясь отдышаться, выдавил я."
             "Мы галопом пробежали от места спецоперации до малозаметной полянки неподалёку от домика Алисы и Ульяны."
@@ -5950,7 +5950,7 @@ label alt_day5_neu_arrest:
     me "Где он только научился?"
     tn "Всегда умел."
     stop music fadeout 5
-    play sound sfx_7dl["eat_horn"] fadein 1
+    play sound _7DL.sfx("eat_horn") fadein 1
     play sound2 sfx_open_door_clubs_2
     pause(1)
     "Наш разговор прервал сигнал горна, несущийся из раструба прямо над крыльцом, и появившаяся Ольга Дмитриевна."
@@ -8855,7 +8855,7 @@ label alt_day5_neu_us_hungry:
     "Тщетно."
     "Под руки попалась только каркасная полка, на которой сохли тарелки."
     "И, разумеется, эта полка совершенно не предназначалась для того, чтобы на ней висли пионеры."
-    play sound sfx_7dl["plates_broken"] fadein 1
+    play sound _7DL.sfx("plates_broken") fadein 1
     "Та-ра-рам!"
     "На скользкий кафельный пол полетели вперемешку я, ложки, тарелки."
     "Последнее, понятно, вдребезги."
@@ -9642,7 +9642,7 @@ label alt_day5_neu_mi_estrade:
                 "Отвернувшись, ответил я."
                 "Обострившимся чутьём на неприятности я понял, что могу сейчас сказать что-то, способное сильно осложнить мне существование."
                 me "Да."
-                play sound sfx_7dl["eat_horn"] fadein 1
+                play sound _7DL.sfx("eat_horn") fadein 1
                 "К счастью от более детального допроса меня спас горн на полдник, поэтому я поспешил подняться и сбежать."
     stop music fadeout 4
     stop sound fadeout 3
@@ -9798,7 +9798,7 @@ label alt_day5_neu_lunch:
     with dissolve
     $ renpy.pause (1)
     play ambience ambience_forest_day fadein 1
-    play sound sfx_7dl["breath"] fadein 3
+    play sound _7DL.sfx("breath") fadein 3
     "Всё, бобик сдох."
     "Меня хватило минут на пятнадцать такого спурта, после чего ноги отказались слушаться."
     "В боку ощутимо закололо, а перед глазами потемнело."
@@ -12087,7 +12087,7 @@ label alt_day6_neu_day:
     else:
         "Вряд ли какая-то пионерка — скорее, та фигуристая девица, вожатствующая над вторым отрядом."
     "Зато совсем не тайной стало гораздо большее."
-    play sound sfx_7dl["eat_horn"] fadein 1
+    play sound _7DL.sfx("eat_horn") fadein 1
     "Уже и горн прозвучал, созывающий пионеров на обед, а я, подумав о еде, испытал очередной приступ тошноты."
     th "Похоже, меня так и будет сегодня штормить."
     "С непонятной покорностью подумал я."
@@ -14540,7 +14540,7 @@ label alt_day7_neu_sleep:
     with vpunch
     sh "Марш!"
     window hide
-    play sound sfx_7dl["nade_explode"] fadein 1
+    play sound _7DL.sfx("nade_explode") fadein 1
     pause(.3)
     scene bg int_catacombs_hole
     show prologue_dream
@@ -14550,7 +14550,7 @@ label alt_day7_neu_sleep:
     "А скорость разноглазой позволяла вовсе не тратить силы."
     "И это хорошо — силы нам ещё понадобятся, когда мы доберёмся до развязки."
     with vpunch
-    play sound sfx_7dl["gunfire_1"] fadein 1
+    play sound _7DL.sfx("gunfire_1") fadein 1
     "Над головой свистнуло, в дальнем конце туннеля раскатисто загрохотало."
     window hide
     scene bg int_dining_hall_day
@@ -14617,7 +14617,7 @@ label alt_day7_neu_sleep:
     show prologue_dream
     "Я резко открыл глаза от знакомого металлического стука."
     "Поймал шарик и с силой бросил его обратно."
-    play sound sfx_7dl["nade_explode"] fadein 1
+    play sound _7DL.sfx("nade_explode") fadein 1
     with vpunch
     pause(1)
     play ambience _7DL.ambience("explosive_post") fadein 3
@@ -14916,7 +14916,7 @@ label alt_day7_neu_bad:
         play sound sfx_shoulder_dive_water
         "Меня ждала моя неизбежность."
     window hide
-    play sound sfx_7dl["aunl"]
+    play sound _7DL.sfx("aunl")
     if persistent.me_neu_bad:
         $ persistent.me_neu_bad += 1
     else:
@@ -15167,7 +15167,7 @@ label alt_day7_neu_wakeup:
     play music _7DL.music("thousand_little_things") fadein 3
     "Куда-то пропала паника, воздух снова стал вкусный, пахнущий сосновым бором и рекой."
     "Я оказался дома."
-    play sound sfx_7dl["eat_horn"] fadein 1
+    play sound _7DL.sfx("eat_horn") fadein 1
     "Со столовой заиграл сигнал горна."
     "Значит, московское время — девять часов."
     th "Где я?"
@@ -15306,7 +15306,7 @@ label alt_day7_neu_explore:
     th "Угу. Стартуем с момента смертельной опасности, а вознаграждение получаем только в случае успешного выполнения задачи."
     dreamgirl "И какова была твоя задача?"
     th "Да чёрт его знает."
-    play sound sfx_7dl["blanket"] fadein 1
+    play sound _7DL.sfx("blanket") fadein 1
     "Я снял форму, бросил её на кровать и за несколько секунд впрыгнул в джинсы, футболку и ботинки."
     "Свитер надевать не стал, так как в такую жарищу это было бы чревато."
     "Просто завязал его рукавами на талии."
@@ -15731,7 +15731,7 @@ label alt_day7_neu_dialogue:
     dreamgirl "Очень смешно. А если серьёзно?"
     th "Да пойду, наверное. {w}Нас и в самом деле совсем не просто так сюда зашвырнули, так что…"
     th "Ну… Здесь не так уж и темно."
-    play sound_loop sfx_7dl["loop_cave_water"] fadein 1
+    play sound_loop _7DL.sfx("loop_cave_water") fadein 1
     "Вернее, тёмные неясные контуры стен и свисающие с потолка каменные сосульки."
     "Почему на полу нет их собратьев, я не думал и думать не хотел."
     "А вот капающая сверху вода…"
@@ -16288,7 +16288,7 @@ label alt_day7_neu_loki_neu:
     with blind_r
     play sound sfx_light_candle
     pause(.25)
-    play sound sfx_7dl["cigaret_lighter_inhale"] fadein 1
+    play sound _7DL.sfx("cigaret_lighter_inhale") fadein 1
     "Закурил сигарету, подошёл к окну, упёрся лбом в холодное стекло."
     "Город жил, город дышал, не засыпая никогда."
     "Потому что если ты одинок, молод и зол, ты предпочитаешь ночное время суток и круглосуточные магазинчики."
@@ -16325,7 +16325,7 @@ label alt_day7_neu_loki_neu:
     "А по голове будто ударили чем-то тяжёлым."
     "Нет, даже не по голове — по морде, по носу, сбивая дыхание и чувство равновесия."
     "В ушах зазвенело, во рту поселился вкус медной ручки, а до меня дошло вдруг, почему последние полгода я жил в вечном дежавю и ожидании, когда горлом кровь пойдёт."
-    play sound sfx_7dl["reverse_bell"] fadein 1
+    play sound _7DL.sfx("reverse_bell") fadein 1
     "Да потому, что это всё со мной было!"
     "Всё это происходило со мной!"
     "Когда?"
@@ -16429,7 +16429,7 @@ label alt_day7_neu_loki_neu:
     "Пришло лето."
     "Человека прошлого."
     window hide
-    play sound sfx_7dl["aunl"]
+    play sound _7DL.sfx("aunl")
     if persistent.me_neu_loki_neu:
         $ persistent.me_neu_loki_neu += 1
     else:
@@ -16568,7 +16568,7 @@ label alt_day7_neu_dr_neu:
     me "И хрен с ним."
     me "Пусть уж лучше это буду я."
     "Я!"
-    play sound sfx_7dl["car_crash"] fadein 1
+    play sound _7DL.sfx("car_crash") fadein 1
     "Девушка откатилась назад с такой скоростью, что с успехом разминулась с джипом, и, лишь убедившись в несовпадении траекторий, я перевёл взгляд на приближающуюся угрозу и оскалился."
     me "Come to papa."
     with fade
@@ -16661,7 +16661,7 @@ label alt_day7_neu_dr_neu:
     "Затухающего."
     "Но меня это уже не волновало."
     window hide
-    play sound sfx_7dl["aunl"]
+    play sound _7DL.sfx("aunl")
     if persistent.me_neu_dr_neu:
         $ persistent.me_neu_dr_neu += 1
     else:
@@ -17049,7 +17049,7 @@ label alt_day7_neu_true:
     window hide
     scene bg int_catacombs_hole
     with dissolve
-    play sound sfx_7dl["breath"] fadein 1
+    play sound _7DL.sfx("breath") fadein 1
     voice "Эй, где он?"
     voice "И я не знаю."
     voice "Нет, мимо нас он не пробегал."
@@ -17165,7 +17165,7 @@ label alt_day7_neu_true:
     "Это не совсем мои способности, они какие-то очень… женские?"
     "Но удобные. И до тех пор, пока я не разберусь, кто я такой, можно пользоваться и ими."
     "Потому что потом…"
-    play sound sfx_7dl["deagle_shot"] fadein 1
+    play sound _7DL.sfx("deagle_shot") fadein 1
     "Ахнул выстрел, пуля выбила искру о камни рядом с самой моей головой."
     me "Твою мать!"
     "Я бросился вперёд, каждые два шага меняя положение вертикальной оси тела."
@@ -17197,7 +17197,7 @@ label alt_day7_neu_true:
     mz "Да только вот все спасатели какие-то несимпатичные, да? {w}А сам себя ты спасать не хочешь — не простил ещё."
     show mz normal glasses pioneer with dspr
     mz "Ладно, задержи дыхание и сосчитай до пяти. Раз… Два…"
-    play ambience sfx_7dl["gunfire_2"] fadein 1
+    play ambience _7DL.sfx("gunfire_2") fadein 1
     window hide
     scene bg int_catacombs_entrance
     with flash
@@ -17429,7 +17429,7 @@ label alt_day7_neu_true:
     "Я выдохнул и посмотрел на мир глазами, о существовании которых уже почти позабыл."
     dreamgirl "С возвращением…"
     window hide
-    play sound sfx_7dl["aunl"]
+    play sound _7DL.sfx("aunl")
     if persistent.me_neu_true:
         $ persistent.me_neu_true += 1
     else:

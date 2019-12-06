@@ -2184,7 +2184,7 @@ label alt_day4_mi_gogo:
     play music music_list["pile"] fadein 1
 
     "Он замахнулся арматурой."
-    play sound sfx_7dl["mpbt"]
+    play sound _7DL.sfx("mpbt")
     with flash
 
     "Как и вчера… Время встало."
@@ -3055,7 +3055,7 @@ label alt_day4_mi2sl_mi:
     me "Один… Три!"
     window hide
     $ renpy.pause(4.4, hard=True)
-    play sound sfx_7dl["snap"] fadein 0
+    play sound _7DL.sfx("snap") fadein 0
     scene white with flash
     $ renpy.pause(9.4, hard=True)
 
@@ -3399,7 +3399,7 @@ label alt_day4_mi_date:
     show mi happy pioneer at center
     window hide
     $ renpy.pause(4.4, hard=True)
-    play sound sfx_7dl["snap"] fadein 0
+    play sound _7DL.sfx("snap") fadein 0
     scene white with flash
     $ renpy.pause(2.4, hard=True)
 

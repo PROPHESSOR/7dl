@@ -384,7 +384,7 @@
         play sound sfx_close_water_sink
         me "Лады. Не умывайся. Только ты уж не умывайся побыстрее, пожалуйста. Слышишь?"
         stop music fadeout 3
-        play sound sfx_7dl["wakeup_horn"] fadein 5
+        play sound _7DL.sfx("wakeup_horn") fadein 5
         "Над лагерем раздавались пока ещё негромкие сигналы пионерского горна, трубящего подъём."
         me "Восемь. Нам надо быть в столовой."
         show us dontlike sport
@@ -853,7 +853,7 @@
         "И хотелось в такие моменты дать себе зарок стать если не лучше, то хотя бы чище."
         "Ведь чистота помыслов — первый шаг к самосовершенствованию."
         "И постыдными казались мысли о том, что могло бы произойти, если бы… {w}В СССР ведь действительно не было секса, там любовь была."
-        play sound sfx_7dl["eat_horn"] fadein 1
+        play sound _7DL.sfx("eat_horn") fadein 1
         "Мои размышления прервал звук горна, и в этот раз я двинулся вместе с отрядом."
         "Ольга спустилась с трибуны и улыбнулась в ответ на мой вопрошающий взгляд."
         "Кажется, зла за сценку в доме она уже не держала."
@@ -2051,7 +2051,7 @@ label alt_day3_event_camp_entrance1:
         "Где-то там, в невероятном отдалении, сейчас гаснет одна из них. {w}И если она соответствует мне, то она настолько тусклая и непримечательная, что никто и никогда не заметит, как её не станет."
         "Из праха вышел и в прах уйдёшь."
         window hide
-        play sound sfx_7dl["makarych"] fadein 0
+        play sound _7DL.sfx("makarych") fadein 0
 
         "Меня ждёт мой холодный город, стылые улицы и нахохленное безразличие бегущих куда-то прохожих-птиц."
         "И смерть."
@@ -2059,7 +2059,7 @@ label alt_day3_event_camp_entrance1:
         "Прекрасному путешествию."
         "Длиной в почти три дня лета."
         window hide
-        play sound sfx_7dl["mpbt"]
+        play sound _7DL.sfx("mpbt")
         $ renpy.pause(4.4, hard=True)
         stop music fadeout 6
         play sound sfx_head_explode
@@ -2092,7 +2092,7 @@ label alt_day3_event_camp_entrance1:
             "Я уже совсем было собрался бежать куда-то и искать Лену там, но благоразумно поинтересовался временем."
             "Экранчик смарта показывал без малого два часа — а это значит, пора возвращать долг Большому Брату."
         else:
-            play sound sfx_7dl["eat_horn"] fadein 1
+            play sound _7DL.sfx("eat_horn") fadein 1
             "Решил я и было заспешил к библиотеке, но был остановлен на полпути сигналом горна."
             "Он удивительно хорошо доносился даже досюда — видимо, ландшафт выполнял свою роль в качестве акустического проводника."
         "С кряхтеньем поднявшись, я покачал головой, разминая шею, отряхнул налипшие соринки и с удовлетворением заключил, что ни капельки не перепачкался."
@@ -3056,7 +3056,7 @@ label alt_day3_dinner:
         "Этих мы заткнули тем самым супом, расставив на каждом столе по стопке тарелок, в назидание вожатым — не можете сдержать детей, кормите их сами."
         "Работать приходилось быстро, не отвлекаясь на глупости, и я был совершенно поглощён процессом: бегал с тележкой, {w}расставлял тарелки, {w}переворачивал поднятые стулья, где возможно, {w}отставлял скамейки, чтобы детишки могли сесть."
         "Наконец мы отработали по последнему столу, и будто рожок валькирий, забирающих павших воинов в Валгаллу, от двери послышался сигнал на обед."
-        play sound sfx_7dl["eat_horn"] fadein 1
+        play sound _7DL.sfx("eat_horn") fadein 1
         "Следующая остановка — полный желудок!"
         window hide
         if (alt_day2_date == 'dv') and alt_day3_dv_event:
@@ -4938,7 +4938,7 @@ label alt_day3_nightmare:
                 "Мы согласны умирать ради тех, кого любим, ради тех, кто сможет жить после нас."
                 "Чего ради умираю я?"
                 window hide
-                play sound sfx_7dl["makarych"] fadein 0
+                play sound _7DL.sfx("makarych") fadein 0
 
                 "Пуля, начавшая свой путь три дня назад, наконец прибыла к пункту назначения."
                 scene black with fade
@@ -4949,7 +4949,7 @@ label alt_day3_nightmare:
                 "Для человека, у которого даже нечему пронестись перед глазами на пороге небытия."
                 window hide
                 stop sound_loop fadeout 0
-                play sound sfx_7dl["aunl"]
+                play sound _7DL.sfx("aunl")
                 if persistent.alt_deep:
                     $ persistent.alt_deep += 1
                 else:
@@ -4985,7 +4985,7 @@ label alt_day3_nightmare:
                 "Они все ушли на то, чтобы создать красочную, объёмную иллюзию лета, где я никогда не бывал."
                 window hide
                 stop sound_loop fadeout 0
-                play sound sfx_7dl["aunl"]
+                play sound _7DL.sfx("aunl")
                 if persistent.alt_deep:
                     $ persistent.alt_deep += 1
                 else:
@@ -5045,7 +5045,7 @@ label alt_day3_nightmare:
         "Даже если с Алиской не срастётся, я принадлежу местному «здесь» и «сейчас». Мне здесь нравится! И никуда отсюда я уезжать не хочу и не собираюсь."
         "Но всё-таки, лучше, чтобы срослось."
     "Я принял решение найти девочку и во всём с ней объясниться."
-    play sound sfx_7dl["eat_horn"] fadein 1
+    play sound _7DL.sfx("eat_horn") fadein 1
     "К несчастью, планам моим не суждено было исполниться — я заслышал с улицы сигнал горна и схватился за голову."
     if alt_day3_duty:
         th "Ульянка меня убьёт! Я же на дежурство опоздал!"
@@ -6525,7 +6525,7 @@ label alt_day3_eventAf_admins1:
     dreamgirl "Так что — катись. Катись. {w}Забей себе голову подсолнечной шелухой, спрячься куда-нибудь под скамейку."
     dreamgirl "Есть местечко на примете, где можно спрятаться…{w} от самого себя?"
     th "Но что мне делать?!"
-    play sound sfx_7dl["eat_horn"] fadein 1
+    play sound _7DL.sfx("eat_horn") fadein 1
     "Со стороны столовой долетел сигнал горна."
     stop music fadeout 3
     dreamgirl "Половина пятого вечера. "
@@ -7952,7 +7952,7 @@ label alt_day3_dv_reunion:
         "Я дурак. И я очень виноват."
         "Надеюсь, в следующей жизни у меня будет шанс всё исправить."
         window hide
-        play sound sfx_7dl["aunl"]
+        play sound _7DL.sfx("aunl")
         if persistent.alt_deep:
             $ persistent.alt_deep += 1
         else:
@@ -7972,7 +7972,7 @@ label alt_day3_dv_reunion:
         "Ты принимаешь правила игры. Ты забываешь о том, кто ты есть и что ты такое."
         "Ради чего?"
         window hide
-        play sound sfx_7dl["makarych"] fadein 0
+        play sound _7DL.sfx("makarych") fadein 0
         "Меня ждёт мой холодный город, стылые улицы и нахохленное безразличие бегущих куда-то прохожих-птиц."
         scene black with fade
         "Я не знаю другого. Ведь это мой дом."
@@ -7982,7 +7982,7 @@ label alt_day3_dv_reunion:
         window hide
         play sound sfx_bodyfall_1
         stop sound_loop fadeout 0
-        play sound sfx_7dl["aunl"]
+        play sound _7DL.sfx("aunl")
         if persistent.alt_deep:
             $ persistent.alt_deep += 1
         else:
@@ -8007,7 +8007,7 @@ label alt_day3_dv_reunion:
         "Пришла в голову мысль, что было бы любопытно — а что случилось бы, если бы автобус упал вниз?"
         "Не страшно, не жутко, не интересно. Просто вяло любопытно."
         window hide
-        play sound sfx_7dl["aunl"]
+        play sound _7DL.sfx("aunl")
         if persistent.alt_deep:
             $ persistent.alt_deep += 1
         else:
@@ -8030,7 +8030,7 @@ label alt_day3_leave1:
         $ persistent.alt_qte_fail += 1
 
         if persistent.alt_qte_fail >= 5:
-            play sound sfx_7dl["aunl"]
+            play sound _7DL.sfx("aunl")
             if persistent.alt_victim:
                 $ persistent.alt_victim += 1
             else:
@@ -8045,14 +8045,14 @@ label alt_day3_leave1:
 label alt_day3_dv_stayhere1:
     $ alt_day3_dv_evening = True
     if persistent.alt_victim and not persistent.alt_qte:
-        play sound sfx_7dl["tousche"]
+        play sound _7DL.sfx("tousche")
         play sound2 sfx_concert_applause
         $ persistent.alt_qte = 1
         show acm_logo_va_qte with moveinright:
             pos (1600, 1020)
         $ renpy.pause(9.4, hard=True)
     else:
-        play sound sfx_7dl["aunl"]
+        play sound _7DL.sfx("aunl")
         if persistent.alt_qte:
             $ persistent.alt_qte += 1
         else:
@@ -10454,7 +10454,7 @@ label alt_day3_technoquest3:
     el "Сейчас!"
     "Под ногами раздался топот, "
     play sound sfx_open_door_clubs fadein 0
-    play sound sfx_7dl["phone_feedback"] fadein 0
+    play sound _7DL.sfx("phone_feedback") fadein 0
     extend "грохот захлопнутой двери…"
     "Ближайший жестяной репродуктор вдруг зафонил, а я чуть не сверзился прямо с того места, где сидел."
     me "Вы меня инвалидом сделать хотите? Нельзя же так пугать!"
@@ -10470,7 +10470,7 @@ label alt_day3_technoquest3:
     scene bg ext_clubs_night:
         zoom 1.75 xalign 0.5 yalign 0.15
         linear 10.0 zoom 1.0 xalign 0.5 yalign 0.45
-    play sound sfx_7dl["mpbt"]
+    play sound _7DL.sfx("mpbt")
     with flash
 
     "Время встало."
@@ -10553,7 +10553,7 @@ label alt_day3_mt_scare:
     window hide
     scene bg ext_boathouse_night with dissolve
     play ambience ambience_boat_station_night fadein 3
-    play sound sfx_7dl["breath"] fadein 9
+    play sound _7DL.sfx("breath") fadein 9
     "Выскочив на пристань, я остановился, переводя дух."
     "Ульянка уже упрыгала куда-то в темноте, а я побрёл по мосткам к дальнему углу понтонов — это место я облюбовал ещё в первый день."
     "Некоторое время я стоял в одиночестве, успокаивая дыхание и расслабляясь, а потом доски за спиной скрипнули, выдавая чьи-то шаги, и чей-то голос сказал:"

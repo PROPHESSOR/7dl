@@ -2114,19 +2114,19 @@ label alt_day2_final_fail:
         "Жужелица встала."
         "Окинула всех диковатым взглядом."
         mz "Всё, что ли? Больше жертв не будет?"
-        play sound sfx_7dl["highfive"]
+        play sound _7DL.sfx("highfive")
         $ renpy.pause (3)
-        play sound sfx_7dl["highfive"]
+        play sound _7DL.sfx("highfive")
         $ renpy.pause (3)
         "В полной тишине спросила она."
-        play sound sfx_7dl["highfive"]
+        play sound _7DL.sfx("highfive")
         $ renpy.pause (3)
-        play sound sfx_7dl["highfive"]
+        play sound _7DL.sfx("highfive")
         show el smile pioneer at left with dissolve
         "Только Электроник продолжал хлопать."
         mz "Ну ладно. Я пойду тогда."
         el "Ура, да здравствует победитель!"
-        play sound sfx_7dl["highfive"]
+        play sound _7DL.sfx("highfive")
         "Закричал Сыроежкин ей вслед."
         "По-моему, это всё-таки любовь."
         sh "Эл, всё, она ушла. Успокойся."
@@ -2360,7 +2360,7 @@ label alt_day2_final_win:
         with dissolve
         "Но… поздно!"
         window hide
-        play sound sfx_7dl["snap"]
+        play sound _7DL.sfx("snap")
         scene expression Sepia("cg d2_mi_me_polaroid_7dl")
         show PolaroidFrame_7dl
         with flash

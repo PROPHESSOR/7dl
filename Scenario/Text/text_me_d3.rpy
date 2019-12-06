@@ -570,7 +570,7 @@ label alt_day1_me_d3_A:
     window hide
     with fade
 
-    play sound sfx_7dl["eat_horn"] fadein 1
+    play sound _7DL.sfx("eat_horn") fadein 1
     "На улице начало вечереть — в напоённом ароматом хвои воздухе разнёсся сигнал горна, зовущий всех на приём пищи."
     "Судя по всему, что-то вроде файф-о-клока или полдника на советский манер."
     "А я стою здесь."
@@ -818,7 +818,7 @@ label alt_day1_me_d3_S:
     with dissolve
     sl "Да? {w}Спасибо. Я стараюсь придать помещению жилой вид, где это возможно, но сам понимаешь."
     "Наконец, она вытащила из шкафа комплект пионерской формы и кинула его мне."
-    play sound sfx_7dl["blanket"] fadein 0
+    play sound _7DL.sfx("blanket") fadein 0
     sl "Надеюсь, не ошиблась с размером. {w}Одевайся."
     am "Э… Ты не могла бы…"
     hide sl with dissolve
@@ -1315,7 +1315,7 @@ label alt_day1_me_d3_L:
             th "Поймал!"
             "В прыжке, сделавшем честь иному голкиперу, я поймал ценный груз в воздухе."
 
-            play sound sfx_7dl["breath"] fadein 3
+            play sound _7DL.sfx("breath") fadein 3
             stop music fadeout 3
             th "Умён, гад."
             "Я сидел на корточках, пытаясь прийти в себя — спурт навстречу бронзовому истукану вытянул из меня остатки сил."
@@ -2031,7 +2031,7 @@ label alt_day1_me_d3_U:
     am "Ладно."
     "Я ещё пожалею об этом."
     am "Давай попробуем."
-    play sound sfx_7dl["stahp"]
+    play sound _7DL.sfx("stahp")
     $ renpy.pause(1, hard=True)
     show us grin sport with flash
     play music _7DL.music("genki") fadein 3
@@ -2112,7 +2112,7 @@ label alt_day1_me_d3_U:
             am "На старт…"
             window hide
             scene bg ext_dining_hall_near_sunset with dissolve
-            play sound sfx_7dl["metal_hit_on_metal"]
+            play sound _7DL.sfx("metal_hit_on_metal")
 
             "Подбежав к дверям столовой, я что было сил заколотил по ним подобранным орудием."
             "Грохот стоял страшный!"
@@ -2155,7 +2155,7 @@ label alt_day1_me_d3_U:
             show blink
             "Я закрыл глаза."
             play music _7DL.music("everyday") fadein 3
-            play sound sfx_7dl["pouring"]
+            play sound _7DL.sfx("pouring")
             scene bg ext_square_sunset
             show unblink
             "А открыл их, когда мне на колени посыпалось нечто твёрдое и не сказать чтобы сыпучее."
@@ -2297,7 +2297,7 @@ label alt_day1_me_d3_ev_A_S:
     play ambience ambience_camp_center_night
     "Мы шли немного по другому маршруту, чуть обходя столовую со стороны, и, сказать по правде, если бы я не знал абсолютно точно, что это столовая, я бы её не узнал."
     "Не то чтобы у меня был прогрессирующий топографический кретинизм, но всё-таки."
-    play sound sfx_7dl["pup_bark"]
+    play sound _7DL.sfx("pup_bark")
     show sl normal pioneer with dissolve
     "Славя резко остановилась."
     sl "Слышал?"
@@ -2913,7 +2913,7 @@ label alt_day7_me_d3_begin:
 
 label alt_day7_me_d3_falsch: #ложная концовка с разбитым монитором
     window hide
-    play sound sfx_7dl["aunl"]
+    play sound _7DL.sfx("aunl")
     if persistent.me_d3_falsch:
         $ persistent.me_d3_falsch += 1
     else:
@@ -2927,7 +2927,7 @@ label alt_day7_me_d3_falsch: #ложная концовка с разбитым 
 
 label alt_day7_me_d3_fag: #фажеская концовка
     window hide
-    play sound sfx_7dl["aunl"]
+    play sound _7DL.sfx("aunl")
     if persistent.me_d3_fag:
         $ persistent.me_d3_fag += 1
     else:
@@ -2941,7 +2941,7 @@ label alt_day7_me_d3_fag: #фажеская концовка
 
 label alt_day7_me_d3_bad: #концовка наблюдателя
     window hide
-    play sound sfx_7dl["aunl"]
+    play sound _7DL.sfx("aunl")
     if persistent.me_d3_bad:
         $ persistent.me_d3_bad += 1
     else:
@@ -2955,7 +2955,7 @@ label alt_day7_me_d3_bad: #концовка наблюдателя
 
 label alt_day7_me_d3_true: #истинная концовка
     window hide
-    play sound sfx_7dl["aunl"]
+    play sound _7DL.sfx("aunl")
     if persistent.me_d3_true:
         $ persistent.me_d3_true += 1
     else:

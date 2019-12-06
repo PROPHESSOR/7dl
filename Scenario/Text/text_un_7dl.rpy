@@ -1920,7 +1920,7 @@ label alt_day4_un_7dl_dinner:
             me "Просто я трезво прикинул собственные шансы и знания."
             me "В общем, в гости к Жужелице заглянуть придётся. Мы же теперь, вроде как друзья?"
             th "Так что сейчас мы встаём и плавно перемещаемся в сторону хранилища знаний."
-            play sound sfx_7dl["eat_horn"] fadein 1
+            play sound _7DL.sfx("eat_horn") fadein 1
             un "После полдника сходим, да?"
         un "Пора чего-нибудь сгрызть!"
         un "Но если тебе вдруг лень идти до столовой, мне там кое-что привезли…"
@@ -2155,7 +2155,7 @@ label alt_day4_un_7dl_dinner:
         me "Один… Три!"
         window hide
         $ renpy.pause(4.4, hard=True)
-        play sound sfx_7dl["snap"] fadein 0
+        play sound _7DL.sfx("snap") fadein 0
         scene white with flash
         $ renpy.pause(3.4, hard=True)
 
@@ -2248,7 +2248,7 @@ label alt_day4_un_7dl_dinner:
         "{i}Какой Ваш любимый цвет?{/i} "
         un "Здесь всё просто. Я люблю голубой."
         me "Да, просто. А я…"
-        play sound sfx_7dl["eat_horn"] fadein 1
+        play sound _7DL.sfx("eat_horn") fadein 1
         "Закончить мне не дал заверещавший жестяной рупор репродуктора, зовущий голодающих пионеров приобщиться к сокровищнице мировой кулинарии."
         show un smile pioneer
         un "Вот и всё, спасибо за компанию!"
@@ -2391,7 +2391,7 @@ label alt_day4_un_7dl_dinner:
                 "Я прошёлся перед строем, поправляя кое-кого, решившего немного пофилонить, наконец удовлетворённо кивнул и позволил перейти к следующему элементу танца."
                 me "Теперь смыкаем сложенные пальцы и большой палец, как будто пытаемся взять что-то из воздуха!"
                 "…"
-                play sound sfx_7dl["eat_horn"] fadein 1
+                play sound _7DL.sfx("eat_horn") fadein 1
                 "Не знаю, где и как глубоко во мне дремал педагог-хореограф и был ли он вообще, или уж примитивным «маленьким утяткам» мог бы обучить кто угодно, кто хоть чуть помнил движения."
                 "Но к моменту, когда прозвучал горн на полдник, детишки тихо сатанели от пятисотого повторения одного и того же."
                 "Зато я был уверен в том, что разбуди их среди ночи — и они не облажаются, и даже в полусне спляшут так, как надо!"
@@ -2464,7 +2464,7 @@ label alt_day4_un_7dl_dinner:
                 mi "Конечно! Обещаю."
                 hide mi with dissolve
                 "Мику мгновенно потеряла к нам интерес и погнала «маленьких утят» на десятое кряду повторение их дурацкого танца, а мы направились в сторону площади."
-                play sound sfx_7dl["eat_horn"] fadein 1
+                play sound _7DL.sfx("eat_horn") fadein 1
                 "Впрочем, нас на полдороги ещё перехватил милый любому пионерскому уху сигнал горна."
                 un "Время-то как пролетело…"
                 "Задумчиво изучая ладошку, сказала Лена."
@@ -2652,7 +2652,7 @@ label alt_day4_un_7dl_dinner:
         me "Я бы ещё на пару кругов проштрафился…"
         me "Если ты, конечно, понимаешь, о чём я."
         show un laugh pioneer with dspr
-        play sound sfx_7dl["eat_horn"] fadein 1
+        play sound _7DL.sfx("eat_horn") fadein 1
         "Она расхохоталась и оглушительно чмокнула меня в нос — а над нашими головами уже разносился сигнал горна, сзывающий пионеров на полдник."
         show un smile3 pioneer with dspr
         un "Как вовремя!"
@@ -2870,7 +2870,7 @@ label alt_day4_un_7dl_launch:
             show un laugh pioneer with dspr
             un "Мудрый поступок."
             un "Алисе с Ульяной пора бы уже научиться отвечать за собственные действия."
-            play sound sfx_7dl["eat_horn"] fadein 1
+            play sound _7DL.sfx("eat_horn") fadein 1
             "Я пожал плечами, а над головой уже разносился горн."
             me "Во как, ещё пряник переварить не успел, а уже требуют ужинать!"
             stop music fadeout 4
@@ -2999,7 +2999,7 @@ label alt_day4_un_7dl_launch:
             "Проворчал я."
             "Очень легко быть великодушным, предупреждая глупость неразумного ребёнка…"
             th "Или крики «плохо, брось бяку» — это предел моего великодушия?"
-            play sound sfx_7dl["eat_horn"] fadein 1
+            play sound _7DL.sfx("eat_horn") fadein 1
             show un normal pioneer with dspr
             un "Ну, вот и вечер настал."
             "Она протянула мне ладошку, приглашая."
@@ -3588,7 +3588,7 @@ label alt_day5_un_7dl_begin:
     th "Может, для вас и смерть не помеха для посещения линейки. Раз уж вожатая с бодуна на летучку поскакала."
     mt "Дождевика или зонта не дам, уж извините, у самой только плащ."
     un "Ничего… У меня зонтик есть."
-    play sound sfx_7dl["eat_horn"] fadein 1
+    play sound _7DL.sfx("eat_horn") fadein 1
     mt "Вот и на завтрак пора."
     "Немного деревянно рассмеялась так и не расслабившаяся вожатая."
     mt "Бегите уже!"
@@ -4287,7 +4287,7 @@ label alt_day5_un_7dl_clubs:
     "Пробормотала она."
     mt "Идите ужинать. Но не забывайте, после ужина костёр. Если вы и его пропустите…"
     "Она оставила окончание фразы в воздухе и удалилась."
-    play sound sfx_7dl["eat_horn"] fadein 1
+    play sound _7DL.sfx("eat_horn") fadein 1
     show un smile pioneer with dspr
     un "Ну, вот и ужин."
     "Улыбнулась Лена и, схватив меня за руку, потащила по направлению к столовой."
@@ -4402,7 +4402,7 @@ label alt_day5_un_7dl_cleaning:
     un "Ой, прости, пожалуйста!"
     "Бросив инвентарь на землю, Лена подошла ко мне и, достав из кармана платок, попыталась немного оттереть лицо."
     me "Не трать время зря. Я лучше до умывальников схожу, когда мы закончим."
-    play sound sfx_7dl["eat_horn"] fadein 1
+    play sound _7DL.sfx("eat_horn") fadein 1
     un "А ты успеешь?"
     "Задала своевременный вопрос Лена."
     me "Нет."
@@ -4499,7 +4499,7 @@ label alt_day5_un_7dl_cleaning:
     th "Ну тебя в баню."
     dreamgirl "К слову о банях — было бы неплохо сполоснуться. Узнай, где здесь душ или шаечками размахивают, потому что на месте Лены я бы такого чумазоида к телу точно подпускать не решилась."
     th "А что не так-то?"
-    play sound sfx_7dl["blanket"] fadein 0
+    play sound _7DL.sfx("blanket") fadein 0
     "Я скомкал рубашку и запулил трёхочковый в корзину у входа."
     th "Я сейчас переоденусь, умоюсь и…"
     dreamgirl "…и останусь потным, вонючим и три дня не мывшимся?"
@@ -5004,7 +5004,7 @@ label alt_day5_un_7dl_games:
     $ persistent.sprite_time = "day"
     scene bg ext_dining_hall_near_day
     with dissolve
-    play sound sfx_7dl["eat_horn"] fadein 1
+    play sound _7DL.sfx("eat_horn") fadein 1
     "Зачитавшись какой-то книжкой, я вздрогнул, когда над головой заорали жестяные рупоры, призывающие пионеров спасти свои бессмертные желудки."
     th "Надеюсь, это не будет какая-нибудь рыба… {w}Хотя, рыбный день, вроде бы, по четвергам…"
     th "Да плевать, на самом деле. Лена-то где?"
@@ -5449,7 +5449,7 @@ label alt_day5_un_7dl_unl:
     me "Вожатая не ошиблась."
     "Невозможно ровным голосом произнёс я."
     me "Ни в едином слове."
-    play sound sfx_7dl["eat_horn"] fadein 1
+    play sound _7DL.sfx("eat_horn") fadein 1
     "Мои мучения прервал сигнал горна, зовущий на полдник."
     "Но ни я, ни она не сдвинулись с места."
     "Напротив, она медленно разворачивалась в мою сторону."
@@ -5911,7 +5911,7 @@ label alt_day5_un_7dl_np:
         me "Как что-то хорошее!"
         "В тон ей ответил я."
         un "Куда ты идти-то собрался, можешь рассказать?"
-        play sound sfx_7dl["eat_horn"] fadein 1
+        play sound _7DL.sfx("eat_horn") fadein 1
         "От лагеря донёсся сигнал рожка."
         me "Да хотя бы туда."
         un "А давай…"
@@ -6005,7 +6005,7 @@ label alt_day5_un_7dl_np:
         mi "Да? Значит, я перепутала? Простите, пожалуйста."
         hide mi with dissolve
         "Одарив нас обоих быстрой улыбкой, японка ретировалась."
-        play sound sfx_7dl["eat_horn"] fadein 1
+        play sound _7DL.sfx("eat_horn") fadein 1
         "А со стороны лагеря донёсся знакомый уже сигнал горна, избавляющий от ненужных вопросов."
         me "Пойдёшь полдничать?"
         show un normal swim at center with dspr
@@ -6435,7 +6435,7 @@ label alt_day5_un_7dl_library:
     un "Повезло им, всё-таки, что дождь с утра был — а то такого бы пистона от вожатой получили…"
     me "Вот видишь. {w}И быстро, и забавно, и злободневно."
     th "В девяностые злободневность очень будет востребована."
-    play sound sfx_7dl["eat_horn"] fadein 1
+    play sound _7DL.sfx("eat_horn") fadein 1
     un "Время-то как пролетело!"
     me "Много переписала?"
     un "Да всё успела. Сейчас я…"
@@ -8313,7 +8313,7 @@ label alt_day6_un_7dl_begin:
     dreamgirl "Ты определись, что для тебя сейчас важнее — сохранить остатки достоинства или всё-таки отыскать возлюбленную?"
     th "Как будто это совместить нельзя."
     "Фыркнул я."
-    play sound sfx_7dl["eat_horn"] fadein 1
+    play sound _7DL.sfx("eat_horn") fadein 1
     dreamgirl "Можно. Но сначала…"
     th "Ищем Лену — никаких обедов до тех пор."
     dreamgirl "Убедишь её в этом?"
@@ -8916,7 +8916,7 @@ label alt_day6_un_7dl_dinner:
         me "Спасибо что поинтересовались моим мнением!"
         "Язвительно ответил я пустому воздуху, тщательно разрывая записку на мелкие клочки и отпуская их по ветру."
         "Я склонялся к тому, чтобы наплевать на постскриптумы и просто-напросто утащить беглянку в столовую — туда, где она сможет нормально поесть."
-        play sound sfx_7dl["eat_horn"] fadein 1
+        play sound _7DL.sfx("eat_horn") fadein 1
         "Но горн расставил всё по местам."
         "Вздохнув, я поплёлся в столовую, гадая, чего бы эдакого можно утащить голодной девочке."
     else:
@@ -9302,7 +9302,7 @@ label alt_day6_un_7dl_letmeout:
         "Свинцовый шарик проколол растянувшееся донельзя мгновение и нашёл своё место у меня во лбу."
         "Свинцовая равнодушная слеза замерзшего питерского неба."
         window hide
-        play sound sfx_7dl["makarych"] fadein 0
+        play sound _7DL.sfx("makarych") fadein 0
         scene black with fade
         play sound sfx_bodyfall_1
     elif loki:
@@ -9324,7 +9324,7 @@ label alt_day6_un_7dl_letmeout:
         "И закрыл глаза."
     window hide
     scene gameover with flash
-    play sound sfx_7dl["aunl"]
+    play sound _7DL.sfx("aunl")
     if persistent.alt_lamp:
         $ persistent.alt_lamp += 1
     else:
@@ -9839,7 +9839,7 @@ label alt_day7_un_7dl_begin:
     show prologue_dream
     "Я сидел как парализованный, а в монитор изнутри ударило что-то, оставляя за собой змеистые трещины."
     "Что-то рвалось наружу, в мой мир. Что-то…"
-    play sound sfx_7dl["ringtone"] fadein 8
+    play sound _7DL.sfx("ringtone") fadein 8
     stop sound_loop
     "ПРОСНИСЬ!"
     "Зазвонил сотовый – я выключил его."
@@ -9851,7 +9851,7 @@ label alt_day7_un_7dl_begin:
     play sound sfx_home_phone_take
     th "Кто это может быть? {w}Кто знает мой городской?"
     "Я поднёс трубку к уху."
-    play sound sfx_7dl["wakeup"]
+    play sound _7DL.sfx("wakeup")
     dreamgirl "Проснись."
     th "А ведь я же знаю этот голос."
     th "Этот голос ежедневно шлёт проклятья свинцовому небу и хрипит у ларька, требуя пачку «Диабло Неро»."
@@ -11105,7 +11105,7 @@ label alt_day7_un_7dl_bad:
         un "Обязательно."
         window hide
     window hide
-    play sound sfx_7dl["mpbt"] fadein 6
+    play sound _7DL.sfx("mpbt") fadein 6
     scene white
     show spill_red
     with flash
@@ -11117,7 +11117,7 @@ label alt_day7_un_7dl_bad:
     with flash
     $ renpy.pause(4.4, hard=True)
     stop sound_loop fadeout 0
-    play sound sfx_7dl["aunl"]
+    play sound _7DL.sfx("aunl")
     if persistent.un_7dl_bad:
         $ persistent.un_7dl_bad += 1
     else:
@@ -11425,13 +11425,13 @@ label alt_day7_un_7dl_good_ussr:
         linear 0.5 zoom 1.0 xalign 0.6 yalign 0.5
     "Впереди — вся жизнь!"
     window hide
-    play sound sfx_7dl["snap"] fadein 0
+    play sound _7DL.sfx("snap") fadein 0
     scene white with flash
     $ renpy.pause(3.4, hard=True)
     scene bg ext_earth_7dl
     show blackout_exh
     with dspr
-    play sound sfx_7dl["aunl"]
+    play sound _7DL.sfx("aunl")
     if persistent.un_7dl_good_ussr:
         $ persistent.un_7dl_good_ussr += 1
     else:
@@ -11696,7 +11696,7 @@ label alt_day7_un_7dl_good_rf:
     un "Ведь у нас теперь целая жизнь впереди!"
     window hide
     $ set_mode_adv()
-    play sound sfx_7dl["aunl"]
+    play sound _7DL.sfx("aunl")
     if persistent.un_7dl_good_rf:
         $ persistent.un_7dl_good_rf += 1
     else:
@@ -11976,7 +11976,7 @@ label alt_day7_un_7dl_true_tran:
     with fade
     stop music fadeout 3
     stop ambience fadeout 3
-    play sound sfx_7dl["aunl"]
+    play sound _7DL.sfx("aunl")
     stop sound_loop fadeout 3
     $ renpy.pause(7.4, hard=True)
     with vpunch
@@ -12229,7 +12229,7 @@ label alt_day7_un_7dl_true_tran:
         pos (747,115)
     with flash
     with dissolve
-    play sound sfx_7dl["aunl"]
+    play sound _7DL.sfx("aunl")
     stop sound_loop fadeout 3
     if persistent.un_7dl_true_tran:
         $ persistent.un_7dl_true_tran += 1
@@ -12320,7 +12320,7 @@ label alt_day7_un_7dl_rej:
     "А я этого не заслужил."
     "Что гораздо хуже: я этого не хотел."
     with dissolve
-    play sound sfx_7dl["aunl"]
+    play sound _7DL.sfx("aunl")
     stop sound_loop fadeout 3
     if persistent.un_7dl_rej:
         $ persistent.un_7dl_rej += 1
@@ -12683,7 +12683,7 @@ label alt_day7_un_7dl_sept:
     am "Значит, поиски продолжаются?"
     show un smile2 sleep with dspr
     un "Да!"
-    play sound sfx_7dl["aunl"]
+    play sound _7DL.sfx("aunl")
     stop sound_loop fadeout 3
     if persistent.un_7dl_sept:
         $ persistent.un_7dl_sept += 1

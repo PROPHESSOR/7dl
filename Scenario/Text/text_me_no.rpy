@@ -1142,7 +1142,7 @@ label alt_day4_no_rendezvous:
         linear 0.8 zoom 1.0 xalign 0.5 yalign 0.30
     window hide
     $ renpy.pause(4.4, hard=True)
-    play sound sfx_7dl["snap"] fadein 0
+    play sound _7DL.sfx("snap") fadein 0
     scene white with flash
     $ renpy.pause(2.4, hard=True)
     "Щёлкнул затвор."

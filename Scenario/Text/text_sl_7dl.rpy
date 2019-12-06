@@ -56,7 +56,7 @@
                 play sound_loop sfx_run_forest
                 scene expression Dawn("bg ext_backdoor_day_7dl") at running
                 with fade2
-                play sound sfx_7dl["breath"] fadein 0
+                play sound _7DL.sfx("breath") fadein 0
                 scene expression Dawn("bg ext_backroad_day_7dl") at running
                 with fade2
                 "Да, если бы моё утро ограничивалось лишь воркованием и поглаживаниями, я был бы самым счастливым человеком на Земле!"
@@ -66,7 +66,7 @@
                 "Но нет же, мы решили показать Славе!"
                 dreamgirl "Достать и показать!"
                 window hide
-                play sound sfx_7dl["breath"] fadein 0
+                play sound _7DL.sfx("breath") fadein 0
                 scene expression Dawn("bg ext_lake_sunset_7dl") at running
                 with fade2
                 "В общем, нетрудно предугадать, чем всё закончилось, раз уж я здесь потею, правда?"
@@ -812,7 +812,7 @@ label alt_day4_sl_7dl_herc_morning:
     stop ambience
     window hide
     play music _7DL.music("dead_silence") fadein 3
-    play sound_loop sfx_7dl["old_phone"]
+    play sound_loop _7DL.sfx("old_phone")
     with flash
     with vpunch
     play ambience _7DL.ambience("int_silence") fadein 5
@@ -880,7 +880,7 @@ label alt_day4_sl_7dl_herc_morning:
                 dreamgirl "Или когда человек вешается на тонком, прочном шнуре."
                 th "Валить надо отсюда. Зря я пришёл."
                 "Я развернулся, чтобы уйти…"
-                play sound_loop sfx_7dl["old_phone"]
+                play sound_loop _7DL.sfx("old_phone")
                 "И в этот момент телефон снова заорал, так же требовательно, надрывно, выматывающе звонко."
                 window hide
                 scene cg d4_sl_phone_up_7dl
@@ -1406,7 +1406,7 @@ label alt_day4_sl_7dl_herc_day:
     "Ульяна помолчала, хотела было что-то сказать, но…"
     stop music fadeout 1
     pause(1)
-    play sound sfx_7dl["eat_horn"] fadein 1
+    play sound _7DL.sfx("eat_horn") fadein 1
     us "О, кошмар окончен! Можно отправляться жрат!"
     window hide
     scene bg ext_camp_entrance_day
@@ -1686,7 +1686,7 @@ label alt_day4_sl_7dl_herc_day:
             "Спать."
             stop music fadeout 1
             pause(1)
-            play sound sfx_7dl["eat_horn"] fadein 1
+            play sound _7DL.sfx("eat_horn") fadein 1
             "Разбудил меня только горн, зовущий всех к столовой."
             stop sound fadeout 1
         "Так где, говоришь, была яблонька?":
@@ -1832,7 +1832,7 @@ label alt_day4_sl_7dl_herc_day:
             me "Опять от высочайших гостей сбежала?"
             sl "Нет, их забрала вожатая второго отряда на подготовку к концерту."
             me "Какому концерту?"
-            play sound sfx_7dl["eat_horn"] fadein 1
+            play sound _7DL.sfx("eat_horn") fadein 1
             sl "На который вы оба после полдника отправляетесь! Имейте совесть, и без того сончас прогуляли!"
             stop music fadeout 1
             pause(1)
@@ -2407,7 +2407,7 @@ label alt_day4_sl_7dl_herc_evening:
     "Даже не пришлось теснить знакомую уже вожатую второго отряда."
     "Нет, меня посадили между Славей и Леной — отчего последняя ощутимо вздрогнула и покраснела."
     "И в любой другой ситуации я бы обратил внимание на этот крайне презанятный факт, но тут над головами откашлялись колонки и заорали:"
-    play sound sfx_7dl["phone_feedback"] fadein 0
+    play sound _7DL.sfx("phone_feedback") fadein 0
     dy "Уважаемые гости нашего лагеря!"
     me "Тьфу ты ну ты. {w}А ещё погромче нельзя было?"
     dy "Благодарим вас за то, что уделили сегодня нам своё время!"
@@ -2794,7 +2794,7 @@ label alt_day4_sl_7dl_loki_morning:
     me "Погоди, дай я."
     "Когда-то тряпка была майкой, то ли серой, то ли голубой, сейчас уже не разберёшь."
     "В любом случае, несложно было найти место шва и, немного поднатужившись…"
-    play sound sfx_7dl["tearing"]
+    play sound _7DL.sfx("tearing")
     "Оба куска тряпки полетели в воду."
     "Как оказалось, жутко ледяную!"
     "Однако это, похоже, смущало только меня одного."
@@ -2932,7 +2932,7 @@ label alt_day4_sl_7dl_loki_morning:
     sl "Да забудь. Пошли, горн скоро."
     stop music fadeout 1
     pause(1)
-    play sound sfx_7dl["eat_horn"] fadein 1
+    play sound _7DL.sfx("eat_horn") fadein 1
     sl "А вот и горн, поспешим!"
     "Мы прибавили шагу."
     window hide
@@ -3248,7 +3248,7 @@ label alt_day4_sl_7dl_loki_day:
     "И Мику — прячущая что-то за спиной."
     "Нет, я серьёзно: неужели Славе совсем заняться нечем?"
     "Так я и спросил."
-    play sound sfx_7dl["highfive"] fadein 1
+    play sound _7DL.sfx("highfive") fadein 1
     "Мику хлопнула Славе по подставленной ладони и что-то пробурчала себе под нос."
     sl "Давай-давай, не жульничай."
     show mi upset pioneer with dissolve
@@ -3578,7 +3578,7 @@ label alt_day4_sl_7dl_loki_day:
     mi "У меня папа — русский инженер!"
     stop music fadeout 1
     pause(1)
-    play sound sfx_7dl["eat_horn"] fadein 1
+    play sound _7DL.sfx("eat_horn") fadein 1
     "В этот момент нашу беседу прервал сигнал горна."
     "Тихий час закончился, и пионеров приглашали в столовую."
     sl "После полдника будет концерт."
@@ -4185,7 +4185,7 @@ label alt_day4_sl_7dl_loki_evening:
     me "Вот тебе и «у»! Сама сказала, что котлеты в безопасности, тебе верить нельзя?"
     show us normal pioneer with dspr
     us "Ты просто злой, потому и…"
-    play sound sfx_7dl["phone_feedback"] fadein 0
+    play sound _7DL.sfx("phone_feedback") fadein 0
     show us surp1 pioneer with dspr
     "Она бы продолжила и дальше свои обвинения, но в этот самый момент динамик, висящий над нашим столом жутко зафонил, после чего откашлялся и заорал."
     dy "Уважаемые гости нашего лагеря!"
@@ -4946,7 +4946,7 @@ label alt_day4_sl_7dl_day:
     me "Э… Пардон?"
     mt "В смысле, моих детей не дам в обиду!"
     me "Я так и подумал."
-    play sound sfx_7dl["highfive"] fadein 1
+    play sound _7DL.sfx("highfive") fadein 1
     hide mt with moveoutright
     "Ольга рассмеялась, хлопнула меня по плечу и ушла вслед за физруком и Славей."
     stop music fadeout 6
@@ -5015,7 +5015,7 @@ label alt_day4_sl_7dl_day:
     "Я открыл было рот, чтобы спросить об этом."
     stop music fadeout 1
     pause(1)
-    play sound sfx_7dl["eat_horn"] fadein 1
+    play sound _7DL.sfx("eat_horn") fadein 1
     sl "А вот и горн! Пора на полдник!"
     "Славя схватила меня за руку и потащила за собой."
     mt "Про концерт не забудьте!"
@@ -5639,7 +5639,7 @@ label alt_day4_sl_7dl_evening:
     stop music fadeout 3
     pause(1)
     "Мику выскочила на сцену и что-то прокричала, отсюда неразличимое."
-    play sound sfx_7dl["eat_horn"] fadein 1
+    play sound _7DL.sfx("eat_horn") fadein 1
     "Зато оживший над нашими головами жестяной раструб на стволе сосны был вполне различим."
     me "Пошли, будем ловить сестру на ужине."
     "Славя послушно кивнула и пошла к столовой."
@@ -6186,7 +6186,7 @@ label alt_day4_sl_7dl_sundown:
             linear 0.8 zoom 1.0 xalign 0.5 yalign 0.5
         window hide
         $ renpy.pause(1, hard=True)
-        play sound sfx_7dl["snap"] fadein 0
+        play sound _7DL.sfx("snap") fadein 0
         scene white with flash
         $ renpy.pause(1, hard=True)
         scene expression Dawn("bg int_refinery_day_7dl")
@@ -6555,7 +6555,7 @@ label alt_day5_sl_7dl_begin:
     show mt smile pioneer
     with fade
     mt "Почти девять. {w}Поднимайся."
-    play sound sfx_7dl["blanket"] fadein 0
+    play sound _7DL.sfx("blanket") fadein 0
     mt "Вот твой дождевик, не забудь, когда на улицу пойдёшь."
     me "А нормальных зонтов не завезли?"
     show mt laugh pioneer with dspr
@@ -8656,7 +8656,7 @@ label alt_day5_sl_7dl_candle:
         stop music fadeout 1
         pause(1)
         "Что ж, будем посмотреть, как говорится."
-        play sound sfx_7dl["eat_horn"] fadein 1
+        play sound _7DL.sfx("eat_horn") fadein 1
         "И тут в нашу идиллию вторгся такой неуместный, но такой любимый пионерами сигнал."
         mt "Так, девочки-мальчики, выходим на улицу строиться!"
         mt "Не забываем помыть руки перед едой."
@@ -9679,7 +9679,7 @@ label alt_day5_sl_7dl_herc_evening:
     "К тому моменту, привлечённый руганью, вокруг нас собрался целый отряд."
     stop music fadeout 3
     $ volume(0.5, "sound")
-    play sound sfx_7dl["eat_horn"] fadein 1
+    play sound _7DL.sfx("eat_horn") fadein 1
     "А со стороны лагеря донёсся сигнал горна."
     "Но никто никуда не спешил."
     "Мы стояли, ожидая, что скажет вожатая."
@@ -10287,7 +10287,7 @@ label alt_day5_sl_7dl_loki_day:
     th "Определённо не научусь."
     stop music fadeout 1
     pause(1)
-    play sound sfx_7dl["eat_horn"] fadein 1
+    play sound _7DL.sfx("eat_horn") fadein 1
     "Над нашими головами разнеслись задорные переливы горна."
     window hide
     stop sound fadeout 3
@@ -12650,7 +12650,7 @@ label alt_day5_sl_7dl_campfire:
             linear 0.8 zoom 1.0 xalign 0.5 yalign 0.5
         window hide
         $ renpy.pause(1, hard=True)
-        play sound sfx_7dl["snap"] fadein 0
+        play sound _7DL.sfx("snap") fadein 0
         scene white with flash
         $ renpy.pause(1, hard=True)
         $ persistent.sprite_time = "night"
@@ -14910,7 +14910,7 @@ label alt_day6_sl_7dl_breakfast:
     window hide
     scene bg ext_sky_7dl
     with fade
-    play sound sfx_7dl["breath"] fadein 1
+    play sound _7DL.sfx("breath") fadein 1
     "Не добегая до ворот, я повалился в траву и с жадным всхлипом втянул в себя воздух."
     sl "Не лежи, заболеешь!"
     "Бессмертная Славя прыгала на пятачке перед воротами, размахивая руками."
@@ -14931,7 +14931,7 @@ label alt_day6_sl_7dl_breakfast:
         me "…"
         sl "Спасибо! Я знала, что ты не откажешься!"
         sl "Придержи створку вот так. И…"
-        play sound sfx_7dl["gate_open"]
+        play sound _7DL.sfx("gate_open")
         "Ржавая личинка со скрежетом провернулась, и на землю упал обрывок цепи."
     show sl smile2 sport with dspr
     sl "Лагерь проснулся и открыл ворота!"
@@ -17395,7 +17395,7 @@ label alt_day6_sl_7dl_morning:
         show sl normal pioneer
         with dissolve
         sl "Куда дальше?"
-        play sound sfx_7dl["eat_horn"] fadein 1
+        play sound _7DL.sfx("eat_horn") fadein 1
         "Ответом ей был горн на обед."
         show sl sad pioneer with dspr
         sl "Уже? Так быстро…"
@@ -17812,7 +17812,7 @@ label alt_day6_sl_7dl_morning:
         sl "Я всегда покрываюсь мурашками, когда ты туда дышишь."
         sl "Так что…"
         "Я успел подумать о том, что это будет крайне неприятно, если мы сейчас доберемся до кондиции, и нам кто-нибудь помешает."
-        play sound sfx_7dl["eat_horn"] fadein 1
+        play sound _7DL.sfx("eat_horn") fadein 1
         "И в это время чуть ли не нам в ухо заорал приколоченный к платформе горн."
         "Мы вздрогнули, неловко рассмеялись."
         me "Придётся продолжить попозже."
@@ -17882,7 +17882,7 @@ label alt_day6_sl_7dl_herc_day:
         sl "После обеда надо будет занести ему чего-нибудь съедобного."
         "Отметила скорее самой себе Славя."
         sl "Всё, а теперь обедать!"
-        play sound sfx_7dl["eat_horn"] fadein 1
+        play sound _7DL.sfx("eat_horn") fadein 1
         "Ей в лад отозвался донесшийся сигнал на обед."
         sl "Вот как вовремя."
         window hide
@@ -21908,7 +21908,7 @@ label alt_day6_sl_7dl_evening:
         with fade
         "Когда я пришёл в себя, оказалось, что я лежу на животе на бетонных плитах под самой трибуной возле Генды, а рядом загорают Славя и Даня."
         "А звук, который меня разбудил, оказался…"
-        play sound sfx_7dl["eat_horn"] fadein 1
+        play sound _7DL.sfx("eat_horn") fadein 1
         th "Горн!"
         me "Эй, подъём! Не спи, замёрзнешь!"
         "Я последовательно растолкал Даню и Славю."
@@ -22565,7 +22565,7 @@ label alt_day6_sl_7dl_catapult:
             "Безумно смешно."
         window hide
         scene gameover with flash
-        play sound sfx_7dl["aunl"]
+        play sound _7DL.sfx("aunl")
         if persistent.alt_lamp:
             $ persistent.alt_lamp += 1
         else:
@@ -22885,7 +22885,7 @@ label alt_day6_sl_7dl_disco:
             me "Глупости."
             dv "Каждый получает жизнь, какую заслуживает. Так и я…"
             window hide
-            play sound sfx_7dl["tearing"] fadein 1
+            play sound _7DL.sfx("tearing") fadein 1
             scene anim_square_party
             show dv scared dress
             with dissolve
@@ -23034,7 +23034,7 @@ label alt_day6_sl_7dl_disco:
         "Хлопнув себя по лбу, Ульянка вскочила со скамейки и куда-то унеслась."
         "Должно быть, извиняться и восполнять нанесённый ущерб."
         if not alt_day4_sl_7dl_phone:
-            play sound sfx_7dl["blanket"] fadein 1
+            play sound _7DL.sfx("blanket") fadein 1
             "Десять минут спустя мне на колени прилетела моя рубашка."
             "И вовремя — на улице начало ощутимо свежеть."
             "Рубашка пахла сладко, пахла чем-то волнующим."
@@ -26160,7 +26160,7 @@ label alt_day7_sl_7dl_packing_herc:
     "Она не успела ни удивиться, ни отвернуться."
     window hide
     $ renpy.pause(2.4, hard=True)
-    play sound sfx_7dl["snap"] fadein 0
+    play sound _7DL.sfx("snap") fadein 0
     scene white with flash
     $ renpy.pause(2.4, hard=True)
     with fade2
@@ -27825,7 +27825,7 @@ label alt_day7_sl_7dl_sept:
     "Дальше была только темнота и тишина."
     "И всё закончилось."
     "Ведь чудес не бывает."
-    play sound sfx_7dl["aunl"]
+    play sound _7DL.sfx("aunl")
     if persistent.sl_7dl_sept:
         $ persistent.sl_7dl_sept += 1
     else:
@@ -27881,7 +27881,7 @@ label alt_day7_sl_7dl_good_rf:
     "Не та Мику. Это же касается и всего прочего."
     "Гротескная пародия."
     "И так во всём."
-    play sound sfx_7dl["ringtone"] fadein 1
+    play sound _7DL.sfx("ringtone") fadein 1
     "Телефон зазвонил, я взял трубку:"
     stop sound
     me "Алло."
@@ -28131,7 +28131,7 @@ label alt_day7_sl_7dl_good_rf:
     sl "Значит, я могу украсть больше твоего времени, чем просто часик в кафе?"
     me "Да хоть целый день."
     me "С утра до ночи."
-    play sound sfx_7dl["aunl"]
+    play sound _7DL.sfx("aunl")
     if persistent.sl_7dl_good_rf:
         $ persistent.sl_7dl_good_rf += 1
     else:
@@ -28580,7 +28580,7 @@ label alt_day7_sl_7dl_herc:
     "И вывалился в морозный вечер своего родного города."
     "К призрачному голубому небу и режуще-жёлтым лампам уличного освещения."
     "К знакомым пятиэтажкам и мерному шуму вечного трафика на пути к Володарскому мосту."
-    play sound sfx_7dl["ringtone"]
+    play sound _7DL.sfx("ringtone")
     "Телефон в кармане загудел входящим вызовом, я вытащил аппарат из кармана."
     "Недоверчиво посмотрел на уровень заряда: 15 процентов."
     me "Но как?"
@@ -29381,7 +29381,7 @@ label alt_day7_sl_7dl_herc_good:
     "Кивнул я, а она, запрокинув руки мне на шею, притянула меня к себе, и, закрыв глаза поцеловала."
     "Скатившаяся по щеке слезинка запуталась в моей щетине."
     "Но это уже не имело значения."
-    play sound sfx_7dl["aunl"]
+    play sound _7DL.sfx("aunl")
     if persistent.sl_7dl_herc_good:
         $ persistent.sl_7dl_herc_good += 1
     else:
@@ -29641,7 +29641,7 @@ label alt_day7_sl_7dl_herc_neu:
     "Навстречу Славе."
     "Единственно верный путь."
     #TODO: цг выше в медленном zoomout
-    play sound sfx_7dl["aunl"]
+    play sound _7DL.sfx("aunl")
     if persistent.sl_7dl_herc_neu:
         $ persistent.sl_7dl_herc_neu += 1
     else:
@@ -30074,7 +30074,7 @@ label alt_day7_sl_7dl_loki_good:
     "Теперь хватало."
     "Значит, в сердце моём больше не было для них места."
     "На то они и радио «Пустота»."
-    play sound sfx_7dl["aunl"]
+    play sound _7DL.sfx("aunl")
     if persistent.sl_7dl_loki_good:
         $ persistent.sl_7dl_loki_good += 1
     else:
@@ -30494,7 +30494,7 @@ label alt_day7_sl_7dl_loki_neu:
     th "Глупое существо…"
     "Я улыбнулся и улёгся как мог удобно — насколько позволяли ремни смирительной рубашки."
     th "Я дома. {w}Куда мне торопиться?"
-    play sound sfx_7dl["aunl"]
+    play sound _7DL.sfx("aunl")
     if persistent.sl_7dl_loki_neu:
         $ persistent.sl_7dl_loki_neu += 1
     else:
@@ -30551,7 +30551,7 @@ label alt_day7_sl_7dl_loki_rej:
     "Прошептал я, вздохнул и нажал на «отправить»."
     me "Я хочу спасти твою жизнь. {w}И записать с тобой песню."
     "Нажал и застыл в ожидании, не зная ещё, что ждёт впереди."
-    play sound sfx_7dl["aunl"]
+    play sound _7DL.sfx("aunl")
     if persistent.sl_7dl_loki_rej:
         $ persistent.sl_7dl_loki_rej += 1
     else:
@@ -31173,7 +31173,7 @@ label alt_day7_sl_7dl_dr_good2:
     cs "Куда доставить, шеф?"
     "Улыбнулась медсестра, и я расслышал мурлыкающие нотки в её голосе."
     me "Домой."
-    play sound sfx_7dl["aunl"]
+    play sound _7DL.sfx("aunl")
     if persistent.sl_7dl_dr_good2:
         $ persistent.sl_7dl_dr_good2 += 1
     else:
@@ -31840,7 +31840,7 @@ label alt_day7_sl_7dl_dr_good:
     "На пятачок вырулил первый «Икарус»."
     "Значит, не зря был целый год ожидания?"
     "Не напрасно?"
-    play sound sfx_7dl["aunl"]
+    play sound _7DL.sfx("aunl")
     if persistent.sl_7dl_dr_good:
         $ persistent.sl_7dl_dr_good += 1
     else:
@@ -32064,7 +32064,7 @@ label alt_day7_sl_7dl_bad:
     "Черты лица, улыбка, брови галочкой."
     "Я помнил всё!"
     "Ведь правда?"
-    play sound sfx_7dl["ringtone"] fadein 1
+    play sound _7DL.sfx("ringtone") fadein 1
     "До тех пор, пока однажды не зазвонил сотовый."
     "Я с минуту смотрел на него в полном обалдении, пытаясь понять, что это за звук вообще."
     "Слишком уж долго мне никто не звонил."
@@ -32353,7 +32353,7 @@ label alt_day7_sl_7dl_bad:
     th "Тысяча девятьсот…"
     th "Неужели я…"
     dreamgirl "Промазал."
-    play sound sfx_7dl["aunl"]
+    play sound _7DL.sfx("aunl")
     if persistent.sl_7dl_bad:
         $ persistent.sl_7dl_bad += 1
     else:

@@ -163,7 +163,7 @@
     window hide
     scene bg semen_room_window with dissolve
     play sound_loop sfx_street_traffic_outside fadein 2
-    play music sfx_7dl["ringtone"]
+    play music _7DL.sfx("ringtone")
     $ renpy.pause(3)
     "Мобильный на столе зажужжал, привлекая моё внимание."
     "Спасаясь от почти ощутимого треска реальности по швам, я вцепился в трубку."
@@ -430,7 +430,7 @@ label alt_day0_start_h:
     "Дистанция прямого рывка."
     "Я верю в то, что всё это когда-нибудь закончится."
     stop music fadeout 3
-    play sound sfx_7dl["makarych"] fadein 0
+    play sound _7DL.sfx("makarych") fadein 0
     window hide
     scene believe_in_pain with flash_red
     with fade3
@@ -651,7 +651,7 @@ label alt_day0_start_h:
     stop sound_loop
     stop ambience
     window hide
-    play sound sfx_7dl["makarych"] fadein 0
+    play sound _7DL.sfx("makarych") fadein 0
     "В общем, день определённо не задался."
     window hide
     scene bg ext_entrance_night_clear_7dl
@@ -1294,7 +1294,7 @@ label alt_day0_d3_prologue:
     stop music fadeout 3
     scene anim prolog_3
     with flash
-    play sound sfx_7dl["wakeup"] fadein 0
+    play sound _7DL.sfx("wakeup") fadein 0
     "Я резко вскочил в кровати, весь покрытый липкой ледяной испариной."
     "Сердце заполошно колотилось в груди, руки ощутимо дрожали."
     "И эхом в глубинах сознания доносились слова, догонявшие, когда я в панике сбегал из сна:"
@@ -1529,7 +1529,7 @@ label alt_day0_epic_fail:
         "Мы согласны умирать ради тех, кого любим, ради тех, кто сможет жить после нас."
         "Чего ради умираю я?"
         window hide
-        play sound sfx_7dl["makarych"] fadein 0
+        play sound _7DL.sfx("makarych") fadein 0
         "Газовый баллончик подал давление на свинцовый шарик, и маленькая круглая смерть вошла в мягкие ткани рядом с глазом. И ещё одна — в самый центр лба."
         scene black with fade
         "Ради чего? Ради бутылки водки?"

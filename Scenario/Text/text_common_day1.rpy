@@ -253,7 +253,7 @@ label alt_day1_bus_start:
     "Радиоканалы GSM, PTT рация, Bluetooth — глухо."
     "Смежные частоты — тоже."
     th "Ладно, дальше."
-    play sound sfx_7dl["white_noise"] fadein 2
+    play sound _7DL.sfx("white_noise") fadein 2
     "Я с грехом пополам пристроил наушники в ушах и переключил плеер в режим радиосканера."
     "FM-диапазон — тихо. {w}АМ-диапазон — аналогично."
     stop sound
@@ -1850,11 +1850,11 @@ label alt_day1_soccer_d1:
         us "Лентяй ты, вот ты кто."
         if (counter_sl_7dl != 1):
             me "Будешь обзываться — оболью ещё раз!"
-        play sound sfx_7dl["eat_horn"] fadein 1
+        play sound _7DL.sfx("eat_horn") fadein 1
         "Девочка хотела было сказать ещё что-то обидное, но её прервали сигналы бессмертного «бери ложку, бери хлеб»."
     else:
         "Можно подумать, счастье — в количестве подтягиваний."
-        play sound sfx_7dl["eat_horn"] fadein 1
+        play sound _7DL.sfx("eat_horn") fadein 1
         "Поняв, что на «слабо» я не ведусь, девочка хотела было вернуться к игре, но её прервал сигнал горна."
     show us grin sport with dspr
     us "Бегом до столовой! Кто последний, тот тухлый помидор!"
@@ -2825,7 +2825,7 @@ label alt_day1_chase:
             scene bg ext_path_sunset at running
             $ renpy.pause (1)
             play ambience ambience_forest_day fadein 1
-            play sound sfx_7dl["breath"] fadein 3
+            play sound _7DL.sfx("breath") fadein 3
             "Пробежав весь лагерь насквозь, я начал понимать, что где-то разминулся с жертвой."
             scene bg ext_path_sunset with dissolve
             "Я остановился, со злостью ударив кулаком по дереву, и, согнувшись, попробовал восстановить дыхание."
