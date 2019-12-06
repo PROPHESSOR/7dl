@@ -531,25 +531,31 @@ init:
     $ sfx_alisa_falls_novoice = "sound/sfx/alisa_falls_novoice.ogg"
 
 init python:
-    # <PROPHESSOR> WTF??!!
     for file in renpy.list_files():
-        if file.startswith((default_7dl_path+"Pics/bg/")) and file.endswith((".jpg", ".png")):
-            renpy.image(("bg "+str(file)[default_7dl_path_length+8:-4]), file)
-        elif file.startswith((default_7dl_path+"Pics/cg/")) and file.endswith((".jpg", ".png")):
-            renpy.image(("cg "+str(file)[default_7dl_path_length+8:-4]), file)
-        elif file.startswith((default_7dl_path+"Pics/noir/")) and file.endswith((".jpg", ".png")):
-            renpy.image((str(file)[default_7dl_path_length+10:-4]), file)
-        elif file.startswith((default_7dl_path+"Pics/gui/tournament/")) and file.endswith((".jpg", ".png")):
-            renpy.image((str(file)[default_7dl_path_length+20:-4]), file)
-        elif file.startswith((default_7dl_path+"Pics/gui/intro/")) and file.endswith((".jpg", ".png")):
-            renpy.image((str(file)[default_7dl_path_length+15:-4]), file)
-        elif file.startswith((default_7dl_path+"Pics/gui/laptop/")) and file.endswith((".jpg", ".png")):
-            renpy.image((str(file)[default_7dl_path_length+16:-4]), file)
-        elif file.startswith((default_7dl_path+"Pics/gui/acm/")) and file.endswith((".jpg", ".png")):
-            renpy.image((str(file)[default_7dl_path_length+13:-4]), file)
-        elif file.startswith((default_7dl_path+"Sound/ambience/")) and file.endswith((".ogg")):
-            ambience_7dl[(str(file)[default_7dl_path_length+24:-8])] = file
-        elif file.startswith((default_7dl_path+"Sound/music/")) and file.endswith((".ogg")):
-            music_7dl[(str(file)[default_7dl_path_length+12:-8])] = file
-        elif file.startswith((default_7dl_path+"Sound/sfx/")) and file.endswith((".ogg")):
-            sfx_7dl[(str(file)[default_7dl_path_length+10:-8])] = file
+        filename = file.split('/')[-1] # file.extension
+
+        if filename.endswith((".jpg", ".png")):
+
+            image_bind_prefix = ""
+
+            if file.startswith((default_7dl_path + "Pics/bg/")):
+                image_bind_prefix = "bg "
+            elif file.startswith((default_7dl_path + "Pics/cg/")):
+                image_bind_prefix = "cg "
+
+            renpy.image((image_bind_prefix + filename[:-4]), file)
+
+        elif filename.endswith((".ogg")):
+            # [:-8] - remove "_7dl" suffix and extension
+
+            if file.startswith((default_7dl_path+"Sound/ambience/")):
+                ambience_7dl[filename[:-8]] = file
+
+            elif file.startswith((default_7dl_path+"Sound/music/")):
+                music_7dl[filename[:-8]] = file
+
+            elif file.startswith((default_7dl_path+"Sound/sfx/")):
+                sfx_7dl[filename[:-8]] = file
+
+    del filename
+    del image_bind_prefix
