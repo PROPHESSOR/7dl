@@ -439,10 +439,10 @@ init:
     
     ##\\\\\\\\\\\\\\\\\\\\\\\\\ЗВУКИ\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     # SFX
-    $ sdl_achv_clear = get_sfx_7dl("ach_list/achv_clear_7dl.ogg")
-    $ sdl_achv_click = get_sfx_7dl("ach_list/achv_click_7dl.ogg")
-    $ sdl_achv_info = get_sfx_7dl("ach_list/achv_info_7dl.ogg")
-    $ sdl_achv_pagina = get_sfx_7dl("ach_list/achv_pagina_7dl.ogg")
+    $ sdl_achv_clear = _7DL.sfx("ach_list/achv_clear")
+    $ sdl_achv_click = _7DL.sfx("ach_list/achv_click")
+    $ sdl_achv_info = _7DL.sfx("ach_list/achv_info")
+    $ sdl_achv_pagina = _7DL.sfx("ach_list/achv_pagina")
 
 ##\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ДУБЛИ КОНЦОВОК\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     

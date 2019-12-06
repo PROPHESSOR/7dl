@@ -634,14 +634,6 @@ init -999 python:
     def get_image_7dl(file):
         return default_7dl_path+"Pics/%s" % (file)
 
-init -998 python:
-    def get_sfx_7dl(file):
-        return default_7dl_path+"Sound/sfx/%s" % (file)
-    def get_ambience_7dl(file):
-        return default_7dl_path+"Sound/ambience/%s" % (file)
-    def get_music_7dl(file):
-        return default_7dl_path+"Sound/music/%s" % (file)
-
 init -997 python:
     def get_sprite_7dl(file):
         return default_7dl_path+"Pics/sprites/%s" % (file)

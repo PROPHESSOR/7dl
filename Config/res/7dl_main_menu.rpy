@@ -217,22 +217,22 @@ screen menu_7dl():
         elif persistent.waifu_7dl == 7:
             auto get_image_7dl("gui/menu_main/uv_menu_%s.png")
         hotspot (170, 511, 299, 33):
-            hover_sound get_sfx_7dl("ach_list/achv_click_7dl.ogg")
+            hover_sound sdl_achv_click
             action [Hide("menu_7dl", transition=Dissolve(0.2)), Hide("settings_7dl", transition=Dissolve(0.2)), Hide("contacts_7dl", transition=Dissolve(0.2)), Hide("media_7dl", transition=Dissolve(0.2)), Stop('music', fadeout=2), Jump("start_7dl")]
         hotspot (170, 558, 243, 39):
-            hover_sound get_sfx_7dl("ach_list/achv_click_7dl.ogg")
+            hover_sound sdl_achv_click
             action [Show("settings_7dl", transition=Dissolve(0.2))]
         hotspot (170, 617, 293, 38):
-            hover_sound get_sfx_7dl("ach_list/achv_click_7dl.ogg")
+            hover_sound sdl_achv_click
             action [Show("menu_7dl", transition=Dissolve(0.2)), Hide("settings_7dl", transition=Dissolve(0.2)), Hide("contacts_7dl", transition=Dissolve(0.2)), Hide("media_7dl", transition=Dissolve(0.2)), Stop('music', fadeout=2), Jump("sdl_achvlist_main")]
         hotspot (170, 670, 221, 33):
-            hover_sound get_sfx_7dl("ach_list/achv_click_7dl.ogg")
+            hover_sound sdl_achv_click
             action [Show("contacts_7dl", transition=Dissolve(0.2))]
         hotspot (170, 723, 143, 33):
-            hover_sound get_sfx_7dl("ach_list/achv_click_7dl.ogg")
+            hover_sound sdl_achv_click
             action [Show("media_7dl", transition=Dissolve(0.2))]
         hotspot (170, 770, 137, 39):
-            hover_sound get_sfx_7dl("ach_list/achv_click_7dl.ogg")
+            hover_sound sdl_achv_click
             action [Hide("menu_7dl", transition=Dissolve(0.2)), Hide("settings_7dl", transition=Dissolve(0.2)), Hide("contacts_7dl", transition=Dissolve(0.2)), Hide("media_7dl", transition=Dissolve(0.2)), Function(alt_exit), MainMenu(confirm=False)]   
     
     # Открываем экран для ввода чит-кодов
@@ -261,7 +261,7 @@ screen settings_7dl():
         textbutton "Виджет (ЛП): выкл." xpos 0.65 ypos 0.255:
             style "log_button"
             text_style "alt_settings_textbutton"
-            hover_sound get_sfx_7dl("ach_list/achv_click_7dl.ogg")
+            hover_sound sdl_achv_click
             hovered Show("settings_widget_lp_on_7dl", transition=Dissolve(0.2))
             unhovered [Hide("settings_widget_lp_on_7dl", transition=Dissolve(0.2))]
             action [SetField(persistent,'lp_widget_7dl', True), Hide("settings_widget_lp_on_7dl", transition=Dissolve(0.2)), Show("settings_widget_lp_off_7dl", transition=Dissolve(0.2))]
@@ -269,7 +269,7 @@ screen settings_7dl():
         textbutton "Виджет (ЛП): вкл." xpos 0.65 ypos 0.255:
             style "log_button"
             text_style "alt_settings_textbutton"
-            hover_sound get_sfx_7dl("ach_list/achv_click_7dl.ogg")
+            hover_sound sdl_achv_click
             hovered Show("settings_widget_lp_off_7dl", transition=Dissolve(0.2))
             unhovered [Hide("settings_widget_lp_off_7dl", transition=Dissolve(0.2))]
             action [SetField(persistent,'lp_widget_7dl', False), Hide("settings_widget_lp_off_7dl", transition=Dissolve(0.2)), Show("settings_widget_lp_on_7dl", transition=Dissolve(0.2))]
@@ -277,7 +277,7 @@ screen settings_7dl():
         textbutton "Виджет (музыка): выкл." xpos 0.65 ypos 0.3:
             style "log_button"
             text_style "alt_settings_textbutton"
-            hover_sound get_sfx_7dl("ach_list/achv_click_7dl.ogg")
+            hover_sound sdl_achv_click
             hovered Show("settings_widget_music_on_7dl", transition=Dissolve(0.2))
             unhovered [Hide("settings_widget_music_on_7dl", transition=Dissolve(0.2))]
             action [SetField(persistent,'music_widget_7dl', True), Hide("settings_widget_music_on_7dl", transition=Dissolve(0.2)), Show("settings_widget_music_off_7dl", transition=Dissolve(0.2))]
@@ -285,7 +285,7 @@ screen settings_7dl():
         textbutton "Виджет (музыка): вкл." xpos 0.65 ypos 0.3:
             style "log_button"
             text_style "alt_settings_textbutton"
-            hover_sound get_sfx_7dl("ach_list/achv_click_7dl.ogg")
+            hover_sound sdl_achv_click
             hovered Show("settings_widget_music_off_7dl", transition=Dissolve(0.2))
             unhovered [Hide("settings_widget_music_off_7dl", transition=Dissolve(0.2))]
             action [SetField(persistent,'music_widget_7dl', False), Hide("settings_widget_music_off_7dl", transition=Dissolve(0.2)), Show("settings_widget_music_on_7dl", transition=Dissolve(0.2))]
@@ -293,7 +293,7 @@ screen settings_7dl():
         textbutton "Х-сцены с Леной: новые" xpos 0.65 ypos 0.347:
             style "log_button"
             text_style "alt_settings_textbutton"
-            hover_sound get_sfx_7dl("ach_list/achv_click_7dl.ogg")
+            hover_sound sdl_achv_click
             hovered Show("settings_hentai_un_old_7dl", transition=Dissolve(0.2))
             unhovered [Hide("settings_hentai_un_old_7dl", transition=Dissolve(0.2))]
             action [SetField(persistent,'hentai_un_old_7dl',True), Hide("settings_hentai_un_old_7dl", transition=Dissolve(0.2)), Show("settings_hentai_un_new_7dl", transition=Dissolve(0.2))]
@@ -301,7 +301,7 @@ screen settings_7dl():
         textbutton "Х-сцены с Леной: старые" xpos 0.65 ypos 0.347:
             style "log_button"
             text_style "alt_settings_textbutton"
-            hover_sound get_sfx_7dl("ach_list/achv_click_7dl.ogg")
+            hover_sound sdl_achv_click
             hovered Show("settings_hentai_un_new_7dl", transition=Dissolve(0.2))
             unhovered [Hide("settings_hentai_un_new_7dl", transition=Dissolve(0.2))]
             action [SetField(persistent,'hentai_un_old_7dl',False), Hide("settings_hentai_un_new_7dl", transition=Dissolve(0.2)), Show("settings_hentai_un_old_7dl", transition=Dissolve(0.2))]
@@ -309,7 +309,7 @@ screen settings_7dl():
         textbutton "Х-графика: выкл." xpos 0.65 ypos 0.392:
             style "log_button"
             text_style "alt_settings_textbutton"
-            hover_sound get_sfx_7dl("ach_list/achv_click_7dl.ogg")
+            hover_sound sdl_achv_click
             hovered Show("settings_hentai_graphics_on_7dl", transition=Dissolve(0.2))
             unhovered [Hide("settings_hentai_graphics_on_7dl", transition=Dissolve(0.2))]
             action [SetField(persistent,'hentai_graphics_7dl',True), Hide("settings_hentai_graphics_on_7dl", transition=Dissolve(0.2)), Show("settings_hentai_graphics_off_7dl", transition=Dissolve(0.2))]
@@ -317,7 +317,7 @@ screen settings_7dl():
         textbutton "Х-графика: вкл." xpos 0.65 ypos 0.392:
             style "log_button"
             text_style "alt_settings_textbutton"
-            hover_sound get_sfx_7dl("ach_list/achv_click_7dl.ogg")
+            hover_sound sdl_achv_click
             hovered Show("settings_hentai_graphics_off_7dl", transition=Dissolve(0.2))
             unhovered [Hide("settings_hentai_graphics_off_7dl", transition=Dissolve(0.2))]
             action [SetField(persistent,'hentai_graphics_7dl',False), Hide("settings_hentai_graphics_off_7dl", transition=Dissolve(0.2)), Show("settings_hentai_graphics_on_7dl", transition=Dissolve(0.2))]
@@ -325,7 +325,7 @@ screen settings_7dl():
         textbutton "Заставки: вкл." xpos 0.65 ypos 0.438:
             style "log_button"
             text_style "alt_settings_textbutton"
-            hover_sound get_sfx_7dl("ach_list/achv_click_7dl.ogg")
+            hover_sound sdl_achv_click
             hovered Show("settings_chapter_off_7dl", transition=Dissolve(0.2))
             unhovered [Hide("settings_chapter_off_7dl", transition=Dissolve(0.2))]
             action [SetField(persistent,'chapter_off_7dl',True), Hide("settings_chapter_off_7dl", transition=Dissolve(0.2)), Show("settings_chapter_on_7dl", transition=Dissolve(0.2))]
@@ -333,7 +333,7 @@ screen settings_7dl():
         textbutton "Заставки: выкл." xpos 0.65 ypos 0.438:
             style "log_button"
             text_style "alt_settings_textbutton"
-            hover_sound get_sfx_7dl("ach_list/achv_click_7dl.ogg")
+            hover_sound sdl_achv_click
             hovered Show("settings_chapter_on_7dl", transition=Dissolve(0.2))
             unhovered [Hide("settings_chapter_on_7dl", transition=Dissolve(0.2))]
             action [SetField(persistent,'chapter_off_7dl',False), Hide("settings_chapter_on_7dl", transition=Dissolve(0.2)), Show("settings_chapter_off_7dl", transition=Dissolve(0.2))]
@@ -341,7 +341,7 @@ screen settings_7dl():
         textbutton "Эмоции (ачивлист): выкл." xpos 0.65 ypos 0.483:
             style "log_button"
             text_style "alt_settings_textbutton"
-            hover_sound get_sfx_7dl("ach_list/achv_click_7dl.ogg")
+            hover_sound sdl_achv_click
             hovered Show("settings_achv_sprite_emo_on_7dl", transition=Dissolve(0.2))
             unhovered [Hide("settings_achv_sprite_emo_on_7dl", transition=Dissolve(0.2))]
             action [SetField(persistent,'achv_sprite_emo_7dl',True), Hide("settings_achv_sprite_emo_on_7dl", transition=Dissolve(0.2)), Show("settings_achv_sprite_emo_off_7dl", transition=Dissolve(0.2))]
@@ -349,7 +349,7 @@ screen settings_7dl():
         textbutton "Эмоции (ачивлист): вкл." xpos 0.65 ypos 0.483:
             style "log_button"
             text_style "alt_settings_textbutton"
-            hover_sound get_sfx_7dl("ach_list/achv_click_7dl.ogg")
+            hover_sound sdl_achv_click
             hovered Show("settings_achv_sprite_emo_off_7dl", transition=Dissolve(0.2))
             unhovered [Hide("settings_achv_sprite_emo_off_7dl", transition=Dissolve(0.2))]
             action [SetField(persistent,'achv_sprite_emo_7dl',False), Hide("settings_achv_sprite_emo_off_7dl", transition=Dissolve(0.2)), Show("settings_achv_sprite_emo_on_7dl", transition=Dissolve(0.2))]
@@ -358,7 +358,7 @@ screen settings_7dl():
             textbutton "Кошкорут: выкл." xpos 0.65 ypos 0.528:
                 style "log_button"
                 text_style "alt_settings_textbutton"
-                hover_sound get_sfx_7dl("ach_list/achv_click_7dl.ogg")
+                hover_sound sdl_achv_click
                 hovered Show("settings_dlc_on_7dl", transition=Dissolve(0.2))
                 unhovered [Hide("settings_dlc_on_7dl", transition=Dissolve(0.2))]
                 action [SetField(persistent,'uv_dlc_on_7dl',True), Hide("settings_dlc_on_7dl", transition=Dissolve(0.2)), Show("settings_dlc_off_7dl", transition=Dissolve(0.2))]
@@ -366,7 +366,7 @@ screen settings_7dl():
             textbutton "Кошкорут: вкл." xpos 0.65 ypos 0.528:
                 style "log_button"
                 text_style "alt_settings_textbutton"
-                hover_sound get_sfx_7dl("ach_list/achv_click_7dl.ogg")
+                hover_sound sdl_achv_click
                 hovered Show("settings_dlc_off_7dl", transition=Dissolve(0.2))
                 unhovered [Hide("settings_dlc_off_7dl", transition=Dissolve(0.2))]
                 action [SetField(persistent,'uv_dlc_on_7dl',False), Hide("settings_dlc_off_7dl", transition=Dissolve(0.2)), Show("settings_dlc_on_7dl", transition=Dissolve(0.2))]
@@ -389,10 +389,10 @@ screen media_7dl():
     imagemap:
         auto get_image_7dl("gui/menu_elem/media/media_%s.png")
         hotspot(1333, 224, 540, 160):
-            hover_sound get_sfx_7dl("ach_list/achv_click_7dl.ogg")
+            hover_sound sdl_achv_click
             clicked [Show("alt_wip", transition=Dissolve(0.2))]
         hotspot(1218, 394, 700, 700):
-            hover_sound get_sfx_7dl("ach_list/achv_click_7dl.ogg")
+            hover_sound sdl_achv_click
             clicked [Hide("media_7dl", transition=Dissolve(0.2)), Hide("menu_7dl", transition=Dissolve(0.2)), Stop('music', fadeout=2), Jump("alt_gallery_start")]
 
 label main_menu_7dl:
