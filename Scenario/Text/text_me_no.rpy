@@ -3,7 +3,7 @@ label alt_day4_no_begin:
     show anim_grain
     with dissolve
     play ambience ambience_camp_entrance_night fadein 3
-    play music music_7dl["hole_in_chest"] fadein 5
+    play music _7DL.music("hole_in_chest") fadein 5
     play sound_loop sfx_bus_interior_moving fadein 1
     $ volume (0.3,'sound_loop')
     $ meet('cs','Водитель')
@@ -132,7 +132,7 @@ label alt_day4_no_trip:
     scene noir_yard3_7dl
     show anim_grain
     with dissolve
-    play music music_7dl["leave_now"] fadein 3
+    play music _7DL.music("leave_now") fadein 3
     "Старая глупая манера — делать отели в панельных полухрущёвках."
     "Я не помнил, какой год на дворе, но здание уже выглядело потрёпанным, немолодым."
     "Сам отель занимал два этажа в жилом здании, в парадной, что кто-то однажды выкупил, слегка облагородил да и обозвал гостиницей «Как дома»."
@@ -225,7 +225,7 @@ label alt_day4_no_trip:
     return
 
 label alt_day4_no_passion:
-    play music music_7dl["comfortable_mistery_3"] fadein 3
+    play music _7DL.music("comfortable_mistery_3") fadein 3
     play ambience ambience_int_cabin_night fadein 2
     "В голове всё перемешалось, перепуталось…"
     "Сигаретный дым не решал проблем, но позволял забыть о них."
@@ -287,7 +287,7 @@ label alt_day4_no_passion:
     return
 
 label alt_day4_no_corpse:
-    play music music_7dl["comfortable_mistery_4"] fadein 3
+    play music _7DL.music("comfortable_mistery_4") fadein 3
     scene noir_mt_sam_room_close_7dl
     show anim_grain
     with dissolve
@@ -561,7 +561,7 @@ label alt_day4_no_witch:
     scene noir_archway2_7dl
     show anim_grain
     with dissolve
-    play music music_7dl["ofrust"] fadein 3
+    play music _7DL.music("ofrust") fadein 3
     "Струсил, струсил бравый специалист по особым поручениями."
     "Мне всегда было проще заниматься делом, чем пытаться унять женские слёзы."
     "Ольга вряд ли стала бы открыто плакать — не тот типаж. Но её состояние не отличалось от истерики."
@@ -658,7 +658,7 @@ label alt_day4_no_witch:
     stop music fadeout 3
     sl "У нас здесь бывают только командированные. {w}Да выездные проверки из первопрестольной."
     sl "Как станет скучно, так приезжают, три дня на пароходе по реке катаются, водку пьют, как вы, вон."
-    play music music_7dl["leave_now"] fadein 3
+    play music _7DL.music("leave_now") fadein 3
     "Она кивнула на рюмку в моей руке, и я залпом опрокинул алкоголь в кровь."
     "Разумеется, палёный. Какой ещё я здесь ожидал встретить?"
     me "А вы что здесь делаете?"
@@ -886,7 +886,7 @@ label alt_day4_no_expo2:
     show unblink
     show anim_grain
     with dissolve
-    play music music_7dl["red_lights"] fadein 3
+    play music _7DL.music("red_lights") fadein 3
     "Когда я снова пришёл в себя, оказалось, что ведьма уже ушла, небо посерело окончательно и местные забулдыги уже разбрелись."
     "Правда, место моё сменилось с асфальта у входа на деревянную лавку по соседству с дырявым ведром, полным окурков."
     "У двери с надписью «Воды» хлопотала уже знакомая продавщица, запирая храм возлияний на огромный навесной замок."
@@ -964,7 +964,7 @@ label alt_day4_no_rendezvous:
     scene noir_yardway_7dl
     show anim_grain
     with dissolve
-    play music music_7dl["breath_again"] fadein 3
+    play music _7DL.music("breath_again") fadein 3
     "В моей работе очень многое решают ноги — как быстро ты догоняешь или наоборот, убегаешь."
     "Ты постоянно сталкиваешься с разными людьми, как-то влияешь на них, они влияют на тебя."
     "У меня не очень большой стаж — в следующем марте стукнет десять лет с тех пор, как я впервые взял на себя заботу о разбирательстве."
@@ -1094,7 +1094,7 @@ label alt_day4_no_rendezvous:
     window hide
     scene noir_ravine_7dl
     with dissolve2
-    play music music_7dl["abyss_call"] fadein 3
+    play music _7DL.music("abyss_call") fadein 3
     play sound_loop sfx_far_steps
     play ambience ambience_forest_day fadein 7
     "Чувство слежки возникло не сразу."
@@ -1349,7 +1349,7 @@ label alt_day4_no_cop:
     show anim_grain
     with dissolve
     play ambience ambience_medstation_inside_day
-    play music music_7dl["prologue_2"] fadein 3    # WTF?
+    play music _7DL.music("prologue_2") fadein 3    # WTF?
     "Очаровашки в униформе за стойкой уже не было, её место занял некий хмурый тип в очках."
     "Он кивнул в ответ на мою фамилию, достал из шкафчика ключ."
     $ meet('sh','Портье')
@@ -1491,7 +1491,7 @@ label alt_day4_no_cop:
     me "Тогда как объяснить вот это?"
     "Запись с камеры была последней в памяти телефона."
     "На экране снова появилось чёрно-белое инверсное изображение с балкой, с глиняными стенами, пустое — насколько хватало глаз."
-    play music music_7dl["snatch"] fadein 3
+    play music _7DL.music("snatch") fadein 3
     "Зато в избытке хватало звуков — странных, пугающих."
     "Я даже не обратил на них внимания, когда мы там шли."
     "Был слишком занят попытками найти слежку."

@@ -2,7 +2,7 @@
     scene anim prolog_2
     with dissolve2
     window hide
-    play music music_7dl["seven_summer_days"] fadein 3
+    play music _7DL.music("seven_summer_days") fadein 3
     "Мне снова снилось что-то."
     "И я снова кричал во сне."
     scene bg ext_entrance_night_clear_7dl
@@ -209,7 +209,7 @@
     scene anim intro_3
     with fade
     $ volume(0.3, 'music')
-    play music music_7dl["prologue_1"]
+    play music _7DL.music("prologue_1")
     $ renpy.pause(3, hard=True)
     scene anim intro_4
     with fade
@@ -245,7 +245,7 @@
     with fade
     $ renpy.pause(1)
     $ set_mode_nvl()
-    play music music_7dl["lonesome_shepherd"]
+    play music _7DL.music("lonesome_shepherd")
     "Моё первое двенадцатое апреля — то самое, которое я запомнил."
     "Меня куда-то ведёт отец, держа за руку, из динамиков вещает Левитан в записи, а с экрана машет рукой какая-то улыбающаяся женщина с орденами."
     "И не верится в то, что это космонавт — они же небожители. Они обитают там, где кончается воздух и начинается Вселенная. Как эта маленькая женщина может быть тем серебристым чудом, что показывали всем нам в фильмах?"
@@ -403,7 +403,7 @@ label alt_day0_start_h:
     scene black
     show spill_gray
     with dissolve
-    play music music_7dl["vampire"] fadein 3
+    play music _7DL.music("vampire") fadein 3
     "Существует не так много вещей, по-настоящему заслуживающих веры."
     me "Остынь, чувак!"
     "Я верю в смерть."
@@ -436,7 +436,7 @@ label alt_day0_start_h:
     with fade3
     $ renpy.pause(5, hard=True)
     "День не задался с самого утра."
-    play music music_7dl["prologue_1"]
+    play music _7DL.music("prologue_1")
     scene bg ext_entrance_night_clear_7dl
     show uvao_d1 at left
     show prologue_dream
@@ -527,7 +527,7 @@ label alt_day0_start_h:
     "Как обычно, в моменты вынужденного безделья мало-помалу начал углубляться в воспоминания."
     window hide
     $ volume(1.0, 'music')
-    play music music_7dl["seven_summer_days"] fadein 3
+    play music _7DL.music("seven_summer_days") fadein 3
     $ renpy.pause(3)
     scene anim prolog_2
     with fade
@@ -637,7 +637,7 @@ label alt_day0_start_h:
     window hide
     stop sound_loop
     stop ambience fadeout 3
-    play music music_7dl["exodus"] fadein 5
+    play music _7DL.music("exodus") fadein 5
     scene bg int_store_7dl with fade
     "Я подчинил жизнь распорядку."
     "После заступления на смену принимаю объект, здороваюсь с Зиной и занимаю место в уголке."
@@ -694,7 +694,7 @@ label alt_day0_start_h:
 
 label alt_day0_start_l:
     scene expression Dawn("bg ext_winterpark_7dl") with dissolve
-    play music music_7dl["nap_one"] fadein 3
+    play music _7DL.music("nap_one") fadein 3
     voice "Прости."
     "Хруст фаланг под опускающейся ногой, закованной в лакированный штиблет."
     "Что-то жизненно важное, лопающееся под ударом ноги."
@@ -733,7 +733,7 @@ label alt_day0_start_l:
     pause(.05)
     scene anim prolog_3
     with fade
-    play music music_7dl["exodus"] fadein 3
+    play music _7DL.music("exodus") fadein 3
     "Я всегда считал, что каждый получает только ту реальность, какую заслуживает."
     "Реальность наркомана состоит из шприца, почти невидимых вен и раствора на ложке над зажигалкой."
     "Реальность художника — из образов, перспектив и горящей на кончиках пальцев идеи."
@@ -767,7 +767,7 @@ label alt_day0_start_l:
     scene anim intro_3
     show blind1_1
     with fade
-    play music music_7dl["prologue_1"]
+    play music _7DL.music("prologue_1")
     hide blind1_1
     show blind1_2
     with dissolve
@@ -887,7 +887,7 @@ label alt_day0_start_l:
     "Оголодавшие хищники, рвущие жертву стаей."
     window hide
     $ volume(1.0, 'music')
-    play music music_7dl["beth"] fadein 3
+    play music _7DL.music("beth") fadein 3
     $ renpy.pause(3)
     scene anim prolog_2
     with fade
@@ -986,7 +986,7 @@ label alt_day0_start_l:
     with fade
     stop ambience fadeout 2
     play sound_loop sfx_bus_interior_moving fadein 4
-    play music music_7dl["laugh_throught_the_universe"] fadein 3
+    play music _7DL.music("laugh_throught_the_universe") fadein 3
     th "Где же она, обещанная ненависть к человеку, который тебя уничтожил?"
     "Связь с Ксаной меня уже чуть не убила однажды."
     "А она позвонила. {w}И попросила приехать."
@@ -1078,7 +1078,7 @@ label alt_day0_d3_prologue:
     $ sunset_time()
     scene black with fade
     with dissolve
-    play music music_7dl["nowyouseeme"] fadein 3
+    play music _7DL.music("nowyouseeme") fadein 3
     play ambience ambience_boat_station_day fadein 5
     "Нам играют вечные «Битлз» и нестареющий Эдриан Пол."
     "Конечно, я не такой, как эти… {w}Бесноватые."
@@ -1126,7 +1126,7 @@ label alt_day0_d3_prologue:
     "Если как следует расставить ноги, держаться крепче и не позволять ему раскачиваться…"
     "Подобное происходило со мной с удручающей периодичностью — провалы в памяти, амнезия."
     $ volume(0.5, "music")
-    play music music_7dl["bad_apple"] fadein 10
+    play music _7DL.music("bad_apple") fadein 10
     "Под нос что-то сунули, я невольно вдохнул."
     hide blackout_exh
     with flash
@@ -1165,7 +1165,7 @@ label alt_day0_d3_prologue:
     $ night_time()
     $ persistent.sprite_time = 'night'
     $ volume(1.0, "music")
-    play music music_7dl["breath_again"] fadein 3
+    play music _7DL.music("breath_again") fadein 3
     scene bg ext_square_night
     with dissolve
     play ambience ambience_camp_center_night fadein 3
@@ -1301,7 +1301,7 @@ label alt_day0_d3_prologue:
     dreamgirl "Можно выбрать любую. {w}Но стоит ли? {w}Если ты своими руками…"
     with vpunch
     am "А вот это плохо!"
-    play music music_7dl["hole_in_chest"] fadein 3
+    play music _7DL.music("hole_in_chest") fadein 3
     window hide
     scene bg int_extra_house_7dl
     with dissolve
@@ -1413,7 +1413,7 @@ label alt_day0_d3_prologue:
     "И пусть меня не пытались целовать, я всё равно со страхом закрывал глаза."
     "За таблетками по рецепту я так и не сходил."
     "И мои призраки догнали меня."
-    play music music_7dl["leave_now"] fadein 3
+    play music _7DL.music("leave_now") fadein 3
     "С памяти пропала блокада, я снова вспомнил их всех."
     "Они все ушли."
     "Они все приходили ко мне во сне!"
@@ -1505,7 +1505,7 @@ label alt_day0_epic_fail:
     stop music fadeout 3
     stop ambience
     stop sound_loop
-    play music music_7dl["herc_death"] fadein 3
+    play music _7DL.music("herc_death") fadein 3
     if loki:
         "Холода больше не было."
         scene cg d7_sl_gonna_be_ok_7dl

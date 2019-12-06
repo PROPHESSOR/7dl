@@ -526,7 +526,6 @@ init:
 
 # Звучок
     $ ambience_7dl = {}
-    $ music_7dl = {}
     $ sfx_7dl = {}
     $ sfx_alisa_falls_novoice = "sound/sfx/alisa_falls_novoice.ogg"
 
@@ -550,7 +549,7 @@ init python:
                 renpy.image((image_bind_prefix + filename[:-4]), file) # [:-4] - remove extension
 
             elif filename.endswith((".ogg")):
-                for category, dictionary, frontslice in ('ambience', ambience_7dl, 9), ('music', music_7dl, 0), ('sfx', sfx_7dl, 0):
+                for category, dictionary, frontslice in ('ambience', ambience_7dl, 9), ('sfx', sfx_7dl, 0):
                     if file.startswith(("%sSound/%s/" % (default_7dl_path, category))):
                         dictionary[filename[frontslice:-8]] = file
                         # [:-8] - remove "_7dl" suffix and extension

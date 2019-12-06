@@ -1010,15 +1010,15 @@ label alt_day4_rps_win:
     "Я немного подумал, и…"
     menu:
         "Дабстепчику бы!":
-            play music music_7dl["polyhymnia_main"]
+            play music _7DL.music("polyhymnia_main")
 
             extend " в раскалённом воздухе поплыли сверхтяжёлые басы."
         "Что-нибудь потяжелее!":
-            play music music_7dl["nookie"]
+            play music _7DL.music("nookie")
 
             extend " сонное царство всколыхнуло агрессивными рифами."
         "Что-нибудь для души!":
-            play music music_7dl["knock"]
+            play music _7DL.music("knock")
 
             extend " в эфир отправилась медленная, грустная композиция с моей родины."
         "Оставить играть":
@@ -2627,7 +2627,7 @@ label alt_day4_mi_club_sick:
     return
 
 label alt_day4_mi_med_EV:
-    play music music_7dl["everyday"] fadein 5
+    play music _7DL.music("everyday") fadein 5
     stop ambience fadeout 2
     play sound sfx_open_door_2
     scene bg ext_musclub_day

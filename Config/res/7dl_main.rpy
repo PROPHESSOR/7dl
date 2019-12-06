@@ -13,7 +13,6 @@ init -1002 python:
             return "%s/Sound/ambience/ambience_%s_7dl.ogg" % (self.rootpath, name)
 
         def music(self, name):
-            print("Getting music %s..." % name)
             return "%s/Sound/music/%s_7dl.ogg" % (self.rootpath, name)
 
         def sfx(self, name):

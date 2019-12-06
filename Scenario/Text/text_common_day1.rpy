@@ -1,5 +1,5 @@
 ﻿label alt_day1_begin:
-    play music music_7dl["areyouabully"] fadein 2
+    play music _7DL.music("areyouabully") fadein 2
     play sound sfx_shoulder_dive_water
     scene anim_underwater
     show blackout_exh
@@ -539,7 +539,7 @@ label alt_day1_firts_met:
     if (counter_sl_7dl == 1):
         show sl normal pioneer with dissolve
     "Потому что взгляду моему открылась картина, что преследовала меня всю мою сознательную жизнь!"
-    play music music_7dl["dead_silence"] fadein 3
+    play music _7DL.music("dead_silence") fadein 3
     scene expression Dawn("bg ext_entrance_night_clear_7dl")
     show anim_grain
     with touch
@@ -809,7 +809,7 @@ label alt_day1_arrival:
     play sound sfx_punch_medium
     with vpunch
     if (herc or loki) and persistent.dv_7dl_good_ussr:
-        play music music_7dl["sheiscool"]
+        play music _7DL.music("sheiscool")
     else:
         play music music_list["that_s_our_madhouse"]
     "Я не успел додумать — от сильного хлопка между лопаток я потерял равновесие и растерял остатки мыслей."
@@ -965,7 +965,7 @@ label alt_day1_arrival:
         "Я махнул рукой и усмехнулся."
         th "Сам виноват, сам."
         "Рядом была крайне перспективная скамеечка, куда я и устроился, предварительно выжав на себе свитер."
-        play music music_7dl["so_cold"] fadein 3
+        play music _7DL.music("so_cold") fadein 3
         "Сохнуть!"
         "К счастью, для таких вот моментов неминуемого унижения у меня, как у супергероя «Человека-Неудачника», существовал антикризисный набор."
         "Чуть-чуть самобичевания, чуть-чуть чёрного юмора и море самоиронии."
@@ -2108,7 +2108,7 @@ label alt_day1_dining_room:
     "Во внезапно опустившейся на столовую тишине мой крик раздался особенно громко."
     "И, судя по долетевшему от двери довольному хихиканью, достиг ушей адресата."
     show us laugh sport with dspr
-    play music music_7dl["genki"]
+    play music _7DL.music("genki")
     "Вот только увидев выражение моего лица, она расхохоталась уже в полный голос!"
     us "Ах-ха-ха-ха-ха-хаа!"
     hide us with easeoutright
@@ -2208,7 +2208,7 @@ label alt_day1_meeting2:
     scene bg ext_dining_hall_near_sunset
     with dissolve
     play ambience ambience_camp_center_evening fadein 6
-    play music music_7dl["what_am_i_doing_here"] fadein 3
+    play music _7DL.music("what_am_i_doing_here") fadein 3
     "Когда я вышел на крылечко столовой, вокруг уже явственно наступал вечер."
     "Тот самый, летний, тёплый, который даже пахнет совсем иначе."
     "Солнце уже не жарит, но всё ещё греет, и от того настроение становится благодушное и расслабленное."
@@ -2310,7 +2310,7 @@ label alt_day1_meeting2:
     "Отсмеявшись, спросила со всех сторон позитивная девочка."
     window hide
     while len(list_slavya_7dl) < 2:
-        play music music_7dl["shestheone"] fadein 3
+        play music _7DL.music("shestheone") fadein 3
         scene bg ext_square_sunset
         with dissolve
         play ambience ambience_camp_center_evening fadein 6
@@ -2379,7 +2379,7 @@ label alt_day1_meeting2:
                 sl "Слышишь?"
                 "Я прислушался."
                 if persistent.alt_binder:
-                    play music music_7dl["unholy_you"] fadein 3
+                    play music _7DL.music("unholy_you") fadein 3
                     "В неуклонно катящийся к ночи вечер ввинчивались тревожные нотки."
                     "Едва-едва уловимые, едва-едва знакомые."
                     "Эта музыка… {w}Я не мог описать её, но мне почему-то казалось, что именно под неё в жизни человека должно происходить нечто плохое."
@@ -2422,7 +2422,7 @@ label alt_day1_meeting2:
                     "За спиной с грохотом опустилась крышка."
                     me "К чёрту. {w}Пошли."
                 else:
-                    play music music_7dl["tellyourworld"] fadein 3
+                    play music _7DL.music("tellyourworld") fadein 3
                     "И только сейчас расслышал едва заметный, на самой грани восприятия, звук."
                     "Вернее, даже не звук, а целую мелодию, которую уверенно выводили чьи-то пальцы."
                     me "Ого!"
@@ -3325,7 +3325,7 @@ label alt_day1_slavya_saviour:
 label alt_day1_lena:
     scene bg ext_square_night with dissolve
     play ambience ambience_camp_center_night fadein 6
-    play music music_7dl["someone_like_you_guitar"] fadein 3
+    play music _7DL.music("someone_like_you_guitar") fadein 3
     if counter_sl_7dl < 2:
         "Я уселся на лавочку и ещё раз прокрутил в голове всё, что произошло со мной сегодня: от утреннего пробуждения до засады у столовой."
     else:
@@ -3349,7 +3349,7 @@ label alt_day1_lena:
     "Девочка. {w}Читает книгу."
     window hide
     scene cg d1_un_book_7dl with dissolve
-    play music music_7dl["take_my_hand"] fadein 4
+    play music _7DL.music("take_my_hand") fadein 4
     th "Лена."
     "Она не столько читала, сколько сидела, прикрыв глаза, и что-то беззвучно говорила."
     "Будто повторяла только что прочитанное."
@@ -3728,7 +3728,7 @@ label alt_day1_un_stay:
 label alt_day1_sleep:
     window hide
     scene bg ext_square_night with dissolve
-    play music music_7dl["melancholy_sun"] fadein 3
+    play music _7DL.music("melancholy_sun") fadein 3
     "Вечер — тёплый, добрый, мой."
     "Возможно, сегодня произошло всё не так, как я планировал, не так, как я хотел."
     "Но это и не важно!"

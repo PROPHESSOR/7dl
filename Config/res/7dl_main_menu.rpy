@@ -431,39 +431,39 @@ label random_bg_7dl:
     elif persistent.waifu_7dl == 7:
         $ persistent.waifu_7dl = renpy.random.choice([1, 2, 3, 4, 5, 6])
     if persistent.waifu_7dl == 1 and 'un' not in list_waifu_7dl:
-        play music music_7dl["take_my_hand"] fadein 3
+        play music _7DL.music("take_my_hand") fadein 3
         $ list_waifu_7dl.append('un')
         scene bg un_bg_7dl with fade
         call screen menu_7dl
     elif persistent.waifu_7dl == 2 and 'sl' not in list_waifu_7dl:
         $ list_waifu_7dl.append('sl')
         scene bg sl_bg_7dl with fade
-        play music music_7dl["slavyas_fantazm"] fadein 3
+        play music _7DL.music("slavyas_fantazm") fadein 3
         call screen menu_7dl
     elif persistent.waifu_7dl == 3 and 'dv' not in list_waifu_7dl:
         $ list_waifu_7dl.append('dv')
         scene bg dv_bg_7dl with fade
-        play music music_7dl["sheiscool"] fadein 3
+        play music _7DL.music("sheiscool") fadein 3
         call screen menu_7dl
     elif persistent.waifu_7dl == 4 and 'mi' not in list_waifu_7dl:
         $ list_waifu_7dl.append('mi')
         scene bg mi_bg_7dl with fade
-        play music music_7dl["tellyourworld"] fadein 3
+        play music _7DL.music("tellyourworld") fadein 3
         call screen menu_7dl
     elif persistent.waifu_7dl == 5 and 'us' not in list_waifu_7dl:
         $ list_waifu_7dl.append('us')
         scene bg us_bg_7dl with fade
-        play music music_7dl["thousand_of_pixies"] fadein 3
+        play music _7DL.music("thousand_of_pixies") fadein 3
         call screen menu_7dl
     elif persistent.waifu_7dl == 6 and 'mt' not in list_waifu_7dl:
         $ list_waifu_7dl.append('mt')
         scene bg mt_bg_7dl with fade
-        play music music_7dl["wheres_wonderland"] fadein 3
+        play music _7DL.music("wheres_wonderland") fadein 3
         call screen menu_7dl
     elif persistent.waifu_7dl == 7 and 'uv' not in list_waifu_7dl:
         $ list_waifu_7dl.append('uv')
         scene bg uv_bg_7dl with fade
-        play music music_7dl["uvao2"] fadein 3
+        play music _7DL.music("uvao2") fadein 3
         call screen menu_7dl
     else:
         jump random_bg_7dl

@@ -1675,7 +1675,7 @@ screen arts_7dl_mt_1:
         
 label alt_gallery_start:
     $ make_names_known_7dl()
-    play music music_7dl["more_than_alive"] fadein 3
+    play music _7DL.music("more_than_alive") fadein 3
     scene bg gallery_7dl with fade
     $ gallery_mode_7dl = "start"
     $ renpy.block_rollback()

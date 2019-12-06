@@ -197,9 +197,9 @@ label alt_day0_start:
         return
     $ renpy.pause(2, hard=True)
     if persistent.alt_binder:
-        play music music_7dl["seven_summer_days"] fadein 5
+        play music _7DL.music("seven_summer_days") fadein 5
     else:
-        play music music_7dl["intro2"] fadein 5
+        play music _7DL.music("intro2") fadein 5
     scene black
     $ renpy.pause(3, hard=True)
     scene op_back
