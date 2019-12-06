@@ -1,264 +1,264 @@
-init 1:
-    $ music_list_7dl = {}
+init 1 python:
+    music_list_7dl = {
+        "Denis Stelmakh - Afraid of Destiny": _7DL.music("afraid_of_destiny"),
+        u"С. Ейбог feat. Liru - Everlasting Summer (cut 1)": _7DL.music("alice_theme"),
+        "Josh Powell - Anglegrinder": _7DL.music("anglegrinder"),
+        "I am waiting for you last summer - Surrender": _7DL.music("are_you_there"),
+        "Josh Powell - Creeping up": _7DL.music("areyouabully"),
+        "Christina Perri - A Thousand years (Piano-Cello ThePianoGuys Cover)": _7DL.music("ask_you_out"),
 
-    $ music_list_7dl["Denis Stelmakh - Afraid of Destiny"] = default_7dl_path+"Sound/music/afraid_of_destiny_7dl.ogg"
-    $ music_list_7dl[u"С. Ейбог feat. Liru - Everlasting Summer (cut 1)"] = default_7dl_path+"Sound/music/alice_theme_7dl.ogg"
-    $ music_list_7dl["Josh Powell - Anglegrinder"] = default_7dl_path+"Sound/music/anglegrinder_7dl.ogg"
-    $ music_list_7dl["I am waiting for you last summer - Surrender"] = default_7dl_path+"Sound/music/are_you_there_7dl.ogg"
-    $ music_list_7dl["Josh Powell - Creeping up"] = default_7dl_path+"Sound/music/areyouabully_7dl.ogg"
-    $ music_list_7dl["Christina Perri - A Thousand years (Piano-Cello ThePianoGuys Cover)"] = default_7dl_path+"Sound/music/ask_you_out_7dl.ogg"
+        "Touhou - Bad Apple (Receptor Cover)": _7DL.music("bad_apple"),
+        "Josh Powell - Beat Symphonic": _7DL.music("beat_symphonic"),
+        "Porter Robinson - Fellow Feeling (no drop edit)": _7DL.music("beasteye"),
+        "Olafur Arnalds - Beth Theme": _7DL.music("beth"),
+        "Clint Mansell - Together We Will Live Forever (Guitar Cover)": _7DL.music("breath_again"),
+        "Sia - Breathe Me": _7DL.music("breath_me"),
+        "Funczion Sounds - Heretics and Dreamers": _7DL.music("but_why"),
 
-    $ music_list_7dl["Touhou - Bad Apple (Receptor Cover)"] = default_7dl_path+"Sound/music/bad_apple_7dl.ogg"
-    $ music_list_7dl["Josh Powell - Beat Symphonic"] = default_7dl_path+"Sound/music/beat_symphonic_7dl.ogg"
-    $ music_list_7dl["Porter Robinson - Fellow Feeling (no drop edit)"] = default_7dl_path+"Sound/music/beasteye_7dl.ogg"
-    $ music_list_7dl["Olafur Arnalds - Beth Theme"] = default_7dl_path+"Sound/music/beth_7dl.ogg"
-    $ music_list_7dl["Clint Mansell - Together We Will Live Forever (Guitar Cover)"] = default_7dl_path+"Sound/music/breath_again_7dl.ogg"
-    $ music_list_7dl["Sia - Breathe Me"] = default_7dl_path+"Sound/music/breath_me_7dl.ogg"
-    $ music_list_7dl["Funczion Sounds - Heretics and Dreamers"] = default_7dl_path+"Sound/music/but_why_7dl.ogg"
+        "Kari Sigurdsson - Trailer Cat": _7DL.music("catch_the_hedge"),
+        "James Dooley - The story of You and Me": _7DL.music("christmas_met"),
+        "V-Flower - Close to you (Guitar Cover by Justin Ly)": _7DL.music("closetoyou"),
+        "RealFaction - A forgotten past": _7DL.music("clueless_hope"),
 
-    $ music_list_7dl["Kari Sigurdsson - Trailer Cat"] = default_7dl_path+"Sound/music/catch_the_hedge_7dl.ogg"
-    $ music_list_7dl["James Dooley - The story of You and Me"] = default_7dl_path+"Sound/music/christmas_met_7dl.ogg"
-    $ music_list_7dl["V-Flower - Close to you (Guitar Cover by Justin Ly)"] = default_7dl_path+"Sound/music/closetoyou_7dl.ogg"
-    $ music_list_7dl["RealFaction - A forgotten past"] = default_7dl_path+"Sound/music/clueless_hope_7dl.ogg"
+        "Yurima - Kiss The rain (Acoustic Cover)": _7DL.music("dance_with_me"),
+        "Yurima - Kiss The Rain": _7DL.music("dance_with_me_piano"),
+        "Seether – Careless Whisper (George Michael сover)": _7DL.music("danceagain"),
+        "Charlie Clouser - Dead Silence": _7DL.music("dead_silence"),
+        "April Rain - Deadman on vacation": _7DL.music("deadman"),
+        "Funczion Sounds - Deep Insude (CrossChannel OST)": _7DL.music("deep_inside"),
+        "Emika - Drop the other(instrumental)": _7DL.music("dropit"),
+        u"Алексей Омельчук - Гитарный трек 11": _7DL.music("dv_guitar"),
 
-    $ music_list_7dl["Yurima - Kiss The rain (Acoustic Cover)"] = default_7dl_path+"Sound/music/dance_with_me_7dl.ogg"
-    $ music_list_7dl["Yurima - Kiss The Rain"] = default_7dl_path+"Sound/music/dance_with_me_piano_7dl.ogg"
-    $ music_list_7dl["Seether – Careless Whisper (George Michael сover)"] = default_7dl_path+"Sound/music/danceagain_7dl.ogg"
-    $ music_list_7dl["Charlie Clouser - Dead Silence"] = default_7dl_path+"Sound/music/dead_silence_7dl.ogg"
-    $ music_list_7dl["April Rain - Deadman on vacation"] = default_7dl_path+"Sound/music/deadman_7dl.ogg"
-    $ music_list_7dl["Funczion Sounds - Deep Insude (CrossChannel OST)"] = default_7dl_path+"Sound/music/deep_inside_7dl.ogg"
-    $ music_list_7dl["Emika - Drop the other(instrumental)"] = default_7dl_path+"Sound/music/dropit_7dl.ogg"
-    $ music_list_7dl[u"Алексей Омельчук - Гитарный трек 11"] = default_7dl_path+"Sound/music/dv_guitar_7dl.ogg"
+        u"Владимир Зеленцов - Emptiness": _7DL.music("emptiness"),
+        u"С. Ейбог feat. Liru - Everlasting Summer (cut 2)": _7DL.music("es_downmix"),
+        "Josh Kramer (feat. Tina Guo) - Where The Light Goes": _7DL.music("escape_2"),
+        u"С. Ейбог feat. Liru - Everlasting Summer": _7DL.music("everlasting_summer_alice"),
+        "April Rain – Exodus": _7DL.music("exodus"),
 
-    $ music_list_7dl[u"Владимир Зеленцов - Emptiness"] = default_7dl_path+"Sound/music/emptiness_7dl.ogg"
-    $ music_list_7dl[u"С. Ейбог feat. Liru - Everlasting Summer (cut 2)"] = default_7dl_path+"Sound/music/es_downmix_7dl.ogg"
-    $ music_list_7dl["Josh Kramer (feat. Tina Guo) - Where The Light Goes"] = default_7dl_path+"Sound/music/escape_2_7dl.ogg"
-    $ music_list_7dl[u"С. Ейбог feat. Liru - Everlasting Summer"] = default_7dl_path+"Sound/music/everlasting_summer_alice_7dl.ogg"
-    $ music_list_7dl["April Rain – Exodus"] = default_7dl_path+"Sound/music/exodus_7dl.ogg"
+        "Stefano Mocini - Inside": _7DL.music("feel_you_inside"),
+        "ATB – Trilogy (The Final Chapter)": _7DL.music("finale_farewell"),
+        "MilkMan-DanAnother Once Ago": _7DL.music("forgive_or_what"),
+        "Jorge Mendez - Cold": _7DL.music("frostwithoutyou"),
+        "Tim Nyman - Full Scale Loneliness": _7DL.music("fsl_tn"),
 
-    $ music_list_7dl["Stefano Mocini - Inside"] = default_7dl_path+"Sound/music/feel_you_inside_7dl.ogg"
-    $ music_list_7dl["ATB – Trilogy (The Final Chapter)"] = default_7dl_path+"Sound/music/finale_farewell_7dl.ogg"
-    $ music_list_7dl["MilkMan-DanAnother Once Ago"] = default_7dl_path+"Sound/music/forgive_or_what_7dl.ogg"
-    $ music_list_7dl["Jorge Mendez - Cold"] = default_7dl_path+"Sound/music/frostwithoutyou_7dl.ogg"
-    $ music_list_7dl["Tim Nyman - Full Scale Loneliness"] = default_7dl_path+"Sound/music/fsl_tn_7dl.ogg"
+        "Funczion Sounds - Slapstick": _7DL.music("genki"),
+        "DeepCosmo - Submarine": _7DL.music("gonna_be_ok"),
+        "Akaaka - Makkakka": _7DL.music("groovie"),
+        "Beat Bites - Forensic Science": _7DL.music("guitar_under_the_window"),
 
-    $ music_list_7dl["Funczion Sounds - Slapstick"] = default_7dl_path+"Sound/music/genki_7dl.ogg"
-    $ music_list_7dl["DeepCosmo - Submarine"] = default_7dl_path+"Sound/music/gonna_be_ok_7dl.ogg"
-    $ music_list_7dl["Akaaka - Makkakka"] = default_7dl_path+"Sound/music/groovie_7dl.ogg"
-    $ music_list_7dl["Beat Bites - Forensic Science"] = default_7dl_path+"Sound/music/guitar_under_the_window_7dl.ogg"
+        "James Dooley - Happy Endings": _7DL.music("happy_ending"),
+        "Jack Wall - Humans Are Disappearing": _7DL.music("herc_death"),
 
-    $ music_list_7dl["James Dooley - Happy Endings"] = default_7dl_path+"Sound/music/happy_ending_7dl.ogg"
-    $ music_list_7dl["Jack Wall - Humans Are Disappearing"] = default_7dl_path+"Sound/music/herc_death_7dl.ogg"
+        "Josh Powel - Resolution": _7DL.music("iamagod2"),
+        "Michael Ortega - Sad Piano For a Broken Heart": _7DL.music("iamsadiamsorry"),
+        "Ainset - Romantic score (inakrin's mix)": _7DL.music("iamsadiamsorry2"),
+        "I am waiting for you last summer - Neon fever": _7DL.music("iamsadiamsorry3"),
+        "Olafur arnalds – So Close (feat. Arnor Dan) 2": _7DL.music("intro2"),
+        "Olafur arnalds – So Close (feat. Arnor Dan) 1": _7DL.music("intro1"),
+        u"Ганджу - I want magic": _7DL.music("iwantmagic"),
 
-    $ music_list_7dl["Josh Powel - Resolution"] = default_7dl_path+"Sound/music/iamagod2_7dl.ogg"
-    $ music_list_7dl["Michael Ortega - Sad Piano For a Broken Heart"] = default_7dl_path+"Sound/music/iamsadiamsorry_7dl.ogg"
-    $ music_list_7dl["Ainset - Romantic score (inakrin's mix)"] = default_7dl_path+"Sound/music/iamsadiamsorry2_7dl.ogg"
-    $ music_list_7dl["I am waiting for you last summer - Neon fever"] = default_7dl_path+"Sound/music/iamsadiamsorry3_7dl.ogg"
-    $ music_list_7dl["Olafur arnalds – So Close (feat. Arnor Dan) 2"] = default_7dl_path+"Sound/music/intro2_7dl.ogg"
-    $ music_list_7dl["Olafur arnalds – So Close (feat. Arnor Dan) 1"] = default_7dl_path+"Sound/music/intro1_7dl.ogg"
-    $ music_list_7dl[u"Ганджу - I want magic"] = default_7dl_path+"Sound/music/iwantmagic_7dl.ogg"
+        "Eels - I Need Some Sleep (Piano Cover)": _7DL.music("kiss_you"),
+        "Digital Elvis & Zero – Theme from the Ocean (OST Достучаться до небес)": _7DL.music("knock"),
 
-    $ music_list_7dl["Eels - I Need Some Sleep (Piano Cover)"] = default_7dl_path+"Sound/music/kiss_you_7dl.ogg"
-    $ music_list_7dl["Digital Elvis & Zero – Theme from the Ocean (OST Достучаться до небес)"] = default_7dl_path+"Sound/music/knock_7dl.ogg"
+        "ALyosha - Sweet People караоке (минус) (cut)": _7DL.music("last_pixie"),
+        "Hatsune Miku feat. Kz (LiveTune) - Last Night Good Night Guitar Cover": _7DL.music("lastlight_guitar"),
+        "Hatsune Miku - Last Night Good Night (Piano Cover by Lee Keng Tat)": _7DL.music("lastlight_piano"),
+        "Arn Andersson - Annihilation": _7DL.music("laugh_throught_the_universe"),
+        "Funczion Sounds - We became friends!": _7DL.music("lazy_olga"),
+        u"Евгений Крылатов - Лиловый Шар (Metal Cover)": _7DL.music("liliac_ball"),
+        "Beat Bites - Programming Victory": _7DL.music("loki_on_3"),
+        "James Last - Lonesome Shepherd": _7DL.music("lonesome_shepherd"),
+        "Audiomachine - Longing": _7DL.music("longing"),
+        "Bosa - Fun Teacher": _7DL.music("there_you_are"),
+        "Bosa - The popular kids": _7DL.music("lost_without_you"),
+        "Roxette - Listen To Your Heart (Acousctic Cover by Igor Presnyakov)": _7DL.music("ltyh"),
+        "Rengoku Teien - Boku wa boku janai bokudeatte boku janai (2nd Edition)": _7DL.music("lullaby2"),
+        "Л. ван Бетховен - Лунная Соната (ремикс)": _7DL.music("lunar_anguish"),
+        "Olafur Arnalds - Lynn theme": _7DL.music("lynn"),
+        u"Сектор Газа - Лирика": _7DL.music("lyrica_sg"),
 
-    $ music_list_7dl["ALyosha - Sweet People караоке (минус) (cut)"] = default_7dl_path+"Sound/music/last_pixie_7dl.ogg"
-    $ music_list_7dl["Hatsune Miku feat. Kz (LiveTune) - Last Night Good Night Guitar Cover"] = default_7dl_path+"Sound/music/lastlight_guitar_7dl.ogg"
-    $ music_list_7dl["Hatsune Miku - Last Night Good Night (Piano Cover by Lee Keng Tat)"] = default_7dl_path+"Sound/music/lastlight_piano_7dl.ogg"
-    $ music_list_7dl["Arn Andersson - Annihilation"] = default_7dl_path+"Sound/music/laugh_throught_the_universe_7dl.ogg"
-    $ music_list_7dl["Funczion Sounds - We became friends!"] = default_7dl_path+"Sound/music/lazy_olga_7dl.ogg"
-    $ music_list_7dl[u"Евгений Крылатов - Лиловый Шар (Metal Cover)"] = default_7dl_path+"Sound/music/liliac_ball_7dl.ogg"
-    $ music_list_7dl["Beat Bites - Programming Victory"] = default_7dl_path+"Sound/music/loki_on_3_7dl.ogg"
-    $ music_list_7dl["James Last - Lonesome Shepherd"] = default_7dl_path+"Sound/music/lonesome_shepherd_7dl.ogg"
-    $ music_list_7dl["Audiomachine - Longing"] = default_7dl_path+"Sound/music/longing_7dl.ogg"
-    $ music_list_7dl["Bosa - Fun Teacher"] = default_7dl_path+"Sound/music/there_you_are_7dl.ogg"
-    $ music_list_7dl["Bosa - The popular kids"] = default_7dl_path+"Sound/music/lost_without_you_7dl.ogg"
-    $ music_list_7dl["Roxette - Listen To Your Heart (Acousctic Cover by Igor Presnyakov)"] = default_7dl_path+"Sound/music/ltyh_7dl.ogg"
-    $ music_list_7dl["Rengoku Teien - Boku wa boku janai bokudeatte boku janai (2nd Edition)"] = default_7dl_path+"Sound/music/lullaby2_7dl.ogg"
-    $ music_list_7dl["Л. ван Бетховен - Лунная Соната (ремикс)"] = default_7dl_path+"Sound/music/lunar_anguish_7dl.ogg"
-    $ music_list_7dl["Olafur Arnalds - Lynn theme"] = default_7dl_path+"Sound/music/lynn_7dl.ogg"
-    $ music_list_7dl[u"Сектор Газа - Лирика"] = default_7dl_path+"Sound/music/lyrica_sg_7dl.ogg"
+        "Bloodhound Gang - The Bad Touch": _7DL.music("mammal"),
+        "Jack Wall - Suicide Mission": _7DL.music("me2ost"),
+        "For The Stars - Meet Me There(Silent Owl Cover)": _7DL.music("meetmethere_tts"),
+        "Marcus D - Kindred Spirit": _7DL.music("melancholy_sun"),
+        u"Алексей Омельчук - Надежда": _7DL.music("misery"),
+        u"Олег Анофриев - Есть Только Миг (OST «Земля Санникова»)": _7DL.music("moment"),
+        "Tom Day - Our World": _7DL.music("more_than_alive"),
+        "Mark Morgan - My Chrysalis Higwayman": _7DL.music("my_chrysalis_highwayman"),
+        "Kristofferson - Where do tears go": _7DL.music("my_only_hope"),
 
-    $ music_list_7dl["Bloodhound Gang - The Bad Touch"] = default_7dl_path+"Sound/music/mammal_7dl.ogg"
-    $ music_list_7dl["Jack Wall - Suicide Mission"] = default_7dl_path+"Sound/music/me2ost_7dl.ogg"
-    $ music_list_7dl["For The Stars - Meet Me There(Silent Owl Cover)"] = default_7dl_path+"Sound/music/meetmethere_tts_7dl.ogg"
-    $ music_list_7dl["Marcus D - Kindred Spirit"] = default_7dl_path+"Sound/music/melancholy_sun_7dl.ogg"
-    $ music_list_7dl[u"Алексей Омельчук - Надежда"] = default_7dl_path+"Sound/music/misery_7dl.ogg"
-    $ music_list_7dl[u"Олег Анофриев - Есть Только Миг (OST «Земля Санникова»)"] = default_7dl_path+"Sound/music/moment_7dl.ogg"
-    $ music_list_7dl["Tom Day - Our World"] = default_7dl_path+"Sound/music/more_than_alive_7dl.ogg"
-    $ music_list_7dl["Mark Morgan - My Chrysalis Higwayman"] = default_7dl_path+"Sound/music/my_chrysalis_highwayman_7dl.ogg"
-    $ music_list_7dl["Kristofferson - Where do tears go"] = default_7dl_path+"Sound/music/my_only_hope_7dl.ogg"
+        "Jassummisko - Bassment Pianist": _7DL.music("no_hope_left"),
+        "Limp Bizkit - Nookie": _7DL.music("nookie"),
+        "Stefano Mocini - Life": _7DL.music("nowyouseeme"),
 
-    $ music_list_7dl["Jassummisko - Bassment Pianist"] = default_7dl_path+"Sound/music/no_hope_left_7dl.ogg"
-    $ music_list_7dl["Limp Bizkit - Nookie"] = default_7dl_path+"Sound/music/nookie_7dl.ogg"
-    $ music_list_7dl["Stefano Mocini - Life"] = default_7dl_path+"Sound/music/nowyouseeme_7dl.ogg"
+        "Yiruma – River Flows in You (Cello & Piano)": _7DL.music("old_kiss"),
+        "DeVso - When I First Met You": _7DL.music("ourfirstmet"),
+        "Jessica Curry - Twenty One": _7DL.music("out_of_painkillers"),
+        u"Ясухара Таканаси - Eau de Vie (Shiki OST)": _7DL.music("out_of_your_tier"),
+        "IA - Outer Science": _7DL.music("outer"),
 
-    $ music_list_7dl["Yiruma – River Flows in You (Cello & Piano)"] = default_7dl_path+"Sound/music/old_kiss_7dl.ogg"
-    $ music_list_7dl["DeVso - When I First Met You"] = default_7dl_path+"Sound/music/ourfirstmet_7dl.ogg"
-    $ music_list_7dl["Jessica Curry - Twenty One"] = default_7dl_path+"Sound/music/out_of_painkillers_7dl.ogg"
-    $ music_list_7dl[u"Ясухара Таканаси - Eau de Vie (Shiki OST)"] = default_7dl_path+"Sound/music/out_of_your_tier_7dl.ogg"
-    $ music_list_7dl["IA - Outer Science"] = default_7dl_path+"Sound/music/outer_7dl.ogg"
+        "Micheal Ortega - Night of rain": _7DL.music("pathways"),
+        "Sonic Librarian - Firefly Mist": _7DL.music("pixies_playing"),
+        "Slava Jamm feat. Please Reprise - WTCS11": _7DL.music("please_reprise"),
+        "KPM Music - Bass Renaissaince 1": _7DL.music("polyhymnia_intro"),
+        "KPM Music - Bass Renaissaince 2": _7DL.music("polyhymnia_main"),
+        "PPK - Resurrection": _7DL.music("ppk"),
+        "Marilyn Manson - Coma White (Acoustic Cover)": _7DL.music("prologue_1"),
+        "Marilyn Manson - Coma White (DeadPunk Cover)": _7DL.music("prologue_2"),
+        "Arn Andersson & Nights Amore - Farewell Life": _7DL.music("promise_to_meet_you"),
 
-    $ music_list_7dl["Micheal Ortega - Night of rain"] = default_7dl_path+"Sound/music/pathways_7dl.ogg"
-    $ music_list_7dl["Sonic Librarian - Firefly Mist"] = default_7dl_path+"Sound/music/pixies_playing_7dl.ogg"
-    $ music_list_7dl["Slava Jamm feat. Please Reprise - WTCS11"] = default_7dl_path+"Sound/music/please_reprise_7dl.ogg"
-    $ music_list_7dl["KPM Music - Bass Renaissaince 1"] = default_7dl_path+"Sound/music/polyhymnia_intro_7dl.ogg"
-    $ music_list_7dl["KPM Music - Bass Renaissaince 2"] = default_7dl_path+"Sound/music/polyhymnia_main_7dl.ogg"
-    $ music_list_7dl["PPK - Resurrection"] = default_7dl_path+"Sound/music/ppk_7dl.ogg"
-    $ music_list_7dl["Marilyn Manson - Coma White (Acoustic Cover)"] = default_7dl_path+"Sound/music/prologue_1_7dl.ogg"
-    $ music_list_7dl["Marilyn Manson - Coma White (DeadPunk Cover)"] = default_7dl_path+"Sound/music/prologue_2_7dl.ogg"
-    $ music_list_7dl["Arn Andersson & Nights Amore - Farewell Life"] = default_7dl_path+"Sound/music/promise_to_meet_you_7dl.ogg"
+        "Sergey Eybog – Raindrops": _7DL.sfx("raindrops_radio"),
+        "Qrown - Gokagetu": _7DL.music("red_lights"),
+        "Mitchell Broom – Redemption": _7DL.music("redemption"),
+        "Moonlight - Electric Cello (Inspired by Beethoven) - The Piano Guys": _7DL.music("refuse_to_believe"),
+        "Oi Va Voi - Yesterday's Mistakes": _7DL.music("refuse_to_replay"),
+        "KPM Music - Change Times": _7DL.music("rewind"),
+        "Jan Cyrka - The Right Road": _7DL.music("rightroad"),
+        "Heavenly - The Ritual": _7DL.music("ritual2"),
+        "The Neighbourhood - Sweater Weather (Instrumental)": _7DL.music("runaway"),
 
-    $ music_list_7dl["Sergey Eybog – Raindrops"] = default_7dl_path+"sound/sfx/raindrops_radio_7dl.ogg"
-    $ music_list_7dl["Qrown - Gokagetu"] = default_7dl_path+"Sound/music/red_lights_7dl.ogg"
-    $ music_list_7dl["Mitchell Broom – Redemption"] = default_7dl_path+"Sound/music/redemption_7dl.ogg"
-    $ music_list_7dl["Moonlight - Electric Cello (Inspired by Beethoven) - The Piano Guys"] = default_7dl_path+"Sound/music/refuse_to_believe_7dl.ogg"
-    $ music_list_7dl["Oi Va Voi - Yesterday's Mistakes"] = default_7dl_path+"Sound/music/refuse_to_replay_7dl.ogg" 
-    $ music_list_7dl["KPM Music - Change Times"] = default_7dl_path+"Sound/music/rewind_7dl.ogg"
-    $ music_list_7dl["Jan Cyrka - The Right Road"] = default_7dl_path+"Sound/music/rightroad_7dl.ogg"
-    $ music_list_7dl["Heavenly - The Ritual"] = default_7dl_path+"Sound/music/ritual2_7dl.ogg"
-    $ music_list_7dl["The Neighbourhood - Sweater Weather (Instrumental)"] = default_7dl_path+"Sound/music/runaway_7dl.ogg"
+        "Olexandr Ignatov - Sad Piano": _7DL.music("sad_piano"),
+        "19's Sound Factory - Dear (Music Box Cover)": _7DL.music("sam_lullaby"),
+        "Scorpions - Still Loving You (Cover by Kfir Ochaion)": _7DL.music("scorpions"),
+        "Purgatory Bunny - Light Chain": _7DL.music("semische"),
+        "April Rain – 7 дней лета (7ДЛ OST)": _7DL.music("seven_summer_days"),
+        u"DeepCosmo - День космонавтики": _7DL.music("sh_ai_rejuv"),
+        "Sting - Shape of my heart (instrumental)": _7DL.music("shape_of_my_heart"),
+        "KPM Music - She has gone": _7DL.music("shehasgone"),
+        "Ellie Goulding - Stay Awake (Guitar Cover by Igor Silchenko)": _7DL.music("sheiscool"),
+        "3L - Kōrui ni shi dzumu wa tomobito no urei (Remix)": _7DL.music("shib_mono"),
+        "3L - Kōrui ni shi dzumu wa tomobito no urei": _7DL.music("shib_stereo"),
+        "OST Amnesia Ukyo Melody (Rock)": _7DL.music("sign_of_blood"),
+        "April Rain - My silent angel": _7DL.music("silent_angel"),
+        "Buoy - ==(Time Lapse of Clouds)==": _7DL.music("sky_feather"),
+        "Gothic Storm - We meet in dreams": _7DL.music("slavyas_fantazm"),
+        "Beat Bites - Ghoulish Chemistry": _7DL.music("sneakupon"),
+        "DeepCosmo - Тихо (Acoustic)": _7DL.music("so_cold"),
+        "Ólafur Arnalds - Raein": _7DL.music("so_lonely"),
+        "Adele - Someone Like You(Sungha Jung Cover)": _7DL.music("someone_like_you_guitar"),
+        u"Сплин - Романс": _7DL.music("splin"),
+        "Scorpions - Still Loving You (Cover by Ozielzinho)": _7DL.music("stilllovingyou"),
+        u"Кино - Кончится Лето (Guitar Cover)": _7DL.music("summer_ends_soon2"),
 
-    $ music_list_7dl["Olexandr Ignatov - Sad Piano"] = default_7dl_path+"Sound/music/sad_piano_7dl.ogg"
-    $ music_list_7dl["19's Sound Factory - Dear (Music Box Cover)"] = default_7dl_path+"Sound/music/sam_lullaby_7dl.ogg"
-    $ music_list_7dl["Scorpions - Still Loving You (Cover by Kfir Ochaion)"] = default_7dl_path+"Sound/music/scorpions_7dl.ogg"
-    $ music_list_7dl["Purgatory Bunny - Light Chain"] = default_7dl_path+"Sound/music/semische_7dl.ogg"
-    $ music_list_7dl["April Rain – 7 дней лета (7ДЛ OST)"] = default_7dl_path+"Sound/music/seven_summer_days_7dl.ogg"
-    $ music_list_7dl[u"DeepCosmo - День космонавтики"] = default_7dl_path+"Sound/music/sh_ai_rejuv_7dl.ogg"
-    $ music_list_7dl["Sting - Shape of my heart (instrumental)"] = default_7dl_path+"Sound/music/shape_of_my_heart_7dl.ogg"
-    $ music_list_7dl["KPM Music - She has gone"] = default_7dl_path+"Sound/music/shehasgone_7dl.ogg"
-    $ music_list_7dl["Ellie Goulding - Stay Awake (Guitar Cover by Igor Silchenko)"] = default_7dl_path+"Sound/music/sheiscool_7dl.ogg"
-    $ music_list_7dl["3L - Kōrui ni shi dzumu wa tomobito no urei (Remix)"] = default_7dl_path+"Sound/music/shib_mono_7dl.ogg"
-    $ music_list_7dl["3L - Kōrui ni shi dzumu wa tomobito no urei"] = default_7dl_path+"Sound/music/shib_stereo_7dl.ogg"
-    $ music_list_7dl["OST Amnesia Ukyo Melody (Rock)"] = default_7dl_path+"Sound/music/sign_of_blood_7dl.ogg"
-    $ music_list_7dl["April Rain - My silent angel"] = default_7dl_path+"Sound/music/silent_angel_7dl.ogg"
-    $ music_list_7dl["Buoy - ==(Time Lapse of Clouds)=="] = default_7dl_path+"Sound/music/sky_feather_7dl.ogg"
-    $ music_list_7dl["Gothic Storm - We meet in dreams"] = default_7dl_path+"Sound/music/slavyas_fantazm_7dl.ogg"
-    $ music_list_7dl["Beat Bites - Ghoulish Chemistry"] = default_7dl_path+"Sound/music/sneakupon_7dl.ogg"
-    $ music_list_7dl["DeepCosmo - Тихо (Acoustic)"] = default_7dl_path+"Sound/music/so_cold_7dl.ogg"
-    $ music_list_7dl["Ólafur Arnalds - Raein"] = default_7dl_path+"Sound/music/so_lonely_7dl.ogg"
-    $ music_list_7dl["Adele - Someone Like You(Sungha Jung Cover)"] = default_7dl_path+"Sound/music/someone_like_you_guitar_7dl.ogg"
-    $ music_list_7dl[u"Сплин - Романс"] = default_7dl_path+"Sound/music/splin_7dl.ogg"
-    $ music_list_7dl["Scorpions - Still Loving You (Cover by Ozielzinho)"] = default_7dl_path+"Sound/music/stilllovingyou_7dl.ogg"
-    $ music_list_7dl[u"Кино - Кончится Лето (Guitar Cover)"] = default_7dl_path+"Sound/music/summer_ends_soon2_7dl.ogg"
+        "Funczion Sounds - To the world of dreams": _7DL.music("take_my_hand"),
+        u"Акира Ямаока - Tears of pain (Silent Hill OST)": _7DL.music("tears_of"),
+        "Hatsune Miku feat. Kz (Livetune) - Tell Your World (Acoustic Cover)": _7DL.music("tellyourworld"),
+        "DeepCosmo - DVATRI": _7DL.music("temptation"),
+        "Camelia - Splatter Party (feat. Hatsune Miku)": _7DL.music("tender_song"),
+        "Zack Hamsey - The way": _7DL.music("the_way"),
+        "Hans Zimmer - Rain Man Theme": _7DL.music("thousand_little_things"),
+        "ALyosha - Sweet People караоке (минус)": _7DL.music("thousand_of_pixies"),
+        "April Rain - Exploring yourself with a knife": _7DL.music("tilltheend"),
+        "Tim McMorris - Translation (Inspirational One)": _7DL.music("timetowakeup"),
+        u"Владимир Розанов - С запада на восток": _7DL.music("to_the_sunrise"),
+        "Broove - |oove|Heartbeats": _7DL.music("too_quiet"),
 
-    $ music_list_7dl["Funczion Sounds - To the world of dreams"] = default_7dl_path+"Sound/music/take_my_hand_7dl.ogg"
-    $ music_list_7dl[u"Акира Ямаока - Tears of pain (Silent Hill OST)"] = default_7dl_path+"Sound/music/tears_of_7dl.ogg"
-    $ music_list_7dl["Hatsune Miku feat. Kz (Livetune) - Tell Your World (Acoustic Cover)"] = default_7dl_path+"Sound/music/tellyourworld_7dl.ogg"
-    $ music_list_7dl["DeepCosmo - DVATRI"] = default_7dl_path+"Sound/music/temptation_7dl.ogg"
-    $ music_list_7dl["Camelia - Splatter Party (feat. Hatsune Miku)"] = default_7dl_path+"Sound/music/tender_song_7dl.ogg"
-    $ music_list_7dl["Zack Hamsey - The way"] = default_7dl_path+"Sound/music/the_way_7dl.ogg" 
-    $ music_list_7dl["Hans Zimmer - Rain Man Theme"] = default_7dl_path+"Sound/music/thousand_little_things_7dl.ogg"
-    $ music_list_7dl["ALyosha - Sweet People караоке (минус)"] = default_7dl_path+"Sound/music/thousand_of_pixies_7dl.ogg"
-    $ music_list_7dl["April Rain - Exploring yourself with a knife"] = default_7dl_path+"Sound/music/tilltheend_7dl.ogg"
-    $ music_list_7dl["Tim McMorris - Translation (Inspirational One)"] = default_7dl_path+"Sound/music/timetowakeup_7dl.ogg"
-    $ music_list_7dl[u"Владимир Розанов - С запада на восток"] = default_7dl_path+"Sound/music/to_the_sunrise_7dl.ogg"
-    $ music_list_7dl["Broove - |oove|Heartbeats"] = default_7dl_path+"Sound/music/too_quiet_7dl.ogg"
+        "Vflower - Close to you (feat. Justin Ly)": _7DL.music("uncertainity"),
+        "April Rain - Violent Passion Surrogate": _7DL.music("uneven_me"),
+        "Audiomachine - Unfinished Life": _7DL.music("unfinished_life"),
+        "Martin O'Donnel - Unforgotten": _7DL.music("unforgotten"),
+        "April Rain – Мы будем жить (7ДЛ OST)": _7DL.music("unfulfilled"),
+        "The Ring OST - Samara's Song (Piano Cover)": _7DL.music("unholy_you"),
 
-    $ music_list_7dl["Vflower - Close to you (feat. Justin Ly)"] = default_7dl_path+"Sound/music/uncertainity_7dl.ogg"
-    $ music_list_7dl["April Rain - Violent Passion Surrogate"] = default_7dl_path+"Sound/music/uneven_me_7dl.ogg" 
-    $ music_list_7dl["Audiomachine - Unfinished Life"] = default_7dl_path+"Sound/music/unfinished_life_7dl.ogg"
-    $ music_list_7dl["Martin O'Donnel - Unforgotten"] = default_7dl_path+"Sound/music/unforgotten_7dl.ogg"
-    $ music_list_7dl["April Rain – Мы будем жить (7ДЛ OST)"] = default_7dl_path+"Sound/music/unfulfilled_7dl.ogg"
-    $ music_list_7dl["The Ring OST - Samara's Song (Piano Cover)"] = default_7dl_path+"Sound/music/unholy_you_7dl.ogg"
+        "Mattashi - Together": _7DL.music("vale"),
+        "Marilyn Manson - If I could be your vampire": _7DL.music("vampire"),
 
-    $ music_list_7dl["Mattashi - Together"] = default_7dl_path+"Sound/music/vale_7dl.ogg"
-    $ music_list_7dl["Marilyn Manson - If I could be your vampire"] = default_7dl_path+"Sound/music/vampire_7dl.ogg"
+        "DeadPunk - Regret": _7DL.music("regret"),
+        "Limp Bizkit - Walking Away": _7DL.music("walking_away"),
+        "Kaivaan ft. Hikaru Station - Escape (Acoustic guitar cover)": _7DL.music("what_am_i_doing_here"),
+        "DeVso - DeVso-Music-The Avengers": _7DL.music("what_cost"),
+        "Curse - Und was ist jetzt (Instrumental)": _7DL.music("whatnow"),
+        "Funczion Sounds - Taking hand in hand": _7DL.music("wheres_wonderland"),
+        "Olafur Arnalds - Near Light": _7DL.music("will_you"),
+        u"Евгений Крылатов - Гостья из будущего OST": _7DL.music("wonderful_faraway"),
 
-    $ music_list_7dl["DeadPunk - Regret"] = default_7dl_path+"Sound/music/regret_7dl.ogg"
-    $ music_list_7dl["Limp Bizkit - Walking Away"] = default_7dl_path+"Sound/music/walking_away_7dl.ogg"
-    $ music_list_7dl["Kaivaan ft. Hikaru Station - Escape (Acoustic guitar cover)"] = default_7dl_path+"Sound/music/what_am_i_doing_here_7dl.ogg"
-    $ music_list_7dl["DeVso - DeVso-Music-The Avengers"] = default_7dl_path+"Sound/music/what_cost_7dl.ogg"
-    $ music_list_7dl["Curse - Und was ist jetzt (Instrumental)"] = default_7dl_path+"Sound/music/whatnow_7dl.ogg"
-    $ music_list_7dl["Funczion Sounds - Taking hand in hand"] = default_7dl_path+"Sound/music/wheres_wonderland_7dl.ogg"
-    $ music_list_7dl["Olafur Arnalds - Near Light"] = default_7dl_path+"Sound/music/will_you_7dl.ogg"
-    $ music_list_7dl[u"Евгений Крылатов - Гостья из будущего OST"] = default_7dl_path+"Sound/music/wonderful_faraway_7dl.ogg"
-
-    $ music_list_7dl["Kabaneri of the Iron Fortress (Fingerstyle Guitar Cover)"] = default_7dl_path+"Sound/music/you_are_human_7dl.ogg"
-    $ music_list_7dl["Kabaneri of the Iron Fortress (Piano Cover)"] = default_7dl_path+"Sound/music/you_are_soul_7dl.ogg"
-    $ music_list_7dl["Ninelie Kabaneri of the Iron Fortress Ending Orchestral Cover Mike Reed IX"] = default_7dl_path+"Sound/music/you_are_star_7dl.ogg"
-    $ music_list_7dl["Michael John Gordon - The end (Wolfenstein The Old Blood OST)"] = default_7dl_path+"Sound/music/you_were_late_7dl.ogg"
-    $ music_list_7dl["Kári Sigurðsson - Stay"] = default_7dl_path+"Sound/music/youareours_7dl.ogg"
-    $ music_list_7dl["Tom Day - Going Home"] = default_7dl_path+"Sound/music/your_life_7dl.ogg"
-    $ music_list_7dl["Ólafur Arnalds - This Place Was A Shelter"] = default_7dl_path+"Sound/music/youre_not_real_7dl.ogg"
+        "Kabaneri of the Iron Fortress (Fingerstyle Guitar Cover)": _7DL.music("you_are_human"),
+        "Kabaneri of the Iron Fortress (Piano Cover)": _7DL.music("you_are_soul"),
+        "Ninelie Kabaneri of the Iron Fortress Ending Orchestral Cover Mike Reed IX": _7DL.music("you_are_star"),
+        "Michael John Gordon - The end (Wolfenstein The Old Blood OST)": _7DL.music("you_were_late"),
+        "Kári Sigurðsson - Stay": _7DL.music("youareours"),
+        "Tom Day - Going Home": _7DL.music("your_life"),
+        "Ólafur Arnalds - This Place Was A Shelter": _7DL.music("youre_not_real"),
 
 #0.34.а
-    $ music_list_7dl["Olafur Arnalds - Brim"] = default_7dl_path+"Sound/music/brim_7dl.ogg"
-    $ music_list_7dl["Kevin MacLeod - Quirky Dog"] = default_7dl_path+"Sound/music/bureaucracy_7dl.ogg"
-    $ music_list_7dl["Pachebel - Canon D (flamenco ver)"] = default_7dl_path+"Sound/music/canon_d_flamenco_7dl.ogg"
-    $ music_list_7dl["Kevin MacLeod - Carefree"] = default_7dl_path+"Sound/music/carefree_7dl.ogg"
-    $ music_list_7dl["Matt Quentin - Waves"] = default_7dl_path+"Sound/music/everyday_7dl.ogg"
-    $ music_list_7dl["Olafur Arnalds - Fyrsta"] = default_7dl_path+"Sound/music/fyrsta_7dl.ogg"
-    $ music_list_7dl["Hungarian Dances No 5 J Brahms - Passepartout Piano Duo"] = default_7dl_path+"Sound/music/hdance_5_7dl.ogg"
-    $ music_list_7dl["Potsu x Lando! - Breakfast"] = default_7dl_path+"Sound/music/hug_me_already_7dl.ogg"
-    $ music_list_7dl["Joakim Karud - Dreams"] = default_7dl_path+"Sound/music/imfine_7dl.ogg"
-    $ music_list_7dl["Kevin MacLeod - Gymnopedie No 1"] = default_7dl_path+"Sound/music/midday_reverie_7dl.ogg"
-    $ music_list_7dl["Ólafur Arnalds - 1440"] = default_7dl_path+"Sound/music/nap_one_7dl.ogg"
-    $ music_list_7dl["Just Big Hills - Shinjuku"] = default_7dl_path+"Sound/music/one_little_lone_cloud_7dl.ogg"
-    $ music_list_7dl["DeadPunk - 7dl intro (7ДЛ OST)"] = default_7dl_path+"Sound/music/sammy_7dl.ogg"
-    $ music_list_7dl["Kevin MacLeod - Your Call High Quality"] = default_7dl_path+"Sound/music/shappihn_7dl.ogg"
-    $ music_list_7dl["Orca Vibes - Gypsy"] = default_7dl_path+"Sound/music/shestheone_7dl.ogg"
-    $ music_list_7dl["DeadPunk - 7dl melody2 (7ДЛ OST)"] = default_7dl_path+"Sound/music/snatch_7dl.ogg"
-    $ music_list_7dl["Slot - Круги на воде (instrumental)"] = default_7dl_path+"Sound/music/so_be_it_7dl.ogg"
-    $ music_list_7dl["SURF - Take Care"] = default_7dl_path+"Sound/music/surf_7dl.ogg"
-    $ music_list_7dl["Mattdeguia - Daylight"] = default_7dl_path+"Sound/music/too_serious_7dl.ogg"
+        "Olafur Arnalds - Brim": _7DL.music("brim"),
+        "Kevin MacLeod - Quirky Dog": _7DL.music("bureaucracy"),
+        "Pachebel - Canon D (flamenco ver)": _7DL.music("canon_d_flamenco"),
+        "Kevin MacLeod - Carefree": _7DL.music("carefree"),
+        "Matt Quentin - Waves": _7DL.music("everyday"),
+        "Olafur Arnalds - Fyrsta": _7DL.music("fyrsta"),
+        "Hungarian Dances No 5 J Brahms - Passepartout Piano Duo": _7DL.music("hdance_5"),
+        "Potsu x Lando! - Breakfast": _7DL.music("hug_me_already"),
+        "Joakim Karud - Dreams": _7DL.music("imfine"),
+        "Kevin MacLeod - Gymnopedie No 1": _7DL.music("midday_reverie"),
+        "Ólafur Arnalds - 1440": _7DL.music("nap_one"),
+        "Just Big Hills - Shinjuku": _7DL.music("one_little_lone_cloud"),
+        "DeadPunk - 7dl intro (7ДЛ OST)": _7DL.music("sammy"),
+        "Kevin MacLeod - Your Call High Quality": _7DL.music("shappihn"),
+        "Orca Vibes - Gypsy": _7DL.music("shestheone"),
+        "DeadPunk - 7dl melody2 (7ДЛ OST)": _7DL.music("snatch"),
+        "Slot - Круги на воде (instrumental)": _7DL.music("so_be_it"),
+        "SURF - Take Care": _7DL.music("surf"),
+        "Mattdeguia - Daylight": _7DL.music("too_serious"),
 #0.34.b
-    $ music_list_7dl["DeadPunk - Hell"] = default_7dl_path+"Sound/music/hell_7dl.ogg"
-    $ music_list_7dl["Steezy Prime - Explore"] = default_7dl_path+"Sound/music/explore_7dl.ogg"
-    $ music_list_7dl["ППВК - Последнее лето"] = default_7dl_path+"Sound/music/last_summer_7dl.ogg"
-    $ music_list_7dl["ППВК - Волшебство уходит"] = default_7dl_path+"Sound/music/magic_is_gone_7dl.ogg"
-    $ music_list_7dl["Matt Quentin - Morning Dew"] = default_7dl_path+"Sound/music/morning_dew_7dl.ogg"
-    $ music_list_7dl["DeadPunk - PleaseStopIt"] = default_7dl_path+"Sound/music/please_stop_it_mastered_7dl.ogg"
-    $ music_list_7dl["Kazam - Raindrops"] = default_7dl_path+"Sound/music/raindrops_7dl.ogg"
-    $ music_list_7dl["DeadPunk - Vibe"] = default_7dl_path+"Sound/music/vibe_7dl.ogg"
+        "DeadPunk - Hell": _7DL.music("hell"),
+        "Steezy Prime - Explore": _7DL.music("explore"),
+        "ППВК - Последнее лето": _7DL.music("last_summer"),
+        "ППВК - Волшебство уходит": _7DL.music("magic_is_gone"),
+        "Matt Quentin - Morning Dew": _7DL.music("morning_dew"),
+        "DeadPunk - PleaseStopIt": _7DL.music("please_stop_it_mastered"),
+        "Kazam - Raindrops": _7DL.music("raindrops"),
+        "DeadPunk - Vibe": _7DL.music("vibe"),
 #0.35.a
-    $ music_list_7dl["Clint Mansell - Together We Will Live Forever (Guitar Cover)"] = default_7dl_path+"Sound/music/breath_again_slow_7dl.ogg"
-    $ music_list_7dl["Beat Bites - Game of Shadows"] = default_7dl_path+"Sound/music/game_of_shadows_7dl.ogg"
-    $ music_list_7dl["Beat Bites - Last Train Home"] = default_7dl_path+"Sound/music/lth_7dl.ogg"
-    $ music_list_7dl["Olafur Arnalds - Not Alone"] = default_7dl_path+"Sound/music/not_alone_7dl.ogg"
-    $ music_list_7dl["Kevin MacLeod - Your Call High Quality"] = default_7dl_path+"Sound/music/shappihn_7dl.ogg"
-    $ music_list_7dl["April Rain - Im All Crying Inside"] = default_7dl_path+"Sound/music/tearing_sobs_7dl.ogg"
-    $ music_list_7dl["My Royal Guardian - Yume Akari"] = default_7dl_path+"Sound/music/yume_akari_7dl.ogg"
-    $ music_list_7dl["Kevin MacLeod - Niles Blues"] = default_7dl_path+"Sound/music/viola_7dl.ogg"
-    $ music_list_7dl["Аревик Аветисян – Воспоминание"] = default_7dl_path+"Sound/music/sorrow_7dl.ogg"
-    $ music_list_7dl["DeadPunk - Smells Like My Grave"] = default_7dl_path+"Sound/music/smlg_7dl.ogg"
+        "Clint Mansell - Together We Will Live Forever (Guitar Cover)": _7DL.music("breath_again_slow"),
+        "Beat Bites - Game of Shadows": _7DL.music("game_of_shadows"),
+        "Beat Bites - Last Train Home": _7DL.music("lth"),
+        "Olafur Arnalds - Not Alone": _7DL.music("not_alone"),
+        "Kevin MacLeod - Your Call High Quality": _7DL.music("shappihn"),
+        "April Rain - Im All Crying Inside": _7DL.music("tearing_sobs"),
+        "My Royal Guardian - Yume Akari": _7DL.music("yume_akari"),
+        "Kevin MacLeod - Niles Blues": _7DL.music("viola"),
+        "Аревик Аветисян – Воспоминание": _7DL.music("sorrow"),
+        "DeadPunk - Smells Like My Grave": _7DL.music("smlg"),
 #0.36.a
-    $ music_list_7dl["Julian Kruse - Fallen From The Sky"] = default_7dl_path+"Sound/music/think_again_7dl.ogg"
-    $ music_list_7dl["AOA - Miniskirt"] = default_7dl_path+"Sound/music/you_re_dam_funny_7dl.ogg"
-    $ music_list_7dl["PianoPrinceOfAnime - Always Watching Over You (Violet Evergarden OST)"] = default_7dl_path+"Sound/music/gimme_hand_7dl.ogg"
-    $ music_list_7dl["Tracey Chattaway - Love is Here"] = default_7dl_path+"Sound/music/hear_a_love_7dl.ogg"
-    $ music_list_7dl["Fabrizio Paterlini - Week #12"] = default_7dl_path+"Sound/music/what_if_7dl.ogg"
+        "Julian Kruse - Fallen From The Sky": _7DL.music("think_again"),
+        "AOA - Miniskirt": _7DL.music("you_re_dam_funny"),
+        "PianoPrinceOfAnime - Always Watching Over You (Violet Evergarden OST)": _7DL.music("gimme_hand"),
+        "Tracey Chattaway - Love is Here": _7DL.music("hear_a_love"),
+        "Fabrizio Paterlini - Week #12": _7DL.music("what_if"),
 #0.37.a
-    $ music_list_7dl["Apocalyptica - Faraway"] = default_7dl_path+"Sound/music/faraway_7dl.ogg"
-    $ music_list_7dl["Secret Garden - Hymn to Hope"] = default_7dl_path+"Sound/music/last_hope_7dl.ogg"
-    $ music_list_7dl["Poets of the Fall - Carnival of Rust"] = default_7dl_path+"Sound/music/ofrust_7dl.ogg"
-    $ music_list_7dl["Hinkik - Time Leaper"] = default_7dl_path+"Sound/music/pure_energy_7dl.ogg"
-    $ music_list_7dl["Acid Jazz vs. Drum'n'Bass - Jungle Radio"] = default_7dl_path+"Sound/music/radio_void_7dl.ogg"
-    $ music_list_7dl["Кино - Кончится Лето"] = default_7dl_path+"Sound/music/summer_ends_soon_7dl.ogg"
-    $ music_list_7dl["Portishead - Roads (Instrumental Cover)"] = default_7dl_path+"Sound/music/war_to_fight_7dl.ogg"
-    $ music_list_7dl["DeadPunk - Alone"] = default_7dl_path+"Sound/music/alone_7dl.ogg"
-    $ music_list_7dl["DeadPunk - SaveMe"] = default_7dl_path+"Sound/music/saveme_7dl.ogg"
-    $ music_list_7dl["Nicolai Heidlas - Letting Go"] = default_7dl_path+"Sound/music/let_me_down_7dl.ogg"
-    $ music_list_7dl["Natureworld1986 - Underworld"] = default_7dl_path+"Sound/music/abyss_call_7dl.ogg"
-    $ music_list_7dl["Arn Andersson - Aftermath"] = default_7dl_path+"Sound/music/aftermath_7dl.ogg"
-    $ music_list_7dl["Arn Andersson - Annihilation (new version)"] = default_7dl_path+"Sound/music/devastated_7dl.ogg"
-    $ music_list_7dl["Arn Andersson - Childhood Memories (The First Era 2014)"] = default_7dl_path+"Sound/music/keep_looking_7dl.ogg"
-    $ music_list_7dl["Arn Andersson - Dawn"] = default_7dl_path+"Sound/music/dawn_7dl.ogg"
-    $ music_list_7dl["Arn Andersson - The Veil"] = default_7dl_path+"Sound/music/brigh_you_7dl.ogg"
-    $ music_list_7dl["Arn Andersson & Eli Richardson - Everlasting"] = default_7dl_path+"Sound/music/i_will_find_you_7dl.ogg"
+        "Apocalyptica - Faraway": _7DL.music("faraway"),
+        "Secret Garden - Hymn to Hope": _7DL.music("last_hope"),
+        "Poets of the Fall - Carnival of Rust": _7DL.music("ofrust"),
+        "Hinkik - Time Leaper": _7DL.music("pure_energy"),
+        "Acid Jazz vs. Drum'n'Bass - Jungle Radio": _7DL.music("radio_void"),
+        "Кино - Кончится Лето": _7DL.music("summer_ends_soon"),
+        "Portishead - Roads (Instrumental Cover)": _7DL.music("war_to_fight"),
+        "DeadPunk - Alone": _7DL.music("alone"),
+        "DeadPunk - SaveMe": _7DL.music("saveme"),
+        "Nicolai Heidlas - Letting Go": _7DL.music("let_me_down"),
+        "Natureworld1986 - Underworld": _7DL.music("abyss_call"),
+        "Arn Andersson - Aftermath": _7DL.music("aftermath"),
+        "Arn Andersson - Annihilation (new version)": _7DL.music("devastated"),
+        "Arn Andersson - Childhood Memories (The First Era 2014)": _7DL.music("keep_looking"),
+        "Arn Andersson - Dawn": _7DL.music("dawn"),
+        "Arn Andersson - The Veil": _7DL.music("brigh_you"),
+        "Arn Andersson & Eli Richardson - Everlasting": _7DL.music("i_will_find_you"),
 #0.38.a
-    $ music_list_7dl["Linkin Park - Crawling (Cello Cover) w/ Krwlng Intro"] = default_7dl_path+"Sound/music/krwling_7dl.ogg"
-    $ music_list_7dl["Oasis - Stop Crying Your Heart Out (Acoustic Cover)"] = default_7dl_path+"Sound/music/see_one_day_7dl.ogg"
+        "Linkin Park - Crawling (Cello Cover) w/ Krwlng Intro": _7DL.music("krwling"),
+        "Oasis - Stop Crying Your Heart Out (Acoustic Cover)": _7DL.music("see_one_day"),
 #0.40
-    $ music_list_7dl["Kevin MacLeod - Comfortable Mystery 3"] = default_7dl_path+"Sound/music/comfortable_mistery_3_7dl.ogg"
-    $ music_list_7dl["Kevin MacLeod - Comfortable Mystery 4"] = default_7dl_path+"Sound/music/comfortable_mistery_4_7dl.ogg"
-    $ music_list_7dl["Sopor Aeternus & The Ensemble Shadows - Abschied"] = default_7dl_path+"Sound/music/requiem_7dl.ogg"
-    $ music_list_7dl["Balmorhea - Remembrance"] = default_7dl_path+"Sound/music/hole_in_chest_7dl.ogg"
-    $ music_list_7dl["Frames - Don't Stay Here"] = default_7dl_path+"Sound/music/leave_now_7dl.ogg"
-    $ music_list_7dl["SinkWay - 7dl noir (7ДЛ OST)"] = default_7dl_path+"Sound/music/noir_ending_7dl.ogg"
-    $ music_list_7dl["Bob Bradley & Thomas Balmforth - Embers Glow"] = default_7dl_path+"Sound/music/embers_7dl.ogg"
-#0.41   
-    $ music_list_7dl["Sergey Eybog - UVAO 2"] = default_7dl_path+"Sound/music/uvao2_7dl.ogg"
-    $ music_list_7dl["Лирика - Сектор Газа (Гитара Классика Фингерстайл)"] = default_7dl_path+"Sound/music/lyrics_7dl.ogg"
-    $ music_list_7dl["Kaai Yuki - Ikanaide"] = default_7dl_path+"Sound/music/ikanaide_7dl.ogg"
-    $ music_list_7dl["Bob Bradley & Thomas Balmforth & Chris Egan - Moment Of Reflection"] = default_7dl_path+"Sound/music/reflection_7dl.ogg"
-    $ music_list_7dl["Sergey Eybog - Let's Be Friends (Cover by Dmitry Yakovlev)"] = default_7dl_path+"Sound/music/lets_be_friends_7dl.ogg"
+        "Kevin MacLeod - Comfortable Mystery 3": _7DL.music("comfortable_mistery_3"),
+        "Kevin MacLeod - Comfortable Mystery 4": _7DL.music("comfortable_mistery_4"),
+        "Sopor Aeternus & The Ensemble Shadows - Abschied": _7DL.music("requiem"),
+        "Balmorhea - Remembrance": _7DL.music("hole_in_chest"),
+        "Frames - Don't Stay Here": _7DL.music("leave_now"),
+        "SinkWay - 7dl noir (7ДЛ OST)": _7DL.music("noir_ending"),
+        "Bob Bradley & Thomas Balmforth - Embers Glow": _7DL.music("embers"),
+#0.41
+        "Sergey Eybog - UVAO 2": _7DL.music("uvao2"),
+        "Лирика - Сектор Газа (Гитара Классика Фингерстайл)": _7DL.music("lyrics"),
+        "Kaai Yuki - Ikanaide": _7DL.music("ikanaide"),
+        "Bob Bradley & Thomas Balmforth & Chris Egan - Moment Of Reflection": _7DL.music("reflection"),
+        "Sergey Eybog - Let's Be Friends (Cover by Dmitry Yakovlev)": _7DL.music("lets_be_friends"),
+    }
