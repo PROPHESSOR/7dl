@@ -655,7 +655,7 @@ label sdl_achvlist_main:
     $ day_time()
     $ persistent.sprite_time = "day"
     $ plthr = u"Достижения"
-    play ambience ambience_7dl["safe"] fadein 5
+    play ambience _7DL.ambience("safe") fadein 5
     
     $ renpy.block_rollback()
     $ sdl_achv_engine = sdl_achv_Engine(sdl_achv_route_default)

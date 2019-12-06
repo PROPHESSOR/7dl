@@ -735,7 +735,7 @@ label alt_day4_sl_7dl_herc_morning:
     scene expression Notch("bg int_old_building_day_7dl")
     show blackout2
     with dissolve
-    play ambience ambience_7dl["int_silence"] fadein 3
+    play ambience _7DL.ambience("int_silence") fadein 3
     "В итоге я победил."
     "Баррикада рассыпалась с душевынимающим визгом, сделавшим бы честь иному голливудскому ужастику, заставив сердце подпрыгнуть и заколотиться где-то в районе горла."
     "Я чуть было не отскочил назад, решив плюнуть на происходящее, но раз уж взялся за гуж…"
@@ -815,7 +815,7 @@ label alt_day4_sl_7dl_herc_morning:
     play sound_loop sfx_7dl["old_phone"]
     with flash
     with vpunch
-    play ambience ambience_7dl["int_silence"] fadein 5
+    play ambience _7DL.ambience("int_silence") fadein 5
     "Я не успел договорить, так как в мёртвую тишину этого места, вдребезги разбивая вернувшееся было душевное равновесие, вплёлся неуместный здесь звук!"
     "Звонящий телефон!"
     "Меня всего съёжило от страха, пробило ледяными мурашками между лопаток, а в голову сразу прыгнули кадры из «звонка» и Дохлой Девочки, лезущей из телевизора."
@@ -4775,7 +4775,7 @@ label alt_day4_sl_7dl_day:
     window hide
     scene bg ext_volley_court_7dl
     with joff_l
-    play ambience ambience_7dl["volley"] fadein 3
+    play ambience _7DL.ambience("volley") fadein 3
     "Наконец, до поля добралась и наша капитан."
     stop music fadeout 5
     pause(1)
@@ -6328,7 +6328,7 @@ label alt_day5_sl_7dl_begin:
     scene expression Desat("bg int_house_of_mt_sunset")
     with dissolve
     $ volume(0.5, "ambience")
-    play ambience ambience_7dl["rain"] fadein 6
+    play ambience _7DL.ambience("rain") fadein 6
     pause(1)
     play music _7DL.music("ask_you_out") fadein 3
     "Вчера всё было иначе, иначе…"
@@ -6730,7 +6730,7 @@ label alt_day5_sl_7dl_breakfast:
         pause(1)
         scene bg ext_dining_hall_near_rain_7dl
         with dissolve
-        play ambience ambience_7dl["rain"] fadein 3
+        play ambience _7DL.ambience("rain") fadein 3
         play music _7DL.music("explore") fadein 3
         "Я серьёзно не понимал — чему радуются все эти сумасшедшие?"
         "Было сложно объяснить, но было некое ощущение, на самой грани восприятия, с головой выдающее охватившее всех возбуждение."
@@ -6909,7 +6909,7 @@ label alt_day5_sl_7dl_breakfast:
         $ persistent.sprite_time = "sunset"
         window hide
         play sound sfx_open_door_2
-        play ambience ambience_7dl["rain"] fadein 3
+        play ambience _7DL.ambience("rain") fadein 3
         pause(1)
         scene bg ext_warehouse_rain_day_7dl
         show sl normal pioneer
@@ -7093,7 +7093,7 @@ label alt_day5_sl_7dl_breakfast:
         pause(1)
         scene bg ext_dining_hall_near_rain_7dl
         with dissolve
-        play ambience ambience_7dl["rain"] fadein 3
+        play ambience _7DL.ambience("rain") fadein 3
         play music _7DL.music("vibe") fadein 3
         me "Солнце светит, и растёт трава, но тебе она не нужна…"
         "Напевая про себя бессмертные строки и старательно обходя все места, где можно промокнуть, я балансировал перед собой завтрак Слави."
@@ -7299,7 +7299,7 @@ label alt_day5_sl_7dl_breakfast:
 label alt_day5_sl_7dl_candle:
     scene bg ext_dining_hall_near_rain_7dl
     with dissolve
-    play ambience ambience_7dl["rain"] fadein 3
+    play ambience _7DL.ambience("rain") fadein 3
     play music _7DL.music("deep_inside") fadein 3
     if herc or loki:
         "Вот только вывела Славя нас почему-то не к клубам, а аккурат к зданию столовой."
@@ -7868,7 +7868,7 @@ label alt_day5_sl_7dl_candle:
         scene bg int_coupe_day_7dl
         show mz smile pioneer at center
         show unblink
-        play ambience ambience_7dl["train"] fadein 3
+        play ambience _7DL.ambience("train") fadein 3
         play music _7DL.music("last_summer") fadein 3
         "Когда я открыл глаза, вокруг уже было смутно знакомое купе поезда, сквозь занавески лился неяркий закатный свет, а напротив меня сидела смутно знакомая девочка."
         "Она не особо-то обращала внимание на меня — её внимание было безраздельно занято леденцовыми конфетками в прозрачных шуршащих обёртках."
@@ -8145,7 +8145,7 @@ label alt_day5_sl_7dl_candle:
         "Руки мыть надо, когда телефона касаешься, чтобы по следам на стекле не спалили."
         "Так что я набрал пин, и…"
         stop music fadeout 5
-        play ambience ambience_7dl["train"] fadein 3
+        play ambience _7DL.ambience("train") fadein 3
         mz "Эй, просыпайся!"
         "В пространство моего сна вдруг вторгся чей-то крайне знакомый голос."
         me "А, что?"
@@ -8255,7 +8255,7 @@ label alt_day5_sl_7dl_candle:
         show mz smile pioneer
         with dissolve
         $ volume(0.5, "ambience")
-        play ambience ambience_7dl["rain"] fadein 3
+        play ambience _7DL.ambience("rain") fadein 3
         mz "Полынью!"
         "Окружающие рукоплескали."
         "А я как будто только-только пришёл в себя: обвёл растерянным взглядом девочек, вожатую…"
@@ -15428,7 +15428,7 @@ label alt_day6_sl_7dl_herc_morning:
         scene bg int_wagon_day_7dl
         show prologue_dream
         with dissolve
-        play ambience ambience_7dl["train"] fadein 3
+        play ambience _7DL.ambience("train") fadein 3
         "Стало так, что мы спешим куда-то по коридору, а несущиеся серые тени все оказались по ту сторону стекла."
         "Девушка резко остановилась, я налетел на неё, и несколькими секундами спустя мы оказались один на другом, глаза в глаза."
         "Жёлтые!"
@@ -15587,7 +15587,7 @@ label alt_day6_sl_7dl_herc_morning:
             show mz normal pioneer behind prologue_dream
             show prologue_dream
             with dissolve
-            play ambience ambience_7dl["train"] fadein 3
+            play ambience _7DL.ambience("train") fadein 3
             mz "А ты молодец. {w}Не куксишься, держишься как не в первый раз."
             mz "Сейчас… Не подглядывай."
             th "Интимный процесс, да…"
@@ -16578,7 +16578,7 @@ label alt_day6_sl_7dl_loki_morning:
     pause(1)
     scene anim_underwater
     with touch
-    play ambience ambience_7dl["underwater"] fadein 3
+    play ambience _7DL.ambience("underwater") fadein 3
     "Здесь оказалось удивительно глубоко, а вода была невероятно прозрачной."
     "Можно было разглядеть расходящихся в разные стороны рыбок — оранжевую и аквамариновую."
     "Алиса плавала неплохо, но и Мику оказалась не лыком шита."
@@ -16903,7 +16903,7 @@ label alt_day6_sl_7dl_loki_morning:
     "В принципе, если присесть пониже или вовсе лечь на пол, то…"
     "Я помотал головой, отгоняя совершенно точно не мои мысли."
     play sound sfx_open_water_sink
-    play ambience ambience_7dl["showers"] fadein 3
+    play ambience _7DL.ambience("showers") fadein 3
     "Свежая форма заняла своё место на крючке, прикрученном к двери, зашумела вода…"
     th "На полу я ещё не лежал!"
     sl "Держи мыло!"
@@ -21743,7 +21743,7 @@ label alt_day6_sl_7dl_evening:
         window hide
         scene anim_underwater
         with fade
-        play ambience ambience_7dl["underwater"] fadein 3
+        play ambience _7DL.ambience("underwater") fadein 3
         "И на меня как шкаф опрокинулся — в памяти открылся широченный лаз, откуда хлынули, сбивая с ног, выпивая дыхание, мыслеобразы, воспоминания, опыт…"
         $ set_mode_nvl()
         "Я служил в одном городке рядом с горами, мальчик нёс воду в каске, а вокруг жара, жара… Мальчик протянул мне каску, поклонился, а я ткнул стволом в его деда — пусть он пьет первый. Каска полетела на землю, короткая очередь…"
@@ -22580,7 +22580,7 @@ label alt_day6_sl_7dl_catapult:
     return
 
 label alt_day6_sl_7dl_disco:
-    play ambience ambience_7dl["disco"] fadein 3
+    play ambience _7DL.ambience("disco") fadein 3
     play music _7DL.music("unfulfilled") fadein 3
     if herc:
         scene anim_square_party
@@ -22788,7 +22788,7 @@ label alt_day6_sl_7dl_disco:
         scene anim_square_party
         show sl smile2 dress
         with dissolve
-        play ambience ambience_7dl["disco"] fadein 3
+        play ambience _7DL.ambience("disco") fadein 3
         "Песня закончилась, и мы нехотя опустили руки."
         sl "Имей в виду, следующий танец ты танцуешь не со мной."
         me "Ты отказываешь?"
@@ -22993,7 +22993,7 @@ label alt_day6_sl_7dl_disco:
         window hide
         with fade
         me "Твоих рук дело?"
-        play ambience ambience_7dl["disco"] fadein 3
+        play ambience _7DL.ambience("disco") fadein 3
         show us calml dress with dissolve
         us "Ты ничего не докажешь!"
         me "Я и не собираюсь. {w}Так твоих?"
@@ -23390,7 +23390,7 @@ label alt_day6_sl_7dl_disco:
         hide sl with dissolve
         "Не ответив, Славя развернулась и отправилась туда, откуда доносились звуки музыки."
         "Немного постояв, я отправился вслед за ней."
-        play ambience ambience_7dl["disco"] fadein 3
+        play ambience _7DL.ambience("disco") fadein 3
         window hide
         scene anim_square_party
         with dissolve
@@ -24437,7 +24437,7 @@ label alt_day6_sl_7dl_hentai:
         "Чувствовал себя при этом опустошённым и выжатым досуха."
         "В хорошем смысле. Если конечно, у этих слов он возможен."
     else:
-        play ambience ambience_7dl["disco"] fadein 3
+        play ambience _7DL.ambience("disco") fadein 3
         scene bg ext_admins_night_7dl
         with dissolve
         "В подростковом ещё возрасте у меня была довольно бурная, богатая фантазия, которая могла рассказать мне обо всём — но то была фантазия."
@@ -24785,7 +24785,7 @@ label alt_day7_sl_7dl_begin_herc:
     scene bg ext_city_night_7dl
     show prologue_dream
     with fade
-    play ambience ambience_7dl["night_city"] fadein 3
+    play ambience _7DL.ambience("night_city") fadein 3
     "В этом городе, среди безликих, безгласых людей, спешащих навстречу неизбежной смерти, я выделяюсь единственным ярким пятном."
     "Но мне тоже нечем похвастаться."
     "Я просто светло-серый, но на контрасте достаточно и этого."
@@ -25076,7 +25076,7 @@ label alt_day7_sl_7dl_begin_loki:
     scene bg ext_winterpark_7dl
     show prologue_dream
     with fade
-    play ambience ambience_7dl["night_city"] fadein 3
+    play ambience _7DL.ambience("night_city") fadein 3
     $ lp_sl += 1
     $ karma += 15
     "В этом мире, среди невыбранных возможностей и отторгнутого эго так легко живётся никем."
@@ -28619,7 +28619,7 @@ label alt_day7_sl_7dl_herc:
     window hide
     scene bg ext_city_night_7dl
     with dissolve
-    play ambience ambience_7dl["night_city"] fadein 3
+    play ambience _7DL.ambience("night_city") fadein 3
     "Домой пришлось идти пешком; заскочив по дороге в «24 часа» я взял кошке кое-чего на ужин и остановился в задумчивости на кассе."
     "Хотелось курить, но не курилось."
     th "Славя не одобрит."
@@ -28947,7 +28947,7 @@ label alt_day7_sl_7dl_herc_good:
     "И…"
     $ day_time()
     window hide
-    play ambience ambience_7dl["town_day"] fadein 3
+    play ambience _7DL.ambience("town_day") fadein 3
     scene bg ext_townscape_ph_day_7dl
     with flash
     play music _7DL.music("what_am_i_doing_here") fadein 3
@@ -29327,7 +29327,7 @@ label alt_day7_sl_7dl_herc_good:
     "Пришлось выбираться."
     stop sound_loop fadeout 1
     window hide
-    play ambience ambience_7dl["town_day"]
+    play ambience _7DL.ambience("town_day")
     scene bg ext_townscape_ph_day_7dl
     with fade
     $ set_mode_adv()
@@ -29398,7 +29398,7 @@ label alt_day7_sl_7dl_herc_neu:
     play music _7DL.music("out_of_painkillers") fadein 3
     scene bg ext_city_night_7dl
     with dissolve
-    play ambience ambience_7dl["night_city"] fadein 3
+    play ambience _7DL.ambience("night_city") fadein 3
     "В итоге я всё же сменил место обитания."
     "Не мог я жить там, где всё кричало о том, что я своими руками удавил."
     "В месте, где стены пропахли мертворожденным счастьем."
@@ -29658,7 +29658,7 @@ label alt_day7_sl_7dl_loki:
     play music _7DL.music("sorrow") fadein 3
     scene bg ext_mv2_7dl
     with dissolve
-    play ambience ambience_7dl["railroad"] fadein 3
+    play ambience _7DL.ambience("railroad") fadein 3
     "Как там говорили… Уходя — уходи?"
     "Я и ушёл."
     "Ничто не держало меня больше здесь, все тропинки в прошлое были перекопаны, все мосты сожжены."
@@ -29680,7 +29680,7 @@ label alt_day7_sl_7dl_loki:
     window hide
     scene bg ext_khruschevka_sunset_7dl
     with dissolve
-    play ambience ambience_7dl["night_city"] fadein 3
+    play ambience _7DL.ambience("night_city") fadein 3
     "Самое странное… Здесь светит солнце."
     "Над моей родной пасмурной столицей светит солнце! {w}Пусть неяркое, но всё же."
     "Как это получилось?"
@@ -29837,7 +29837,7 @@ label alt_day7_sl_7dl_loki:
     window hide
     scene bg ext_city_night_7dl
     with dissolve
-    play ambience ambience_7dl["night_city"] fadein 3
+    play ambience _7DL.ambience("night_city") fadein 3
     me "Ну же, давай, перестань ты трястись в муках."
     me "Я же с тобой, протяни мне свою руку."
     "Никогда не пел песен, хотя до знакомства с одной дрянью голос мне всё-таки ставили."
@@ -30531,7 +30531,7 @@ label alt_day7_sl_7dl_loki_rej:
     window hide
     scene bg int_excalator2_7dl
     with dissolve
-    play ambience ambience_7dl["railroad"] fadein 3
+    play ambience _7DL.ambience("railroad") fadein 3
     "Внутри было тепло, были люди, был бесплатный вайфай."
     "А учётную запись скайпа, куда ушло так много моих чувств, моего участия и поддержки, оказалось, прекрасно помнят мои пальцы."
     "Поиск, запрос на добавление…"
@@ -30656,7 +30656,7 @@ label alt_day7_sl_7dl_dr_good2:
     window hide
     scene bg intro_xx
     with dissolve
-    play ambience ambience_7dl["night_city"] fadein 3
+    play ambience _7DL.ambience("night_city") fadein 3
     play music _7DL.music("war_to_fight") fadein 3
     "Мне бы хотелось, чтобы у нас было больше времени."
     "Знаете, где-нибудь годик-другой, а ещё лучше — десять!"
@@ -30753,7 +30753,7 @@ label alt_day7_sl_7dl_dr_good2:
     with dissolve
     stop ambience fadeout 2
     "Автобус затормозил у «Ломоносовской», выплюнул меня и укатил."
-    play ambience ambience_7dl["night_city"] fadein 3
+    play ambience _7DL.ambience("night_city") fadein 3
     "Взъерошенного, растерянного, обескураженного."
     "Честно сказать, я уже и думать забыл, зачем садился в этот автобус."
     th "Куда-то, помнится, ехал."

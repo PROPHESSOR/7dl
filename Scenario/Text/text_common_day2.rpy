@@ -4889,7 +4889,7 @@ label alt_day2_siesta:
         window hide
         scene anim prolog_1
         stop music fadeout 3
-        play ambience ambience_7dl["safe"] fadein 4
+        play ambience _7DL.ambience("safe") fadein 4
         "Снилась какая-то муть."
         "Будто я проснулся внутри сна и понял, что у меня нет ног."
         "Вернее, есть — но эти два ватных бревна, которые с трудом приходится переносить с места на место."

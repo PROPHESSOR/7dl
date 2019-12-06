@@ -2724,7 +2724,7 @@ label alt_day4_neu_lunch:
             show mt normal sport at fright with moveinright
             show us grin sport with dissolve
             us "И победила — я!"
-            play ambience ambience_7dl["volley"] fadein 2
+            play ambience _7DL.ambience("volley") fadein 2
             play music music_list["went_fishing_caught_a_girl"] fadein 2
             show mt smile sport with dspr
             mt "Давай играть, победитель!"
@@ -5069,7 +5069,7 @@ label alt_day5_morningdream:
 
 label alt_day5_neu_start:
     play music _7DL.music("too_quiet") fadein 3
-    play sound_loop ambience_7dl["rain"] fadein 5
+    play sound_loop _7DL.ambience("rain") fadein 5
     if alt_day4_fz_sh == 1 or alt_day4_fz_sh == 4:
         scene bg int_aidpost_day with dissolve
         play ambience ambience_medstation_inside_day fadein 5
@@ -5620,7 +5620,7 @@ label alt_day5_neu_breakfast:
     return
 
 label alt_day5_neu_arrest:
-    play ambience ambience_7dl["rain"] fadein 3
+    play ambience _7DL.ambience("rain") fadein 3
     play music _7DL.music("to_the_sunrise") fadein 3
     scene bg ext_clubs_rain_7dl
     show mt normal pioneer at zenterleft
@@ -6313,7 +6313,7 @@ label alt_day5_neu_gaming:
     return
 
 label alt_day5_neu_along:
-    play ambience ambience_7dl["rain"] fadein 3
+    play ambience _7DL.ambience("rain") fadein 3
     $ persistent.sprite_time = "day"
     $ day_time()
     play music _7DL.music("beth") fadein 3
@@ -6750,7 +6750,7 @@ label alt_day5_neu_cndl:
         play sound sfx_open_door_clubs
         pause(1)
         window hide
-        play ambience ambience_7dl["rain"] fadein 3
+        play ambience _7DL.ambience("rain") fadein 3
         scene bg ext_clubs_rain_7dl
         show mt smile pioneer at zenterright
         with dissolve
@@ -11905,7 +11905,7 @@ label alt_day6_neu_loki_day:
     window hide
     with fade
     play music _7DL.music("too_serious") fadein 3
-    play ambience ambience_7dl["showers"] fadein 3
+    play ambience _7DL.ambience("showers") fadein 3
     "Потому что за распахнутой дверью в мыльной пене и водных брызгах…"
     th "Ох, я не могу на это смотреть!"
     dreamgirl "А я могу! {w}Смотри, красота-то какая!"
@@ -11961,7 +11961,7 @@ label alt_day6_neu_loki_day:
     "В целом ряде смыслов."
     window hide
     with fade
-    play ambience ambience_7dl["showers"] fadein 3
+    play ambience _7DL.ambience("showers") fadein 3
     "Вот только… {w}Помыться мне не дали."
     "Я никогда не был особо впечатлительным человеком, но злобный, сверлящий взгляд между лопаток ощутил сразу, как только сунул голову под прохладный душ."
     "Кто-то смотрел на меня, и смотрел без особой приязни."
@@ -14278,7 +14278,7 @@ label alt_day7_neu_sleep:
     scene bg ext_busstop_dust_7dl
     show prologue_dream
     with dissolve
-    play ambience ambience_7dl["int_silence"] fadein 3
+    play ambience _7DL.ambience("int_silence") fadein 3
     "Голова болела и болела не переставая."
     "И было это чертовски странно, ведь во сне мы не чувствуем боль. Так всегда было."
     "Во всяком случае, это верно для здорового человека."
@@ -14580,7 +14580,7 @@ label alt_day7_neu_sleep:
     "Меня спасло только то, что я ожидал чего-то подобного. Потому и неуместные ступеньки отметил, резко затормозил…"
     "Свет унёсся прочь."
     "А я побежал по лестнице, побежал к листку на стене, со всей силы ударил по нему ладонью."
-    play ambience ambience_7dl["elevator"] fadein 3
+    play ambience _7DL.ambience("elevator") fadein 3
     "Где-то в глубине земли что-то загудело, а я залёг."
     "От подъёма, что мы миновали минутой ранее, послышался громкий топот, азартный матерок…"
     "В стену надо мной ударили пули."
@@ -14620,7 +14620,7 @@ label alt_day7_neu_sleep:
     play sound sfx_7dl["nade_explode"] fadein 1
     with vpunch
     pause(1)
-    play ambience ambience_7dl["explosive_post"] fadein 3
+    play ambience _7DL.ambience("explosive_post") fadein 3
     "По ту сторону моего укрытия кто-то заголосил, качнуло стены жарким «ах», и я остался наедине со звенящей тишиной."
     "Развернулся в сторону лестницы — кабина уже прибыла!"
     window hide
@@ -14643,7 +14643,7 @@ label alt_day7_neu_sleep:
     "Сразу под ними и притаилась кнопка с искомым этажом."
     "Времени тормозить и дальше уже совсем не было, оставалось лишь уповать на то, что механизм блокировки двери сработает нормально, пока кабина в движении."
     "Иначе будет ай-яй-яй."
-    play ambience ambience_7dl["elevator"] fadein 3
+    play ambience _7DL.ambience("elevator") fadein 3
     "Палец нашёл кнопку, наверху что-то зажужжало — и тут же кто-то заполошно задёргал ручку двери."
     "Да поздно уже."
     "Восхождение началось."
@@ -16543,7 +16543,7 @@ label alt_day7_neu_dr_neu:
     window hide
     scene bg ext_city_night_7dl
     with fade
-    play ambience ambience_7dl["night_city"] fadein 3
+    play ambience _7DL.ambience("night_city") fadein 3
     "Небо над головой стояло несправедливо питерское, низкое, хмурое, как будто я и не уезжал из родного города."
     "И ведь не скажешь, что от дома меня отделяют аж три часовых пояса…"
     "Самое главное…"
@@ -17243,7 +17243,7 @@ label alt_day7_neu_true:
     window hide
     scene expression Desat("bg int_home_lift_7dl") at running
     with dissolve
-    play ambience ambience_7dl["elevator"] fadein 3
+    play ambience _7DL.ambience("elevator") fadein 3
     "Там меня обязательно дождётся тот, кто ждал с самого начала."
     "Странное существо — вовсе не человек. Да и меня, если на то пошло, трудно назвать человеком."
     "Это до поры я верил в то, что доступное мне доступно и всем."

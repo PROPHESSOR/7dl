@@ -2,7 +2,7 @@
     scene anim_underwater
     show blackout_exh
     with fade
-    play ambience ambience_7dl["underwater"] fadein 3
+    play ambience _7DL.ambience("underwater") fadein 3
     "Воды в трёхлитровой банке хватило, чтобы утопить меня с головой."
     "Связать руки и тело, выдавить из лёгких воздух…"
     "Но сейчас иначе нельзя. {w}Я не помню, кто и когда сбегал таким образом от смерти, но это было."

@@ -3556,7 +3556,7 @@ label alt_day6_us_7dl_button:
                 play sound sfx_shoulder_dive_water
                 pause(1)
                 scene anim_underwater
-                play ambience ambience_7dl["underwater"] fadein 3
+                play ambience _7DL.ambience("underwater") fadein 3
                 "Вот только в воду в результате ухнул я, а не она."
                 "Старый-старый приём ещё из «Ивана Васильевича»."
                 "А я, дурак, купился."
@@ -3737,7 +3737,7 @@ label alt_day6_us_7dl_button:
 
 label alt_day6_us_7dl_rendezvous:
     play music _7DL.music("dance_with_me") fadein 3
-    play ambience ambience_7dl["underwater"] fadein 0
+    play ambience _7DL.ambience("underwater") fadein 0
     "Не так я себе представлял последний день в лагере."
     "Совсем не так."
     "Мне грезились игры, смех, влюблённые глаза и впитавшееся в стволы сосен счастье, которое манит и манит год за годом возвращаться сюда вновь."
@@ -4450,7 +4450,7 @@ label alt_day6_us_px_carrier:
     me "Обратно. Я не уверен, что нам стоит здесь оста…"
     with flash
     play sound sfx_fall_wood_floor
-    play ambience ambience_7dl["explosive_post"]
+    play ambience _7DL.ambience("explosive_post")
     "Как падение вглубь собственного подсознания перед сном, отчего сами дёргаются ноги, мимо меня, обдав морозным воздухом, пронеслась «Волга». Воображаемая."
     play ambience ambience_ext_road_day fadein 3
     me "Нет, валим отсюда."
@@ -9628,7 +9628,7 @@ label alt_day7_us_7dl_leaving:
             window hide
             scene anim_digi
             with fade
-            play ambience ambience_7dl["underwater"] fadein 3
+            play ambience _7DL.ambience("underwater") fadein 3
             "Я открыл глаза."
             "В пустоту."
             "Вспомнил о том, что «я» — это самое важное, что есть."
@@ -10436,7 +10436,7 @@ label alt_day7_us_7dl_tran_mi:
     window hide
     scene bg int_home_lift_7dl
     with fade2
-    play ambience ambience_7dl["elevator"] fadein 3
+    play ambience _7DL.ambience("elevator") fadein 3
     "Я добрался домой уже заполночь, прошмыгнул мимо недовольного взгляда консьержки, вызвал лифт."
     "Всё напевал и напевал эту мелодию, стараясь запомнить как следует."
     "У меня было несколько программ для распознавания музыки, и я не собирался просто так отступаться."
@@ -10799,7 +10799,7 @@ label alt_day7_us_7dl_good:
     with fade
     play sound sfx_intro_bus_door_open
     pause(2)
-    play ambience ambience_7dl["railroad"] fadein 3
+    play ambience _7DL.ambience("railroad") fadein 3
     scene bg ext_mv2_7dl
     with fade
     stop sound_loop fadeout 4
@@ -10985,7 +10985,7 @@ label alt_day7_us_7dl_good:
 label alt_day7_us_7dl_true:
     play music _7DL.music("ask_you_out") fadein 3
     play ambience ambience_cold_wind_loop fadein 6
-    play sound_loop ambience_7dl["night_city"] fadein 6
+    play sound_loop _7DL.ambience("night_city") fadein 6
     scene anim intro_2
     with dissolve
     "Город красится перед выходом в люди."
@@ -12691,7 +12691,7 @@ label alt_day7_us_px_sept:
     play music _7DL.music("nap_one") fadein 3
     scene bg ext_adductius_7dl
     with dissolve
-    play ambience ambience_7dl["town_day"] fadein 5
+    play ambience _7DL.ambience("town_day") fadein 5
     $ meet('dv','Она')
     "Она нашла меня одного, брошенного на качелях, спросила, почему я один."
     "А что я могу ей сказать?"
@@ -12708,7 +12708,7 @@ label alt_day7_us_px_sept:
     "Я решил во что бы то ни стало дождаться её, потому провёл весь вечер и часть ночи на качелях, отбивая их у соседской малышни."
     "Почему-то казалось, что если я уйду, она меня потеряет."
     "Потеряет!"
-    play ambience ambience_7dl["rain"] fadein 6
+    play ambience _7DL.ambience("rain") fadein 6
     show rain_overlay
     with dissolve
     "А под утро пошёл дождь, холодный, мокрый и зябкий."
@@ -12864,7 +12864,7 @@ label alt_day7_us_px_sept:
     "И положила ладошку мне на голову. Погладила волосы."
     window hide
     scene anim prolog_1
-    play ambience ambience_7dl["tv"] fadein 3
+    play ambience _7DL.ambience("tv") fadein 3
     with fade
     "Так с тех пор и пошло."
     "Я ждал её дома, улыбался и готовил что-то, что мог, если только она не готовила пиццу."
@@ -12962,7 +12962,7 @@ label alt_day7_us_px_sept:
     window hide
     scene bg ext_khruschevka_day_7dl
     with dissolve
-    play ambience ambience_7dl["town_day"] fadein 3
+    play ambience _7DL.ambience("town_day") fadein 3
     "На следующий день в дом пришла какая-то девушка чуть младше моей… а кого?"
     "Я даже не знал, кем мне была Алиса."
     "Мамой? Старшей сестрой? Кем-то большим?"
@@ -13239,7 +13239,7 @@ label alt_day7_us_px_mourning:
     ba "А сейчас марш на обед — и по домам. По области объявлено штормовое предупреждение."
     stop music fadeout 5
     window hide
-    play sound_loop ambience_7dl["rain"] fadein 5
+    play sound_loop _7DL.ambience("rain") fadein 5
     scene bg ext_houses_rainy_day_7dl with dissolve
     with dissolve
     play music _7DL.music("what_cost") fadein 3

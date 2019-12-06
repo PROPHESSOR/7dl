@@ -525,7 +525,6 @@ init:
     image alt_cat_map_pathfinding = get_image_7dl("gui/dnd/alt_cat_map_pathfinding.png")
 
 # Звучок
-    $ ambience_7dl = {}
     $ sfx_7dl = {}
     $ sfx_alisa_falls_novoice = "sound/sfx/alisa_falls_novoice.ogg"
 
@@ -549,11 +548,9 @@ init python:
                 renpy.image((image_bind_prefix + filename[:-4]), file) # [:-4] - remove extension
 
             elif filename.endswith((".ogg")):
-                for category, dictionary, frontslice in ('ambience', ambience_7dl, 9), ('sfx', sfx_7dl, 0):
+                for category, dictionary in [('sfx', sfx_7dl)]:
                     if file.startswith(("%sSound/%s/" % (default_7dl_path, category))):
-                        dictionary[filename[frontslice:-8]] = file
+                        dictionary[filename[:-8]] = file
                         # [:-8] - remove "_7dl" suffix and extension
-                        # frontslice removes "ambience_" prefix from ambiences.
-                        # <PROPHESSOR> Why is the prefix there?
 
     bind_files_7dl()

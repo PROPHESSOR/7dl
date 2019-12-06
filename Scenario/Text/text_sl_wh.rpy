@@ -1,7 +1,7 @@
 label alt_day5_sl_wh_begin:
     scene cg d5_rainy_idle_7dl with dissolve
-    play music ambience_7dl["safe"] fadein 3
-    play sound_loop ambience_7dl["rain"]
+    play music _7DL.ambience("safe") fadein 3
+    play sound_loop _7DL.ambience("rain")
     "Я проснулся от холода и сырости, залезающей, казалось, за шиворот."
     th "Где я?"
     "Я рывком сел и огляделся."

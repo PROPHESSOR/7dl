@@ -64,7 +64,7 @@ label alt_day4_no_begin:
     scene noir_townscape_ph_day_7dl
     show anim_grain
     with dissolve
-    play ambience ambience_7dl["town_day"] fadein 3
+    play ambience _7DL.ambience("town_day") fadein 3
     stop sound_loop fadeout 5
     $ volume (1.0,'sound_loop')
     "Меня выставили вон из машины, бросили вслед рюкзак."
@@ -310,7 +310,7 @@ label alt_day4_no_corpse:
     scene noir_khruschevka_day_7dl
     show anim_grain
     with dissolve
-    play ambience ambience_7dl["town_day"] fadein 3
+    play ambience _7DL.ambience("town_day") fadein 3
     "Я махнул рукой конторке, за которой Леночка исчезла полностью, и вышел на улицу."
     "Найти участкового оказалось не так-то просто."
     "Постоянно, куда бы я ни приходил — везде «был только что, но ушёл»."
@@ -546,7 +546,7 @@ label alt_day4_no_corpse:
     pause(1)
     scene noir_yard2_7dl
     with dissolve
-    play ambience ambience_7dl["town_day"] fadein 3
+    play ambience _7DL.ambience("town_day") fadein 3
     "Да, чуть позже я понял, что поступил некрасиво, попросту сбежал."
     "Но мне стало очень страшно."
     "Не за себя."
@@ -701,7 +701,7 @@ label alt_day4_no_witch:
     scene noir_archway_7dl
     show anim_grain
     with dissolve
-    play ambience ambience_7dl["town_day"] fadein 3
+    play ambience _7DL.ambience("town_day") fadein 3
     "Пролавировав между выставленных и оттопыренных конечностей, я вывалился на улицу, где уже стояло несколько мутных личностей."
     "Всё как и должно быть - приросшие к нижней губе папироски, остекленевший взгляд и уйма проблем всем мимопроходящим."
     "Хотя ко мне у них не должно быть претензий."
@@ -1332,7 +1332,7 @@ label alt_day4_no_rendezvous:
     scene noir_townscape_ph_day_7dl
     show anim_grain
     with dissolve
-    play ambience ambience_7dl["town_day"] fadein 3
+    play ambience _7DL.ambience("town_day") fadein 3
     "На часах была половина девятого, когда я вышел из автобуса у местного вокзала."
     "Купив на вокзале бутылку водки в буфете, я спрятал её в зонтик, чтобы не дразнить местный бомонд и отправился домой."
     "Сиречь, в отель."

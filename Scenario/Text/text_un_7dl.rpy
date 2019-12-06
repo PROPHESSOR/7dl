@@ -3384,7 +3384,7 @@ label alt_day4_un_7dl_sleeptime:
 
 label alt_day5_un_7dl_begin:
     play music music_list["waltz_of_doubts"] fadein 3
-    play ambience ambience_7dl["rain"] fadein 3
+    play ambience _7DL.ambience("rain") fadein 3
     scene expression Rained("bg int_house_of_mt_sunset")
     with fade2
     "Этот сон был слишком сладок, чтобы оказаться правдой."
@@ -11006,7 +11006,7 @@ label alt_day7_un_7dl_bad:
     scene bg int_home_lift_7dl
     with fade2
     "Ну, здравствуй, нелюбимый и немилый дом."
-    play ambience ambience_7dl["elevator"] fadein 3
+    play ambience _7DL.ambience("elevator") fadein 3
     "Подскочившую консьержку я отодвинул в сторону не глядя, и лишь спустя пару мгновений в лифте, безучастно отметив лязг сомкнувшихся створок, понял, что сознание абсолютно не отметило этаж, кнопку которого выбрали пальцы."
     "Оно, может, и к лучшему."
     "Я забился в дальний тёмный угол и сел на пол, прижав колени к груди."
@@ -12287,7 +12287,7 @@ label alt_day7_un_7dl_rej:
     window hide
     scene bg int_excalator_7dl with fade
     "И хорошо: с глаз долой — из сердца вон."
-    play ambience ambience_7dl["railroad"] fadein 3
+    play ambience _7DL.ambience("railroad") fadein 3
     show un tr1 modern at left
     show mt tr1 at right
     with dissolve
@@ -12395,7 +12395,7 @@ label alt_day7_un_7dl_sept:
     window hide
     scene bg ext_city_night_7dl
     with dissolve
-    play ambience ambience_7dl["night_city"] fadein 3
+    play ambience _7DL.ambience("night_city") fadein 3
     play music _7DL.music("dawn") fadein 3
     "Честно сказать, я думал, она откажет мне в гостеприимстве."
     "Всё-таки её отъезд в другой город больше был похож на бегство, а оно обычно сопровождается сжиганием мостов."
@@ -12537,7 +12537,7 @@ label alt_day7_un_7dl_sept:
     $ meet('ka', 'Катюшка')
     ka "Не кричи. Конечно же, чая я попью, только потом поеду. {w}И мальчика твоего покормлю, кожа да кости."
     window hide
-    play ambience ambience_7dl["night_city"] fadein 3
+    play ambience _7DL.ambience("night_city") fadein 3
     scene bg ext_city_night_7dl
     with dissolve
     "Вот так за шутливой перебранкой мы встретили вечер."
