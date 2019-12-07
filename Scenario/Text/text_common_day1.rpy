@@ -631,7 +631,7 @@ label alt_day1_firts_met:
     me "Я невменяем, но меня не стоит обвинять."
     "Выдавило пересохшее горло."
     "Полузадушенная паника снова подняла голову."
-    if (counter_sl_7dl == 1):
+    if counter_sl_7dl == 1:
         show sl surprise pioneer
         sl "…! Приди в себя!"
         "Отстранённый выстрел пощёчины, не оставляющий даже боли в нервных тенётах."
@@ -639,12 +639,12 @@ label alt_day1_firts_met:
             sl "Ох… У тебя снова кровь."
         else:
             sl "Ох… У тебя кровь."
+
+        play sound_loop sfx_head_heartbeat fadein 3
         "Я стоял, шатаясь, сглатывая горькую слюну, закатывая глаза, старательно качаясь в противофазе с гравитацией."
 
-        # TODO: <PROPHESSOR> Проверить
-        # show prologue_dream with dissolve
-        # pause 1
-        # hide prologue_dream with dissolve
+        show prologue_dream with dissolve
+        hide prologue_dream with dissolve
 
         "Четыре выдоха, два вдоха, пульс, шум в ушах."
         "Под носом прикосновения ткани — уже влажной."
@@ -659,6 +659,7 @@ label alt_day1_firts_met:
         "Откуда-то сверху что-то бурчало-бормотало."
         "И когда паника схлынула, я понял, что это просто ласковый, воркующий голос того ангела, что всё никак не уйдёт!"
         th "Крепко же я тебе нужен, милая…"
+        stop sound_loop fadeout 5
         window hide
         play ambience ambience_camp_entrance_day fadein 3
         scene bg ext_camp_entrance_day
