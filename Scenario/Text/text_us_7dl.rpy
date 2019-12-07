@@ -5710,7 +5710,7 @@ label alt_day6_us_7dl_disco:
     play sound sfx_open_dooor_campus_1
     pause(1)
     $ persistent.sprite_time = "night"
-    $ night_time
+    $ night_time()
     scene anim_square_party
     with dissolve
     play ambience ambience_camp_center_evening fadein 3

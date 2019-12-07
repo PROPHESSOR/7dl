@@ -2884,7 +2884,7 @@ label alt_day1_headshot:
     play music music_list["smooth_machine"] fadein 1
     "Пробормотав отходную молитву по безвременно почившему ужину, я направился куда глаза глядят."
     window hide
-    $ night_time
+    $ night_time()
     $ persistent.sprite_time = "night"
     scene bg ext_camp_entrance_night
     with fade2

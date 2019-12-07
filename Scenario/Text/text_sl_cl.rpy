@@ -16504,7 +16504,7 @@ label alt_day7_sl_cl_int_good:
     scene bg ext_camp_entrance_sunset with flash
     pause(1)
     scene bg ext_camp_entrance_day with flash
-    $ day_time
+    $ day_time()
     $ persistent.sprite_time = "day"
     "И я понять ничего не успел."
     sl "Привет. А что ты тут делаешь?"

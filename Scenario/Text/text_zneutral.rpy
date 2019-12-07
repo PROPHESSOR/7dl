@@ -4986,7 +4986,7 @@ label alt_day4_neu_mt_diary_vol1:
     stop music fadeout 3
     $ set_mode_adv()
     $ persistent.sprite_time = "night"
-    $ night_time
+    $ night_time()
     scene bg int_house_of_mt_night
     "Больше я ничего прочитать не успел — ступеньки заскрипели под чьими-то шагами, и я поспешил вернуть ежедневник на место."
     "Приняв скучающий вид, я выглянул в окно."

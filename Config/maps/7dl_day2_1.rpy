@@ -21,7 +21,7 @@
 
 label alt_day2_map:
     $ persistent.sprite_time = "day"
-    $ day_time
+    $ day_time()
     play music music_list["smooth_machine"] fadein 2
     
     if len(list_voyage_7dl) < 4:
