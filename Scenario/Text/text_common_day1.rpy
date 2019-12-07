@@ -19,7 +19,7 @@ label alt_day1_bus_start:
     scene anim_underwater
     show blackout_exh
     with fade
-    "А уже ударившись о дно, понял, что просто сплю."
+    "Ударившись о дно, я понял, что просто сплю."
     $ volume (0.7,'sound_loop')
     play sound_loop sfx_cooling_engine_loop fadein 2
 
@@ -86,7 +86,7 @@ label alt_day1_bus_start:
     window hide
     scene cg d1_mi_dv_bus_7dl with flash
     "На улице царило лето."
-    th "{b}Лето?!{\b}" with vpunch
+    th "{b}Лето?!{\b}" with vpunch # <PROPHESSOR> Оборвана цепочка рассуждений
     "Неподалёку от автобуса стояла ещё одна девушка — чуть выше первой, тоже очень красивая, с медно-рыжими волосами, огненно блестящими на ярком солнце."
     "«Циановая» подбежала к ней и что-то быстро-быстро заговорила, размахивая руками, в то время как рыжая молча и чуточку снисходительно слушала её."
     "Потом что-то ответила — и «циановая» рассмеялась, как-то меленько так, рассыпчато. Как умеют только азиатки."
@@ -143,7 +143,7 @@ label alt_day1_bus_start:
     "Разве что никак не мог припомнить подробностей."
     "Я поднапрягся, и…"
     window hide
-    scene red with fade
+    scene black with flash_red
     "Виски скрутило болью, а из носа закапала кровь."
     play music music_list["no_tresspassing"] fadein 3
     "Но меня это мало заботило, потому что сквозь образовавшийся лаз в прошлое хлынули воспоминания."
@@ -167,6 +167,7 @@ label alt_day1_bus_start:
     show anim_intro_recall:
         xalign 0.5 yalign 0.5 zoom 1.35
         linear 3.0 zoom 0.3 xalign 0.5 yalign 0.5
+    with dissolve
     $ renpy.pause(3, hard=True)
     if loki:
         scene bg ext_winterpark_7dl
@@ -183,6 +184,7 @@ label alt_day1_bus_start:
     show blinking
     scene bg ext_road_day
     show blackout_exh
+    with dissolve
     play ambience ambience_camp_entrance_day fadein 3
     th "Если понадобится, вспомню. {w}Сейчас у меня дела куда более насущные."
     "Я точно помню, что, пока я спал, ко мне снова приходила та девочка и спрашивала, пойду ли я с ней."
@@ -354,6 +356,7 @@ label alt_day1_firts_met:
         "Вслух я ничего не сказал, но девушка отступила на шаг, явно чем-то потрясённая."
 
     scene expression Noon("bg ext_bus1_7dl") at zenterleft
+    show sl shade
 
     "А я наконец сумел разглядеть её лицо."
     show sl serious pioneer
