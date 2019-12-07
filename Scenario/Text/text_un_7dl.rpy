@@ -1582,7 +1582,7 @@ label alt_day4_un_7dl_dinner:
         stop music fadeout 2
         play sound sfx_door_squeak_light
         scene bg int_house_of_un_day
-        $ day_time
+        $ day_time()
         with fade2
         play ambience ambience_int_cabin_night fadein 3
 

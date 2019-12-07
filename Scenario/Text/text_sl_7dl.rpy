@@ -5300,7 +5300,7 @@ label alt_day4_sl_7dl_evening:
     window hide
     scene bg int_clubs_male_sunset
     with flash
-    $ sunset_time
+    $ sunset_time()
     pause(1)
     play sound sfx_open_door_clubs_2
     pause(1)

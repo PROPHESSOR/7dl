@@ -576,7 +576,7 @@ label alt_day2_bf:
             th "Эти… Эти… Я не знаю даже, какой эпитет подобрать! Они испортили толковый какао сгущёнкой! Ну что за люди!"
             show sl smile2 pioneer with dspr
             "Славя, искоса наблюдающая за моими эволюциями, втихомолку хихикнула, разглядев бездну разочарования на моём лице."
-            sl "Запретили у нас его. После того как несколько человек аллергию получили. Вот его и разводят."
+            sl "Запретили у нас его. После того как несколько человек аллергию получили. Вот теперь и разводят."
             "Ну да. Как будто таким образом как-то уберут аллерген."
             "Какао есть какао: у тебя либо есть на него аллергия, либо нет. Причём здесь сгущёнка вообще?"
             "Я не стал делиться умозаключениями со Славей, уткнувшись в тарелку с кашей, тем более, что её уже была почти пуста, а мне ещё хотелось задать ряд вопросов."
@@ -2213,7 +2213,7 @@ label alt_day2_event_sport_area1:
     window hide
     scene bg int_sporthall_day_7dl with dissolve
     $ persistent.sprite_time = "sunset"
-    $ sunset_time
+    $ sunset_time()
     play music music_list["went_fishing_caught_a_girl"] fadein 5
     if ((alt_day1_sl_keys_took == 1) or (counter_sl_cl != 0) or (counter_sl_7dl == 3)) and (alt_day2_convoy == 'sl'):
         "Славя была права!"
@@ -2343,7 +2343,7 @@ label alt_day2_event_sport_area1:
             "Ответил я и вышел из спортзала."
     scene bg ext_playground_day with fade
     $ persistent.sprite_time = "day"
-    $ day_time
+    $ day_time()
     play ambience ambience_camp_center_day fadein 2
     if (alt_day2_convoy == 'un'):
         me "Физрук у вас, конечно…"
