@@ -7615,7 +7615,7 @@ label alt_day2_un_loki_date:
         "Серьёзно?!"
         "Человеку, которого она знает меньше сорока часов?"
         "Да я за это время руку ему подавать не приучусь и имени не запомню!"
-    scene bg ext_houses_sunset with dissolve
+    scene bg ext_houses_night_7dl with dissolve
     show un grin pioneer with dissolve
     "Мне вдруг стало очень неуютно."
     "Игра, правила которой были понятны и очевидны Лене, мне казалась хаосом."
