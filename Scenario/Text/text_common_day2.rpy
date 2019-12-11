@@ -2724,6 +2724,7 @@ label alt_day2_event_library1:
 
 label alt_day2_mz:
     window hide
+    play ambience ambience_library_day fadein 3
     $ meet('mz','Библиотекарша')
     mz "Ну и кто тут кричит?"
     "Раздался скрипучий голос."
