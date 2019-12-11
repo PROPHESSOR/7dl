@@ -7027,6 +7027,7 @@ label alt_day3_eventAf_library1:
         cs "Вот вы где."
         "Раздался сзади знакомый голос."
         show cs normal at right with dissolve
+        show un normal with dspr
         "Лена неохотно отстранилась и посмотрела в сторону побеспокоившей нас Виолы."
         me "Да, Виола, вы нас искали?"
         cs "Что-то вроде того."
