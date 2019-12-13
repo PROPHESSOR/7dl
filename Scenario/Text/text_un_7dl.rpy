@@ -1810,6 +1810,7 @@ label alt_day4_un_7dl_dinner:
             un "А моя женская интуиция говорит мне, что такие ощущения не к добру."
             me "Как сурово сказано! Женская интуиция!"
             "Лена показала мне язык."
+        stop music fadeout 1
         window hide
         scene bg int_house_of_un_day
         show un grin pioneer with dspr
