@@ -3747,6 +3747,7 @@ label alt_day5_un_7dl_breakfast:
     return
 
 label alt_day5_un_7dl_breakfast_l:
+    play ambience ambience_medium_crowd_indoors_1 fadein 3
     me "А если мы не согласимся?"
     "Поинтересовался я."
     mt "У вас выбора нет. {w}Либо так, либо домашний арест — за то, что кто-то ночью испортил памятник. А у нас есть свидетели, что Лена и ты, Семён, куда-то ходили ночью."
