@@ -2703,7 +2703,7 @@ label alt_day4_un_7dl_launch:
     play ambience ambience_dining_hall_full fadein 5
     play music music_list["silhouette_in_sunset"] fadein 3
     scene bg int_dining_hall_people_day
-    show un smile pioneer
+    show un serious pioneer
     with dissolve
     "Лена уселась напротив меня, подобрав под себя ногу и как-то странно уставилась в упор."
     "Я коврижкой чуть не подавился."
