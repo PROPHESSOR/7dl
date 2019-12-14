@@ -6525,7 +6525,7 @@ label alt_day5_un_7dl_library:
     return
 
 label alt_day5_un_7dl_washing:
-    "Быстро прикончив свои плюшки, мы вышли на крыльцо."
+    "Быстро прикончив свои плюшки, мы вышли на крыльцо"
     scene bg ext_dining_hall_near_day
     show sl normal pioneer
     with dissolve
