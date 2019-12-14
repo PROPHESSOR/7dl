@@ -6716,6 +6716,7 @@ label alt_day5_un_7dl_washing:
     me "Да кого я дразню? {w}Просто устал уже пёхать. Долго там?"
     "Я красноречиво подбросил вязанку в руках, устраивая поудобнее."
     show sl normal pioneer with dspr
+    stop music fadeout 1
     sl "Нет, мы уже на месте."
     window hide
     scene bg ext_polyana_day with dissolve
@@ -6813,10 +6814,6 @@ label alt_day5_un_7dl_washing:
     me "А как насчёт опции «помоешься самостоятельно»?"
     show un serious pioneer with dspr
     un "Не рассматривается. Времени до ужина осталось меньше часа, а нам ещё обратно идти."
-    me "Лена, на пару слов."
-    hide sl with dissolve
-    show un normal pioneer at center with dspr
-    "Я отвёл Лену в сторонку, где нас не могла услышать посторонняя сейчас Славя."
     menu:
         "Делайте что нужно":
             "Иногда лучше просто расслабиться."
@@ -6824,6 +6821,10 @@ label alt_day5_un_7dl_washing:
             $ alt_day5_un_7dl_sl_un_washing = True
         "Просто дайте мне нормально умыться":
             $ karma -= 10
+            me "Лена, на пару слов."
+            hide sl with dissolve
+            show un normal pioneer at center with dspr
+            "Я отвёл Лену в сторонку, где нас не могла услышать посторонняя сейчас Славя."
             me "Лена."
             "Я подбавил строгости в голос."
             me "Баловство закончилось."
@@ -6840,6 +6841,10 @@ label alt_day5_un_7dl_washing:
         "Я не против тебя":
             $ lp_un += 1
             $ karma += 10
+            me "Лена, на пару слов."
+            hide sl with dissolve
+            show un normal pioneer at center with dspr
+            "Я отвёл Лену в сторонку, где нас не могла услышать посторонняя сейчас Славя."
             me "Я не хочу, чтобы там была она."
             un "Что такое? Боишься, понравится?"
             me "Лена…"
